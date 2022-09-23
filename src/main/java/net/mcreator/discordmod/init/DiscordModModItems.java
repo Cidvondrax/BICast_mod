@@ -47,7 +47,6 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> MOZZARELLA_BALL = REGISTRY.register("mozzarella_ball", () -> new MozzarellaBallItem());
 	public static final RegistryObject<Item> MOZZARELLA_BLOCK = block(DiscordModModBlocks.MOZZARELLA_BLOCK, CreativeModeTab.TAB_FOOD);
 	public static final RegistryObject<Item> BLUECHEESEBLOCK = block(DiscordModModBlocks.BLUECHEESEBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> ASDDF = block(DiscordModModBlocks.ASDDF, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

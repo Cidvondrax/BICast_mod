@@ -27,7 +27,6 @@ import net.mcreator.discordmod.block.BluecheeseBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
 import net.mcreator.discordmod.block.AztecSmoothStoneBlock;
 import net.mcreator.discordmod.block.AztecBrickBlock;
-import net.mcreator.discordmod.block.AsddfBlock;
 import net.mcreator.discordmod.DiscordModMod;
 
 public class DiscordModModBlocks {
@@ -46,7 +45,6 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> SLIME_GRASS = REGISTRY.register("slime_grass", () -> new SlimeGrassBlock());
 	public static final RegistryObject<Block> MOZZARELLA_BLOCK = REGISTRY.register("mozzarella_block", () -> new MozzarellaBlockBlock());
 	public static final RegistryObject<Block> BLUECHEESEBLOCK = REGISTRY.register("bluecheeseblock", () -> new BLUECHEESEBLOCKBlock());
-	public static final RegistryObject<Block> ASDDF = REGISTRY.register("asddf", () -> new AsddfBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
