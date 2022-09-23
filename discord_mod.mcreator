@@ -1,0 +1,290 @@
+{
+  "mod_elements": [
+    {
+      "name": "Coconujpeg",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconujpeg"
+    },
+    {
+      "name": "Crab",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crab"
+    },
+    {
+      "name": "Gorilla",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorilla"
+    },
+    {
+      "name": "Cheese",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese"
+    },
+    {
+      "name": "Cheeseblackone",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheeseblackone"
+    },
+    {
+      "name": "Cheeseblockstwo",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swiss_cheese_block"
+    },
+    {
+      "name": "Kraft",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kraft"
+    },
+    {
+      "name": "CheesyShittery",
+      "type": "biome",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesy_shittery"
+    },
+    {
+      "name": "MonsterCheese",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monster_cheese"
+    },
+    {
+      "name": "Mosnmeertr",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mosnmeertr"
+    },
+    {
+      "name": "Chhc",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chhc"
+    },
+    {
+      "name": "Bluecheese",
+      "type": "fluid",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluecheese",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "Cheesedoor",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesedoor"
+    },
+    {
+      "name": "Muenstercheesebiome",
+      "type": "biome",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenstercheesebiome"
+    },
+    {
+      "name": "Muenstercheesedimension",
+      "type": "dimension",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenstercheesedimension",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "AztecBrick",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aztec_brick"
+    },
+    {
+      "name": "AztecSmoothStone",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aztec_smooth_stone"
+    },
+    {
+      "name": "Rennet",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rennet"
+    },
+    {
+      "name": "Rennetdrop",
+      "type": "loottable",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rennetdrop"
+    },
+    {
+      "name": "SlimeGrass",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_grass"
+    },
+    {
+      "name": "Curd",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd"
+    },
+    {
+      "name": "MilkRennetCurd",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_rennet_curd"
+    },
+    {
+      "name": "MozzarellaBall",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mozzarella_ball"
+    },
+    {
+      "name": "Mozzarellaballrecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mozzarellaballrecipe"
+    },
+    {
+      "name": "MozzarellaBlock",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mozzarella_block"
+    },
+    {
+      "name": "BLUECHEESEBLOCK",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluecheeseblock"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "crebravae",
+      "files": [
+        "noisestorm-crab-rave-_monstercat-release_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "monekeeee",
+      "files": [
+        "angry-monkey-sound-effect-_-prosounds"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.discord_mod.cheesedoor": "Cheesedoor",
+      "block.discord_mod.cheeseblackone": "Cheddar Cheese Block",
+      "item.discord_mod.curd": "Curd",
+      "item.discord_mod.gorilla_spawn_egg": "Gorilla Spawn Egg",
+      "block.discord_mod.bluecheese": "Bluecheese",
+      "subtitles.crebravae": "",
+      "item.discord_mod.cheese": "Cheese",
+      "item.discord_mod.bluecheese_bucket": "Bluecheese Bucket",
+      "block.discord_mod.swiss_cheese_block": "Swiss Cheese Block",
+      "item.discord_mod.rennet": "Rennet",
+      "entity.discord_mod.gorilla": "Gorilla",
+      "block.discord_mod.kraft": "Swiss Cheese Block",
+      "item.discord_mod.muenstercheesedimension": "Mozzarella and Steel",
+      "biome.discord_mod.muenstercheesebiome": "Muenstercheesebiome",
+      "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
+      "subtitles.monekeeee": "",
+      "block.discord_mod.aztec_smooth_stone": "Aztec Brick",
+      "fluid.discord_mod.bluecheese": "Bluecheese",
+      "block.discord_mod.mozzarella_block": "Mozzarella Block",
+      "block.discord_mod.aztec_brick": "Aztec Brick",
+      "block.discord_mod.slime_grass": "Slime Grass",
+      "block.discord_mod.monster_cheese": "Muenster cheese block",
+      "block.discord_mod.bluecheeseblock": "BLUECHEESEBLOCK",
+      "item.discord_mod.crab_spawn_egg": "Crab Spawn Egg",
+      "entity.discord_mod.crab": "Crab",
+      "biome.discord_mod.cheesy_shittery": "Cheesy Shittery",
+      "block.discord_mod.coconujpeg": "Cicinut"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "discord_mod",
+    "modName": "Discord mod",
+    "version": "1.0.0",
+    "author": "frost, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.discordmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}

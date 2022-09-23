@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "discord_mod:curd"
+    },
+    {
+      "item": "discord_mod:curd"
+    },
+    {
+      "item": "discord_mod:curd"
+    },
+    {
+      "item": "discord_mod:curd"
+    }
+  ],
+  "result": {
+    "item": "discord_mod:mozzarella_ball",
+    "count": 1
+  }
+}

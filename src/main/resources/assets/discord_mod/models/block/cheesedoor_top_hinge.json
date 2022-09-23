@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top_rh",
+  "textures": {
+    "bottom": "discord_mod:blocks/2222",
+    "top": "discord_mod:blocks/2222"
+  }
+}

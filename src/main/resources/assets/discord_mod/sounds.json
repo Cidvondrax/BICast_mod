@@ -1,0 +1,20 @@
+{
+  "crebravae": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "discord_mod:noisestorm-crab-rave-_monstercat-release_",
+        "stream": false
+      }
+    ]
+  },
+  "monekeeee": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "discord_mod:angry-monkey-sound-effect-_-prosounds",
+        "stream": false
+      }
+    ]
+  }
+}

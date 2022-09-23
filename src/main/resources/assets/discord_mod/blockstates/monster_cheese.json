@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "discord_mod:block/monster_cheese",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "discord_mod:block/monster_cheese"
+    },
+    "axis=z": {
+      "model": "discord_mod:block/monster_cheese",
+      "x": 90
+    }
+  }
+}
