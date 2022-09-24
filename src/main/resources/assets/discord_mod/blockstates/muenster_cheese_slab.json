@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "discord_mod:block/muenster_cheese_slab"
+    },
+    "type=top": {
+      "model": "discord_mod:block/muenster_cheese_slab_top"
+    },
+    "type=double": {
+      "model": "discord_mod:block/muenster_cheese_slab_full"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "discord_mod:blocks/muenster_side",
+    "particle": "discord_mod:blocks/muenster_side"
+  }
+}

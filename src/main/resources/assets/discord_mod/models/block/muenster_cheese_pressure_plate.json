@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "discord_mod:blocks/muenstercheese_planks"
+  }
+}

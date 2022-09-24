@@ -16,6 +16,16 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.discordmod.block.SlimeGrassBlock;
 import net.mcreator.discordmod.block.MuenstercheesedimensionPortalBlock;
+import net.mcreator.discordmod.block.MuensterCheeseWoodBlock;
+import net.mcreator.discordmod.block.MuensterCheeseStairsBlock;
+import net.mcreator.discordmod.block.MuensterCheeseSlabBlock;
+import net.mcreator.discordmod.block.MuensterCheesePressurePlateBlock;
+import net.mcreator.discordmod.block.MuensterCheesePlanksBlock;
+import net.mcreator.discordmod.block.MuensterCheeseLogBlock;
+import net.mcreator.discordmod.block.MuensterCheeseLeavesBlock;
+import net.mcreator.discordmod.block.MuensterCheeseFenceGateBlock;
+import net.mcreator.discordmod.block.MuensterCheeseFenceBlock;
+import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
 import net.mcreator.discordmod.block.MonsterCheeseBlock;
 import net.mcreator.discordmod.block.KraftBlock;
@@ -45,6 +55,23 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> SLIME_GRASS = REGISTRY.register("slime_grass", () -> new SlimeGrassBlock());
 	public static final RegistryObject<Block> MOZZARELLA_BLOCK = REGISTRY.register("mozzarella_block", () -> new MozzarellaBlockBlock());
 	public static final RegistryObject<Block> BLUECHEESEBLOCK = REGISTRY.register("bluecheeseblock", () -> new BLUECHEESEBLOCKBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_WOOD = REGISTRY.register("muenster_cheese_wood", () -> new MuensterCheeseWoodBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_LOG = REGISTRY.register("muenster_cheese_log", () -> new MuensterCheeseLogBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_PLANKS = REGISTRY.register("muenster_cheese_planks",
+			() -> new MuensterCheesePlanksBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_LEAVES = REGISTRY.register("muenster_cheese_leaves",
+			() -> new MuensterCheeseLeavesBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_STAIRS = REGISTRY.register("muenster_cheese_stairs",
+			() -> new MuensterCheeseStairsBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_SLAB = REGISTRY.register("muenster_cheese_slab", () -> new MuensterCheeseSlabBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_FENCE = REGISTRY.register("muenster_cheese_fence",
+			() -> new MuensterCheeseFenceBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_FENCE_GATE = REGISTRY.register("muenster_cheese_fence_gate",
+			() -> new MuensterCheeseFenceGateBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_PRESSURE_PLATE = REGISTRY.register("muenster_cheese_pressure_plate",
+			() -> new MuensterCheesePressurePlateBlock());
+	public static final RegistryObject<Block> MUENSTER_CHEESE_BUTTON = REGISTRY.register("muenster_cheese_button",
+			() -> new MuensterCheeseButtonBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

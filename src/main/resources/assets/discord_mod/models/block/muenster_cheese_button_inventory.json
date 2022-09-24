@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "discord_mod:blocks/muenstercheese_planks"
+  }
+}

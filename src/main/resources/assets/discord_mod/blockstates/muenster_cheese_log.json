@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "discord_mod:block/muenster_cheese_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "discord_mod:block/muenster_cheese_log"
+    },
+    "axis=z": {
+      "model": "discord_mod:block/muenster_cheese_log",
+      "x": 90
+    }
+  }
+}

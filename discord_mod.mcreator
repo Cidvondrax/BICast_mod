@@ -213,6 +213,280 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bluecheeseblock"
+    },
+    {
+      "name": "MuensterCheeseWood",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_wood"
+    },
+    {
+      "name": "MuensterCheeseLog",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_log"
+    },
+    {
+      "name": "MuensterCheesePlanks",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_planks"
+    },
+    {
+      "name": "MuensterCheeseLeaves",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_leaves"
+    },
+    {
+      "name": "MuensterCheeseStairs",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_stairs"
+    },
+    {
+      "name": "MuensterCheeseSlab",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_slab"
+    },
+    {
+      "name": "MuensterCheeseFence",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_fence"
+    },
+    {
+      "name": "MuensterCheeseFenceGate",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_fence_gate"
+    },
+    {
+      "name": "MuensterCheesePressurePlate",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_pressure_plate"
+    },
+    {
+      "name": "MuensterCheeseButton",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_button"
+    },
+    {
+      "name": "MuensterCheeseItemsTag",
+      "type": "tag",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_items_tag"
+    },
+    {
+      "name": "MuensterCheeseWoodRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_wood_recipe"
+    },
+    {
+      "name": "MuensterCheesePlanksRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_planks_recipe"
+    },
+    {
+      "name": "MuensterCheeseStairsRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_stairs_recipe"
+    },
+    {
+      "name": "MuensterCheeseSlabRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_slab_recipe"
+    },
+    {
+      "name": "MuensterCheeseFenceRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_fence_recipe"
+    },
+    {
+      "name": "MuensterCheeseFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_fence_gate_recipe"
+    },
+    {
+      "name": "MuensterCheesePressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_pressure_plate_recipe"
+    },
+    {
+      "name": "MuensterCheeseButtonRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_button_recipe"
+    },
+    {
+      "name": "MuensterCheeseStickRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_cheese_stick_recipe"
+    },
+    {
+      "name": "GelSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gel_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GelSword",
+      "type": "tool",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gel_sword"
+    },
+    {
+      "name": "CoconujpegBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconujpeg_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SlimeArmorArmor",
+      "type": "armor",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SlimeArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "SlimeArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_armor_armor_body_recipe"
+    },
+    {
+      "name": "SlimeArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "SlimeArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_armor_armor_boots_recipe"
+    },
+    {
+      "name": "SlimeArmorArmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_armor_armor_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -237,32 +511,47 @@
   "language_map": {
     "en_us": {
       "block.discord_mod.cheesedoor": "Cheesedoor",
+      "item.discord_mod.slime_armor_armor_chestplate": "SlimeArmor Chestplate",
       "block.discord_mod.cheeseblackone": "Cheddar Cheese Block",
       "item.discord_mod.curd": "Curd",
       "item.discord_mod.gorilla_spawn_egg": "Gorilla Spawn Egg",
-      "subtitles.crebravae": "",
       "block.discord_mod.bluecheese": "Bluecheese",
+      "subtitles.crebravae": "",
       "item.discord_mod.cheese": "Cheese",
       "item.discord_mod.bluecheese_bucket": "Bluecheese Bucket",
+      "item.discord_mod.gel_sword": "Gel Sword",
       "block.discord_mod.swiss_cheese_block": "Swiss Cheese Block",
+      "block.discord_mod.muenster_cheese_leaves": "MuensterCheese Leaves",
+      "block.discord_mod.muenster_cheese_log": "MuensterCheese Log",
+      "block.discord_mod.muenster_cheese_pressure_plate": "MuensterCheese Pressure Plate",
       "item.discord_mod.rennet": "Rennet",
+      "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
+      "item.discord_mod.slime_armor_armor_boots": "SlimeArmor Boots",
       "entity.discord_mod.gorilla": "Gorilla",
       "block.discord_mod.kraft": "Swiss Cheese Block",
       "item.discord_mod.muenstercheesedimension": "Mozzarella and Steel",
+      "block.discord_mod.muenster_cheese_wood": "MuensterCheese Wood",
       "biome.discord_mod.muenstercheesebiome": "Muenstercheesebiome",
       "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
       "subtitles.monekeeee": "",
+      "block.discord_mod.muenster_cheese_fence": "MuensterCheese Fence",
+      "block.discord_mod.muenster_cheese_stairs": "MuensterCheese Stairs",
       "block.discord_mod.aztec_smooth_stone": "Aztec Brick",
       "fluid.discord_mod.bluecheese": "Bluecheese",
       "block.discord_mod.mozzarella_block": "Mozzarella Block",
+      "item.discord_mod.slime_armor_armor_leggings": "SlimeArmor Leggings",
       "block.discord_mod.aztec_brick": "Aztec Brick",
       "block.discord_mod.slime_grass": "Slime Grass",
       "block.discord_mod.monster_cheese": "Muenster cheese block",
       "block.discord_mod.bluecheeseblock": "BLUECHEESEBLOCK",
+      "block.discord_mod.muenster_cheese_slab": "MuensterCheese Slab",
+      "item.discord_mod.slime_armor_armor_helmet": "SlimeArmor Helmet",
       "item.discord_mod.crab_spawn_egg": "Crab Spawn Egg",
       "entity.discord_mod.crab": "Crab",
+      "block.discord_mod.muenster_cheese_planks": "MuensterCheese Planks",
       "biome.discord_mod.cheesy_shittery": "Cheesy Shittery",
-      "block.discord_mod.coconujpeg": "Cicinut"
+      "block.discord_mod.coconujpeg": "Cicinut",
+      "block.discord_mod.muenster_cheese_button": "MuensterCheese Button"
     }
   },
   "foldersRoot": {

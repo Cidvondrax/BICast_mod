@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:muenster_cheese_planks"
+    },
+    "3": {
+      "item": "discord_mod:muenster_cheese_planks"
+    },
+    "4": {
+      "item": "discord_mod:muenster_cheese_planks"
+    },
+    "6": {
+      "item": "discord_mod:muenster_cheese_planks"
+    },
+    "7": {
+      "item": "discord_mod:muenster_cheese_planks"
+    },
+    "8": {
+      "item": "discord_mod:muenster_cheese_planks"
+    }
+  },
+  "result": {
+    "item": "discord_mod:muenster_cheese_stairs",
+    "count": 4
+  }
+}

@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "discord_mod:blocks/blue_cheese_block",
-    "particle": "discord_mod:blocks/blue_cheese_block"
+    "all": "discord_mod:blocks/blue_-_copy",
+    "particle": "discord_mod:blocks/blue_-_copy"
   }
 }

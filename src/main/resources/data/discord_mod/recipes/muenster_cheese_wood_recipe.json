@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:muenster_cheese_log"
+    },
+    "1": {
+      "item": "discord_mod:muenster_cheese_log"
+    },
+    "2": {
+      "item": "discord_mod:muenster_cheese_log"
+    },
+    "3": {
+      "item": "discord_mod:muenster_cheese_log"
+    }
+  },
+  "result": {
+    "item": "discord_mod:muenster_cheese_wood",
+    "count": 3
+  }
+}

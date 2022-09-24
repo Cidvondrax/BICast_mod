@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:muenstercheese_log"
+    }
+  ],
+  "result": {
+    "item": "discord_mod:muenster_cheese_planks",
+    "count": 4
+  }
+}
