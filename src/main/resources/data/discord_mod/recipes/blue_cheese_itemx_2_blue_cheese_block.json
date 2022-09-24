@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:blue_cheese_food"
+    },
+    "1": {
+      "item": "discord_mod:blue_cheese_food"
+    }
+  },
+  "result": {
+    "item": "discord_mod:bluecheeseblock",
+    "count": 1
+  }
+}

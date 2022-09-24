@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:mozzarella_ball"
+    },
+    "1": {
+      "item": "discord_mod:mozzarella_ball"
+    },
+    "2": {
+      "item": "discord_mod:mozzarella_ball"
+    },
+    "3": {
+      "item": "discord_mod:mozzarella_ball"
+    }
+  },
+  "result": {
+    "item": "discord_mod:mozzarella_block",
+    "count": 1
+  }
+}

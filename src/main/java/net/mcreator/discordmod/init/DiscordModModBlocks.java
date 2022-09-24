@@ -15,7 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.discordmod.block.SlimeGrassBlock;
-import net.mcreator.discordmod.block.MuenstercheesedimensionPortalBlock;
 import net.mcreator.discordmod.block.MuensterCheeseWoodBlock;
 import net.mcreator.discordmod.block.MuensterCheeseStairsBlock;
 import net.mcreator.discordmod.block.MuensterCheeseSlabBlock;
@@ -33,7 +32,7 @@ import net.mcreator.discordmod.block.CoconujpegBlock;
 import net.mcreator.discordmod.block.CheesedoorBlock;
 import net.mcreator.discordmod.block.CheeseblockstwoBlock;
 import net.mcreator.discordmod.block.CheeseblackoneBlock;
-import net.mcreator.discordmod.block.BluecheeseBlock;
+import net.mcreator.discordmod.block.CheeseBullShitPortalBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
 import net.mcreator.discordmod.block.AztecSmoothStoneBlock;
 import net.mcreator.discordmod.block.AztecBrickBlock;
@@ -46,7 +45,6 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> SWISS_CHEESE_BLOCK = REGISTRY.register("swiss_cheese_block", () -> new CheeseblockstwoBlock());
 	public static final RegistryObject<Block> KRAFT = REGISTRY.register("kraft", () -> new KraftBlock());
 	public static final RegistryObject<Block> MONSTER_CHEESE = REGISTRY.register("monster_cheese", () -> new MonsterCheeseBlock());
-	public static final RegistryObject<Block> BLUECHEESE = REGISTRY.register("bluecheese", () -> new BluecheeseBlock());
 	public static final RegistryObject<Block> CHEESEDOOR = REGISTRY.register("cheesedoor", () -> new CheesedoorBlock());
 	public static final RegistryObject<Block> MUENSTERCHEESEDIMENSION_PORTAL = REGISTRY.register("muenstercheesedimension_portal",
 			() -> new MuenstercheesedimensionPortalBlock());
@@ -72,6 +70,8 @@ public class DiscordModModBlocks {
 			() -> new MuensterCheesePressurePlateBlock());
 	public static final RegistryObject<Block> MUENSTER_CHEESE_BUTTON = REGISTRY.register("muenster_cheese_button",
 			() -> new MuensterCheeseButtonBlock());
+	public static final RegistryObject<Block> CHEESE_BULL_SHIT_PORTAL = REGISTRY.register("cheese_bull_shit_portal",
+			() -> new CheeseBullShitPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

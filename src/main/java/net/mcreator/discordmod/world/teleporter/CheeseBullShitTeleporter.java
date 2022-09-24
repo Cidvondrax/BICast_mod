@@ -39,23 +39,23 @@ import java.util.Comparator;
 import com.google.common.collect.ImmutableSet;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class MuenstercheesedimensionTeleporter implements ITeleporter {
-	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("muenstercheesedimension_portal", Vec3i::compareTo, 300);
+public class CheeseBullShitTeleporter implements ITeleporter {
+	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("cheese_bull_shit_portal", Vec3i::compareTo, 300);
 	public static PoiType poi = null;
 
 	@SubscribeEvent
 	public static void registerPointOfInterest(RegistryEvent.Register<PoiType> event) {
-		poi = new PoiType("muenstercheesedimension_portal",
+		poi = new PoiType("cheese_bull_shit_portal",
 				com.google.common.collect.Sets.newHashSet(
-						ImmutableSet.copyOf(DiscordModModBlocks.MUENSTERCHEESEDIMENSION_PORTAL.get().getStateDefinition().getPossibleStates())),
-				0, 1).setRegistryName("muenstercheesedimension_portal");
+						ImmutableSet.copyOf(DiscordModModBlocks.CHEESE_BULL_SHIT_PORTAL.get().getStateDefinition().getPossibleStates())),
+				0, 1).setRegistryName("cheese_bull_shit_portal");
 		ForgeRegistries.POI_TYPES.register(poi);
 	}
 
 	private final ServerLevel level;
 	private final BlockPos entityEnterPos;
 
-	public MuenstercheesedimensionTeleporter(ServerLevel worldServer, BlockPos entityEnterPos) {
+	public CheeseBullShitTeleporter(ServerLevel worldServer, BlockPos entityEnterPos) {
 		this.level = worldServer;
 		this.entityEnterPos = entityEnterPos;
 	}
@@ -149,9 +149,7 @@ public class MuenstercheesedimensionTeleporter implements ITeleporter {
 			for (int i3 = -1; i3 < 2; ++i3) {
 				for (int j3 = 0; j3 < 2; ++j3) {
 					for (int k3 = -1; k3 < 3; ++k3) {
-						BlockState blockstate1 = k3 < 0
-								? DiscordModModBlocks.MOZZARELLA_BLOCK.get().defaultBlockState()
-								: Blocks.AIR.defaultBlockState();
+						BlockState blockstate1 = k3 < 0 ? Blocks.POLISHED_ANDESITE.defaultBlockState() : Blocks.AIR.defaultBlockState();
 						blockpos$mutableblockpos.setWithOffset(blockpos, j3 * direction.getStepX() + i3 * direction1.getStepX(), k3,
 								j3 * direction.getStepZ() + i3 * direction1.getStepZ());
 						this.level.setBlockAndUpdate(blockpos$mutableblockpos, blockstate1);
@@ -163,12 +161,11 @@ public class MuenstercheesedimensionTeleporter implements ITeleporter {
 			for (int j2 = -1; j2 < 4; ++j2) {
 				if (l1 == -1 || l1 == 2 || j2 == -1 || j2 == 3) {
 					blockpos$mutableblockpos.setWithOffset(blockpos, l1 * direction.getStepX(), j2, l1 * direction.getStepZ());
-					this.level.setBlock(blockpos$mutableblockpos, DiscordModModBlocks.MOZZARELLA_BLOCK.get().defaultBlockState(), 3);
+					this.level.setBlock(blockpos$mutableblockpos, Blocks.POLISHED_ANDESITE.defaultBlockState(), 3);
 				}
 			}
 		}
-		BlockState blockstate = DiscordModModBlocks.MUENSTERCHEESEDIMENSION_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS,
-				p_77668_);
+		BlockState blockstate = DiscordModModBlocks.CHEESE_BULL_SHIT_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, p_77668_);
 		for (int k2 = 0; k2 < 2; ++k2) {
 			for (int l2 = 0; l2 < 3; ++l2) {
 				blockpos$mutableblockpos.setWithOffset(blockpos, k2 * direction.getStepX(), l2, k2 * direction.getStepZ());
@@ -234,14 +231,14 @@ public class MuenstercheesedimensionTeleporter implements ITeleporter {
 				direction$axis = blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS);
 				BlockUtil.FoundRectangle teleportationrepositioner$result = BlockUtil.getLargestRectangleAround(this.entityEnterPos, direction$axis,
 						21, Direction.Axis.Y, 21, pos -> entity.level.getBlockState(pos) == blockstate);
-				vector3d = MuenstercheesedimensionPortalShape.getRelativePosition(teleportationrepositioner$result, direction$axis, entity.position(),
+				vector3d = CheeseBullShitPortalShape.getRelativePosition(teleportationrepositioner$result, direction$axis, entity.position(),
 						entity.getDimensions(entity.getPose()));
 			} else {
 				direction$axis = Direction.Axis.X;
 				vector3d = new Vec3(0.5, 0, 0);
 			}
-			return MuenstercheesedimensionPortalShape.createPortalInfo(server, repositioner, direction$axis, vector3d,
-					entity.getDimensions(entity.getPose()), entity.getDeltaMovement(), entity.getYRot(), entity.getXRot());
+			return CheeseBullShitPortalShape.createPortalInfo(server, repositioner, direction$axis, vector3d, entity.getDimensions(entity.getPose()),
+					entity.getDeltaMovement(), entity.getYRot(), entity.getXRot());
 		}).orElse(new PortalInfo(entity.position(), Vec3.ZERO, entity.getYRot(), entity.getXRot()));
 	}
 

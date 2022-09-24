@@ -27,7 +27,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.discordmod.init.DiscordModModItems;
-import net.mcreator.discordmod.init.DiscordModModFluids;
 import net.mcreator.discordmod.init.DiscordModModFeatures;
 import net.mcreator.discordmod.init.DiscordModModEntities;
 import net.mcreator.discordmod.init.DiscordModModBlocks;
@@ -54,7 +53,6 @@ public class DiscordModMod {
 		DiscordModModEntities.REGISTRY.register(bus);
 
 		DiscordModModFeatures.REGISTRY.register(bus);
-		DiscordModModFluids.REGISTRY.register(bus);
 
 		DiscordModModBiomes.REGISTRY.register(bus);
 

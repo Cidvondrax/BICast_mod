@@ -10,10 +10,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.discordmod.block.MuenstercheesedimensionPortalBlock;
+import net.mcreator.discordmod.block.CheeseBullShitPortalBlock;
 
-public class MuenstercheesedimensionItem extends Item {
-	public MuenstercheesedimensionItem() {
+public class CheeseBullShitItem extends Item {
+	public CheeseBullShitItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).durability(64));
 	}
 
@@ -31,7 +31,7 @@ public class MuenstercheesedimensionItem extends Item {
 			int z = pos.getZ();
 			boolean success = false;
 			if (world.isEmptyBlock(pos) && true) {
-				MuenstercheesedimensionPortalBlock.portalSpawn(world, pos);
+				CheeseBullShitPortalBlock.portalSpawn(world, pos);
 				itemstack.hurtAndBreak(1, entity, c -> c.broadcastBreakEvent(context.getHand()));
 				success = true;
 			}

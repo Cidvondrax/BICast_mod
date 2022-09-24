@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.NetherPortalBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.util.Mth;
@@ -22,13 +23,13 @@ import javax.annotation.Nullable;
 import java.util.function.Predicate;
 import java.util.Optional;
 
-public class MuenstercheesedimensionPortalShape {
+public class CheeseBullShitPortalShape {
 	private static final int MIN_WIDTH = 2;
 	public static final int MAX_WIDTH = 21;
 	private static final int MIN_HEIGHT = 3;
 	public static final int MAX_HEIGHT = 21;
 	private static final BlockBehaviour.StatePredicate FRAME = (p_77720_, p_77721_, p_77722_) -> {
-		return p_77720_.getBlock() == DiscordModModBlocks.MOZZARELLA_BLOCK.get();
+		return p_77720_.getBlock() == Blocks.POLISHED_ANDESITE;
 	};
 	private final LevelAccessor level;
 	private final Direction.Axis axis;
@@ -39,26 +40,24 @@ public class MuenstercheesedimensionPortalShape {
 	private int height;
 	private final int width;
 
-	public static Optional<MuenstercheesedimensionPortalShape> findEmptyPortalShape(LevelAccessor p_77709_, BlockPos p_77710_,
-			Direction.Axis p_77711_) {
+	public static Optional<CheeseBullShitPortalShape> findEmptyPortalShape(LevelAccessor p_77709_, BlockPos p_77710_, Direction.Axis p_77711_) {
 		return findPortalShape(p_77709_, p_77710_, (p_77727_) -> {
 			return p_77727_.isValid() && p_77727_.numPortalBlocks == 0;
 		}, p_77711_);
 	}
 
-	public static Optional<MuenstercheesedimensionPortalShape> findPortalShape(LevelAccessor p_77713_, BlockPos p_77714_,
-			Predicate<MuenstercheesedimensionPortalShape> p_77715_, Direction.Axis p_77716_) {
-		Optional<MuenstercheesedimensionPortalShape> optional = Optional.of(new MuenstercheesedimensionPortalShape(p_77713_, p_77714_, p_77716_))
-				.filter(p_77715_);
+	public static Optional<CheeseBullShitPortalShape> findPortalShape(LevelAccessor p_77713_, BlockPos p_77714_,
+			Predicate<CheeseBullShitPortalShape> p_77715_, Direction.Axis p_77716_) {
+		Optional<CheeseBullShitPortalShape> optional = Optional.of(new CheeseBullShitPortalShape(p_77713_, p_77714_, p_77716_)).filter(p_77715_);
 		if (optional.isPresent()) {
 			return optional;
 		} else {
 			Direction.Axis direction$axis = p_77716_ == Direction.Axis.X ? Direction.Axis.Z : Direction.Axis.X;
-			return Optional.of(new MuenstercheesedimensionPortalShape(p_77713_, p_77714_, direction$axis)).filter(p_77715_);
+			return Optional.of(new CheeseBullShitPortalShape(p_77713_, p_77714_, direction$axis)).filter(p_77715_);
 		}
 	}
 
-	public MuenstercheesedimensionPortalShape(LevelAccessor p_77695_, BlockPos p_77696_, Direction.Axis p_77697_) {
+	public CheeseBullShitPortalShape(LevelAccessor p_77695_, BlockPos p_77696_, Direction.Axis p_77697_) {
 		this.level = p_77695_;
 		this.axis = p_77697_;
 		this.rightDir = p_77697_ == Direction.Axis.X ? Direction.WEST : Direction.SOUTH;
@@ -141,7 +140,7 @@ public class MuenstercheesedimensionPortalShape {
 				if (!isEmpty(blockstate)) {
 					return i;
 				}
-				if (blockstate.getBlock() == DiscordModModBlocks.MUENSTERCHEESEDIMENSION_PORTAL.get()) {
+				if (blockstate.getBlock() == DiscordModModBlocks.CHEESE_BULL_SHIT_PORTAL.get()) {
 					++this.numPortalBlocks;
 				}
 			}
@@ -150,7 +149,7 @@ public class MuenstercheesedimensionPortalShape {
 	}
 
 	private static boolean isEmpty(BlockState p_77718_) {
-		return p_77718_.isAir() || p_77718_.getBlock() == DiscordModModBlocks.MUENSTERCHEESEDIMENSION_PORTAL.get();
+		return p_77718_.isAir() || p_77718_.getBlock() == DiscordModModBlocks.CHEESE_BULL_SHIT_PORTAL.get();
 	}
 
 	public boolean isValid() {
@@ -158,13 +157,12 @@ public class MuenstercheesedimensionPortalShape {
 	}
 
 	public void createPortalBlocks() {
-		BlockState blockstate = DiscordModModBlocks.MUENSTERCHEESEDIMENSION_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS,
-				this.axis);
+		BlockState blockstate = DiscordModModBlocks.CHEESE_BULL_SHIT_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, this.axis);
 		BlockPos.betweenClosed(this.bottomLeft, this.bottomLeft.relative(Direction.UP, this.height - 1).relative(this.rightDir, this.width - 1))
 				.forEach((p_77725_) -> {
 					this.level.setBlock(p_77725_, blockstate, 18);
 					if (this.level instanceof ServerLevel)
-						((ServerLevel) this.level).getPoiManager().add(p_77725_, MuenstercheesedimensionTeleporter.poi);
+						((ServerLevel) this.level).getPoiManager().add(p_77725_, CheeseBullShitTeleporter.poi);
 				});
 	}
 

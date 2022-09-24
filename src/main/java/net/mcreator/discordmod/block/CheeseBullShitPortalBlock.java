@@ -25,14 +25,14 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.discordmod.world.teleporter.MuenstercheesedimensionTeleporter;
-import net.mcreator.discordmod.world.teleporter.MuenstercheesedimensionPortalShape;
+import net.mcreator.discordmod.world.teleporter.CheeseBullShitTeleporter;
+import net.mcreator.discordmod.world.teleporter.CheeseBullShitPortalShape;
 
 import java.util.Random;
 import java.util.Optional;
 
-public class MuenstercheesedimensionPortalBlock extends NetherPortalBlock {
-	public MuenstercheesedimensionPortalBlock() {
+public class CheeseBullShitPortalBlock extends NetherPortalBlock {
+	public CheeseBullShitPortalBlock() {
 		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 0)
 				.noDrops());
 	}
@@ -42,7 +42,7 @@ public class MuenstercheesedimensionPortalBlock extends NetherPortalBlock {
 	}
 
 	public static void portalSpawn(Level world, BlockPos pos) {
-		Optional<MuenstercheesedimensionPortalShape> optional = MuenstercheesedimensionPortalShape.findEmptyPortalShape(world, pos, Direction.Axis.X);
+		Optional<CheeseBullShitPortalShape> optional = CheeseBullShitPortalShape.findEmptyPortalShape(world, pos, Direction.Axis.X);
 		if (optional.isPresent()) {
 			optional.get().createPortalBlocks();
 		}
@@ -54,7 +54,7 @@ public class MuenstercheesedimensionPortalBlock extends NetherPortalBlock {
 		Direction.Axis direction$axis = p_54929_.getAxis();
 		Direction.Axis direction$axis1 = p_54928_.getValue(AXIS);
 		boolean flag = direction$axis1 != direction$axis && direction$axis.isHorizontal();
-		return !flag && !p_54930_.is(this) && !(new MuenstercheesedimensionPortalShape(p_54931_, p_54932_, direction$axis1)).isComplete()
+		return !flag && !p_54930_.is(this) && !(new CheeseBullShitPortalShape(p_54931_, p_54932_, direction$axis1)).isComplete()
 				? Blocks.AIR.defaultBlockState()
 				: super.updateShape(p_54928_, p_54929_, p_54930_, p_54931_, p_54932_, p_54933_);
 	}
@@ -91,10 +91,10 @@ public class MuenstercheesedimensionPortalBlock extends NetherPortalBlock {
 			if (entity.isOnPortalCooldown()) {
 				entity.setPortalCooldown();
 			} else if (entity.level.dimension() != ResourceKey.create(Registry.DIMENSION_REGISTRY,
-					new ResourceLocation("discord_mod:muenstercheesedimension"))) {
+					new ResourceLocation("discord_mod:cheese_bull_shit"))) {
 				entity.setPortalCooldown();
 				teleportToDimension(entity, pos,
-						ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("discord_mod:muenstercheesedimension")));
+						ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("discord_mod:cheese_bull_shit")));
 			} else {
 				entity.setPortalCooldown();
 				teleportToDimension(entity, pos, Level.OVERWORLD);
@@ -104,6 +104,6 @@ public class MuenstercheesedimensionPortalBlock extends NetherPortalBlock {
 
 	private void teleportToDimension(Entity entity, BlockPos pos, ResourceKey<Level> destinationType) {
 		entity.changeDimension(entity.getServer().getLevel(destinationType),
-				new MuenstercheesedimensionTeleporter(entity.getServer().getLevel(destinationType), pos));
+				new CheeseBullShitTeleporter(entity.getServer().getLevel(destinationType), pos));
 	}
 }

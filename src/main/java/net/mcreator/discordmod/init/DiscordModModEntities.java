@@ -20,6 +20,7 @@ import net.mcreator.discordmod.entity.GorillaEntityProjectile;
 import net.mcreator.discordmod.entity.GorillaEntity;
 import net.mcreator.discordmod.entity.CrabEntityProjectile;
 import net.mcreator.discordmod.entity.CrabEntity;
+import net.mcreator.discordmod.entity.BlueCheeseZombieEntity;
 import net.mcreator.discordmod.DiscordModMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -39,6 +40,11 @@ public class DiscordModModEntities {
 	public static final RegistryObject<EntityType<GorillaEntityProjectile>> GORILLA_PROJECTILE = register("projectile_gorilla",
 			EntityType.Builder.<GorillaEntityProjectile>of(GorillaEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(GorillaEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BlueCheeseZombieEntity>> BLUE_CHEESE_ZOMBIE = register("blue_cheese_zombie",
+			EntityType.Builder.<BlueCheeseZombieEntity>of(BlueCheeseZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlueCheeseZombieEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -49,6 +55,7 @@ public class DiscordModModEntities {
 		event.enqueueWork(() -> {
 			CrabEntity.init();
 			GorillaEntity.init();
+			BlueCheeseZombieEntity.init();
 		});
 	}
 
@@ -56,5 +63,6 @@ public class DiscordModModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CRAB.get(), CrabEntity.createAttributes().build());
 		event.put(GORILLA.get(), GorillaEntity.createAttributes().build());
+		event.put(BLUE_CHEESE_ZOMBIE.get(), BlueCheeseZombieEntity.createAttributes().build());
 	}
 }

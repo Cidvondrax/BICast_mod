@@ -10,7 +10,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.carver.WorldCarver;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
@@ -23,16 +22,16 @@ import java.util.HashSet;
 import com.google.common.collect.ImmutableSet;
 
 @Mod.EventBusSubscriber
-public class MuenstercheesedimensionDimension {
+public class CheeseBullShitDimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class Fixers {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(DiscordModModBlocks.MONSTER_CHEESE.get());
-			replaceableBlocks.add(DiscordModModBlocks.MONSTER_CHEESE.get());
-			replaceableBlocks.add(Blocks.YELLOW_CONCRETE);
+			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.CHEESEBLACKONE.get());
+			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
@@ -53,10 +52,10 @@ public class MuenstercheesedimensionDimension {
 
 				@Override
 				public boolean isFoggyAt(int x, int y) {
-					return true;
+					return false;
 				}
 			};
-			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("discord_mod:muenstercheesedimension"), customEffect));
+			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("discord_mod:cheese_bull_shit"), customEffect));
 		}
 	}
 }

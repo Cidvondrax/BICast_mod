@@ -17,6 +17,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.discordmod.init.DiscordModModItems;
+
 import java.util.List;
 import java.util.Collections;
 
@@ -61,6 +63,6 @@ public class MonsterCheeseBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 3));
+		return Collections.singletonList(new ItemStack(DiscordModModItems.DELETED_MOD_ELEMENT.get(), 3));
 	}
 }

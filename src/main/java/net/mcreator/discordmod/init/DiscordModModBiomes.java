@@ -30,8 +30,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.mcreator.discordmod.world.biome.SwissWasteLandBiome;
 import net.mcreator.discordmod.world.biome.MuenstercheesebiomeBiome;
 import net.mcreator.discordmod.world.biome.CheesyShitteryBiome;
+import net.mcreator.discordmod.world.biome.CheddarForestBiome;
 import net.mcreator.discordmod.DiscordModMod;
 
 import java.util.Map;
@@ -46,12 +48,16 @@ public class DiscordModModBiomes {
 	public static final RegistryObject<Biome> CHEESY_SHITTERY = REGISTRY.register("cheesy_shittery", () -> CheesyShitteryBiome.createBiome());
 	public static final RegistryObject<Biome> MUENSTERCHEESEBIOME = REGISTRY.register("muenstercheesebiome",
 			() -> MuenstercheesebiomeBiome.createBiome());
+	public static final RegistryObject<Biome> CHEDDAR_FOREST = REGISTRY.register("cheddar_forest", () -> CheddarForestBiome.createBiome());
+	public static final RegistryObject<Biome> SWISS_WASTE_LAND = REGISTRY.register("swiss_waste_land", () -> SwissWasteLandBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			CheesyShitteryBiome.init();
 			MuenstercheesebiomeBiome.init();
+			CheddarForestBiome.init();
+			SwissWasteLandBiome.init();
 		});
 	}
 
@@ -88,7 +94,7 @@ public class DiscordModModBiomes {
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, CHEESY_SHITTERY.getId()),
 											DiscordModModBlocks.CHEESEBLACKONE.get().defaultBlockState(),
 											DiscordModModBlocks.SWISS_CHEESE_BLOCK.get().defaultBlockState(),
-											DiscordModModBlocks.BLUECHEESE.get().defaultBlockState()));
+											DiscordModModItems.DELETED_MOD_ELEMENT.get().defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
