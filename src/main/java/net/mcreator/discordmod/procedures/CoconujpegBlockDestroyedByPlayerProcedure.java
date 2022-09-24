@@ -1,25 +1,191 @@
 package net.mcreator.discordmod.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
 
-import net.mcreator.discordmod.init.DiscordModModEntities;
-import net.mcreator.discordmod.entity.CrabEntity;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 public class CoconujpegBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		for (int index0 = 0; index0 < (int) (10000); index0++) {
-			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new CrabEntity(DiscordModModEntities.CRAB.get(), _level);
-				entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
-				world.addFreshEntity(entityToSpawn);
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+					new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "kill @a");
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private LevelAccessor world;
+
+			public void start(LevelAccessor world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
 			}
-		}
+
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
+
+			private void run() {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level,
+							4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "kill @a");
+				new Object() {
+					private int ticks = 0;
+					private float waitTicks;
+					private LevelAccessor world;
+
+					public void start(LevelAccessor world, int waitTicks) {
+						this.waitTicks = waitTicks;
+						MinecraftForge.EVENT_BUS.register(this);
+						this.world = world;
+					}
+
+					@SubscribeEvent
+					public void tick(TickEvent.ServerTickEvent event) {
+						if (event.phase == TickEvent.Phase.END) {
+							this.ticks += 1;
+							if (this.ticks >= this.waitTicks)
+								run();
+						}
+					}
+
+					private void run() {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
+									_level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "kill @a");
+						new Object() {
+							private int ticks = 0;
+							private float waitTicks;
+							private LevelAccessor world;
+
+							public void start(LevelAccessor world, int waitTicks) {
+								this.waitTicks = waitTicks;
+								MinecraftForge.EVENT_BUS.register(this);
+								this.world = world;
+							}
+
+							@SubscribeEvent
+							public void tick(TickEvent.ServerTickEvent event) {
+								if (event.phase == TickEvent.Phase.END) {
+									this.ticks += 1;
+									if (this.ticks >= this.waitTicks)
+										run();
+								}
+							}
+
+							private void run() {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z),
+											Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+											"kill @a");
+								new Object() {
+									private int ticks = 0;
+									private float waitTicks;
+									private LevelAccessor world;
+
+									public void start(LevelAccessor world, int waitTicks) {
+										this.waitTicks = waitTicks;
+										MinecraftForge.EVENT_BUS.register(this);
+										this.world = world;
+									}
+
+									@SubscribeEvent
+									public void tick(TickEvent.ServerTickEvent event) {
+										if (event.phase == TickEvent.Phase.END) {
+											this.ticks += 1;
+											if (this.ticks >= this.waitTicks)
+												run();
+										}
+									}
+
+									private void run() {
+										if (world instanceof ServerLevel _level)
+											_level.getServer().getCommands()
+													.performCommand(
+															new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+																	new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+															"kill @a");
+										new Object() {
+											private int ticks = 0;
+											private float waitTicks;
+											private LevelAccessor world;
+
+											public void start(LevelAccessor world, int waitTicks) {
+												this.waitTicks = waitTicks;
+												MinecraftForge.EVENT_BUS.register(this);
+												this.world = world;
+											}
+
+											@SubscribeEvent
+											public void tick(TickEvent.ServerTickEvent event) {
+												if (event.phase == TickEvent.Phase.END) {
+													this.ticks += 1;
+													if (this.ticks >= this.waitTicks)
+														run();
+												}
+											}
+
+											private void run() {
+												if (world instanceof ServerLevel _level)
+													_level.getServer().getCommands().performCommand(
+															new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+																	new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+															"kill @a");
+												new Object() {
+													private int ticks = 0;
+													private float waitTicks;
+													private LevelAccessor world;
+
+													public void start(LevelAccessor world, int waitTicks) {
+														this.waitTicks = waitTicks;
+														MinecraftForge.EVENT_BUS.register(this);
+														this.world = world;
+													}
+
+													@SubscribeEvent
+													public void tick(TickEvent.ServerTickEvent event) {
+														if (event.phase == TickEvent.Phase.END) {
+															this.ticks += 1;
+															if (this.ticks >= this.waitTicks)
+																run();
+														}
+													}
+
+													private void run() {
+														if (world instanceof ServerLevel _level)
+															_level.getServer().getCommands()
+																	.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z),
+																			Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null)
+																			.withSuppressedOutput(), "kill @a");
+														MinecraftForge.EVENT_BUS.unregister(this);
+													}
+												}.start(world, 400);
+												MinecraftForge.EVENT_BUS.unregister(this);
+											}
+										}.start(world, 400);
+										MinecraftForge.EVENT_BUS.unregister(this);
+									}
+								}.start(world, 400);
+								MinecraftForge.EVENT_BUS.unregister(this);
+							}
+						}.start(world, 400);
+						MinecraftForge.EVENT_BUS.unregister(this);
+					}
+				}.start(world, 400);
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, 400);
 	}
 }

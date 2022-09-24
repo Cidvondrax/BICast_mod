@@ -21,7 +21,6 @@ import net.mcreator.discordmod.item.MuenstercheesedimensionItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GelSwordItem;
 import net.mcreator.discordmod.item.CurdItem;
-import net.mcreator.discordmod.item.CheeseItem;
 import net.mcreator.discordmod.item.BluecheeseItem;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -32,7 +31,6 @@ public class DiscordModModItems {
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.CRAB, -3407872, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> GORILLA = REGISTRY.register("gorilla_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.GORILLA, -13426407, -15396848, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> CHEESE = REGISTRY.register("cheese", () -> new CheeseItem());
 	public static final RegistryObject<Item> CHEESEBLACKONE = block(DiscordModModBlocks.CHEESEBLACKONE, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> SWISS_CHEESE_BLOCK = block(DiscordModModBlocks.SWISS_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> KRAFT = block(DiscordModModBlocks.KRAFT, CreativeModeTab.TAB_BUILDING_BLOCKS);
