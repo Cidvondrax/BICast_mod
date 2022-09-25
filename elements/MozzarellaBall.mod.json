@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "mozzerella",
+    "texture": "mozzarellaball",
     "customModelName": "Normal",
     "name": "Mozzarella Ball",
     "rarity": "COMMON",

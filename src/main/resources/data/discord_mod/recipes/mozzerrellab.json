@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "discord_mod:mozzarella_block"
+    }
+  ],
+  "result": {
+    "item": "discord_mod:mozzarella_ball",
+    "count": 4
+  }
+}

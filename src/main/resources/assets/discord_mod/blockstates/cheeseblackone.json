@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "discord_mod:block/cheeseblackone"
+    },
+    "facing=east": {
+      "model": "discord_mod:block/cheeseblackone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "discord_mod:block/cheeseblackone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "discord_mod:block/cheeseblackone",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "discord_mod:block/cheeseblackone",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "discord_mod:block/cheeseblackone",
+      "x": 90
     }
   }
 }

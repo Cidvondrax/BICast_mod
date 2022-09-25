@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "discord_mod:block/rubble_block"
+    },
+    "facing=east": {
+      "model": "discord_mod:block/rubble_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "discord_mod:block/rubble_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "discord_mod:block/rubble_block",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "discord_mod:block/rubble_block",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "discord_mod:block/rubble_block",
+      "x": 90
+    }
+  }
+}

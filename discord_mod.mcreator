@@ -484,6 +484,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "derby_cheese_block"
+    },
+    {
+      "name": "Mozzerrellab",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mozzerrellab"
+    },
+    {
+      "name": "RubbleBlock",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubble_block"
     }
   ],
   "variable_elements": [],
@@ -521,6 +537,7 @@
       "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
       "item.discord_mod.slime_armor_armor_boots": "SlimeArmor Boots",
       "entity.discord_mod.gorilla": "Gorilla",
+      "block.discord_mod.rubble_block": "Rubble Block",
       "block.discord_mod.muenster_cheese_wood": "MuensterCheese Wood",
       "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
       "entity.discord_mod.blue_cheese_zombie": "Blue Cheese Zombie",

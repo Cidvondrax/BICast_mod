@@ -63,7 +63,7 @@
       "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": "Blocks.RAW_GOLD_BLOCK"
+      "value": "CUSTOM:MuensterCheeseWood"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
