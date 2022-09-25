@@ -7,13 +7,10 @@ package net.mcreator.discordmod.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.discordmod.block.SwissCheeseBlockBlock;
 import net.mcreator.discordmod.block.SlimeGrassBlock;
 import net.mcreator.discordmod.block.MuensterCheeseWoodBlock;
 import net.mcreator.discordmod.block.MuensterCheeseStairsBlock;
@@ -26,8 +23,9 @@ import net.mcreator.discordmod.block.MuensterCheeseFenceGateBlock;
 import net.mcreator.discordmod.block.MuensterCheeseFenceBlock;
 import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
+import net.mcreator.discordmod.block.DerbyCheeseBlockBlock;
 import net.mcreator.discordmod.block.CoconujpegBlock;
-import net.mcreator.discordmod.block.CheesedoorBlock;
+import net.mcreator.discordmod.block.CheesyDimensionPortalBlock;
 import net.mcreator.discordmod.block.CheeseblackoneBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
 import net.mcreator.discordmod.block.AztecSmoothStoneBlock;
@@ -38,7 +36,6 @@ public class DiscordModModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, DiscordModMod.MODID);
 	public static final RegistryObject<Block> COCONUJPEG = REGISTRY.register("coconujpeg", () -> new CoconujpegBlock());
 	public static final RegistryObject<Block> CHEESEBLACKONE = REGISTRY.register("cheeseblackone", () -> new CheeseblackoneBlock());
-	public static final RegistryObject<Block> CHEESEDOOR = REGISTRY.register("cheesedoor", () -> new CheesedoorBlock());
 	public static final RegistryObject<Block> AZTEC_BRICK = REGISTRY.register("aztec_brick", () -> new AztecBrickBlock());
 	public static final RegistryObject<Block> AZTEC_SMOOTH_STONE = REGISTRY.register("aztec_smooth_stone", () -> new AztecSmoothStoneBlock());
 	public static final RegistryObject<Block> SLIME_GRASS = REGISTRY.register("slime_grass", () -> new SlimeGrassBlock());
@@ -61,12 +58,8 @@ public class DiscordModModBlocks {
 			() -> new MuensterCheesePressurePlateBlock());
 	public static final RegistryObject<Block> MUENSTER_CHEESE_BUTTON = REGISTRY.register("muenster_cheese_button",
 			() -> new MuensterCheeseButtonBlock());
-
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
-		@SubscribeEvent
-		public static void clientSetup(FMLClientSetupEvent event) {
-			CheesedoorBlock.registerRenderLayer();
-		}
-	}
+	public static final RegistryObject<Block> CHEESY_DIMENSION_PORTAL = REGISTRY.register("cheesy_dimension_portal",
+			() -> new CheesyDimensionPortalBlock());
+	public static final RegistryObject<Block> SWISS_CHEESE_BLOCK = REGISTRY.register("swiss_cheese_block", () -> new SwissCheeseBlockBlock());
+	public static final RegistryObject<Block> DERBY_CHEESE_BLOCK = REGISTRY.register("derby_cheese_block", () -> new DerbyCheeseBlockBlock());
 }

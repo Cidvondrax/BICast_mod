@@ -7,10 +7,10 @@
       "value": "CUSTOM:Cheeseblackone"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Cheeseblockstwo"
+      "value": "CUSTOM:Cheeseblackone"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "Blocks.FLOWING_WATER"
     },
     "ambientSound": {
       "value": ""

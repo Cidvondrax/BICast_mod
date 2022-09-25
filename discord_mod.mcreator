@@ -41,14 +41,6 @@
       "registry_name": "chhc"
     },
     {
-      "name": "Cheesedoor",
-      "type": "block",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cheesedoor"
-    },
-    {
       "name": "AztecBrick",
       "type": "block",
       "sortid": 17,
@@ -465,6 +457,33 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_cheese_zombieloottable"
+    },
+    {
+      "name": "CheesyDimension",
+      "type": "dimension",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesy_dimension",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "SwissCheeseBlock",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swiss_cheese_block"
+    },
+    {
+      "name": "DerbyCheeseBlock",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "derby_cheese_block"
     }
   ],
   "variable_elements": [],
@@ -488,13 +507,13 @@
   ],
   "language_map": {
     "en_us": {
-      "block.discord_mod.cheesedoor": "Cheesedoor",
       "item.discord_mod.slime_armor_armor_chestplate": "SlimeArmor Chestplate",
       "block.discord_mod.cheeseblackone": "Cheddar Cheese Block",
       "item.discord_mod.curd": "Curd",
       "item.discord_mod.gorilla_spawn_egg": "Gorilla Spawn Egg",
       "subtitles.crebravae": "",
       "item.discord_mod.gel_sword": "Gel Sword",
+      "block.discord_mod.swiss_cheese_block": "Swiss Cheese Block",
       "block.discord_mod.muenster_cheese_leaves": "MuensterCheese Leaves",
       "block.discord_mod.muenster_cheese_log": "MuensterCheese Log",
       "block.discord_mod.muenster_cheese_pressure_plate": "MuensterCheese Pressure Plate",
@@ -505,12 +524,14 @@
       "block.discord_mod.muenster_cheese_wood": "MuensterCheese Wood",
       "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
       "entity.discord_mod.blue_cheese_zombie": "Blue Cheese Zombie",
+      "item.discord_mod.cheesy_dimension": "Cheesy Dimension Portal Igniter",
       "subtitles.monekeeee": "",
       "block.discord_mod.muenster_cheese_fence": "MuensterCheese Fence",
       "block.discord_mod.muenster_cheese_stairs": "MuensterCheese Stairs",
       "block.discord_mod.aztec_smooth_stone": "Aztec Brick",
       "block.discord_mod.mozzarella_block": "Mozzarella Block",
       "item.discord_mod.slime_armor_armor_leggings": "SlimeArmor Leggings",
+      "block.discord_mod.derby_cheese_block": "Derby Cheese Block",
       "block.discord_mod.aztec_brick": "Aztec Brick",
       "block.discord_mod.slime_grass": "Slime Grass",
       "block.discord_mod.bluecheeseblock": "BLUECHEESEBLOCK",

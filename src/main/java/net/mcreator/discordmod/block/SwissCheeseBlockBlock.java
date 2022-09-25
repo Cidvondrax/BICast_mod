@@ -17,10 +17,9 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class CheeseblackoneBlock extends Block {
-	public CheeseblackoneBlock() {
-		super(BlockBehaviour.Properties.of(Material.VEGETABLE).sound(SoundType.GRAVEL).strength(0.5f, 10f).friction(0.7999999999999999f)
-				.jumpFactor(1.5f));
+public class SwissCheeseBlockBlock extends Block {
+	public SwissCheeseBlockBlock() {
+		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1f, 10f));
 	}
 
 	@Override
@@ -38,6 +37,6 @@ public class CheeseblackoneBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 3));
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 }

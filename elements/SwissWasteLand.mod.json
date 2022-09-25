@@ -4,13 +4,33 @@
   "definition": {
     "name": "Swiss Waste Land",
     "groundBlock": {
-      "value": "CUSTOM:Cheeseblockstwo"
+      "value": "CUSTOM:SwissCheeseBlock"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Cheeseblockstwo"
+      "value": "CUSTOM:SwissCheeseBlock"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -1300,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -2041668,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -2041668,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -2865,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -2865,
+      "falpha": 0.0
     },
     "ambientSound": {
       "value": ""
@@ -38,9 +58,9 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
+    "biomeWeight": 20,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 4,
+    "grassPerChunk": 10,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
@@ -66,30 +86,40 @@
       "value": ""
     },
     "spawnStronghold": false,
-    "spawnMineshaft": false,
-    "spawnMineshaftMesa": false,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
-    "spawnDesertPyramid": false,
+    "spawnDesertPyramid": true,
     "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
-    "spawnShipwreck": false,
-    "spawnShipwreckBeached": false,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": true,
     "spawnBuriedTreasure": false,
-    "oceanRuinType": "NONE",
+    "oceanRuinType": "WARM",
     "spawnNetherBridge": false,
     "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "NONE",
+    "spawnRuinedPortal": "DESERT",
     "defaultFeatures": [
       "Caves",
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:BlueCheeseZombie"
+        },
+        "minGroup": 4,
+        "maxGroup": 8,
+        "weight": 30,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

@@ -11,7 +11,6 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
@@ -20,6 +19,7 @@ import net.mcreator.discordmod.item.RennetItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GelSwordItem;
 import net.mcreator.discordmod.item.CurdItem;
+import net.mcreator.discordmod.item.CheesyDimensionItem;
 import net.mcreator.discordmod.item.BlueCheeseFoodItem;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -31,7 +31,6 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> GORILLA = REGISTRY.register("gorilla_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.GORILLA, -13426407, -15396848, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> CHEESEBLACKONE = block(DiscordModModBlocks.CHEESEBLACKONE, CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Item> CHEESEDOOR = doubleBlock(DiscordModModBlocks.CHEESEDOOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZTEC_BRICK = block(DiscordModModBlocks.AZTEC_BRICK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZTEC_SMOOTH_STONE = block(DiscordModModBlocks.AZTEC_SMOOTH_STONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> RENNET = REGISTRY.register("rennet", () -> new RennetItem());
@@ -72,12 +71,11 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> BLUE_CHEESE_ZOMBIE = REGISTRY.register("blue_cheese_zombie_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.BLUE_CHEESE_ZOMBIE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> BLUE_CHEESE_FOOD = REGISTRY.register("blue_cheese_food", () -> new BlueCheeseFoodItem());
+	public static final RegistryObject<Item> CHEESY_DIMENSION = REGISTRY.register("cheesy_dimension", () -> new CheesyDimensionItem());
+	public static final RegistryObject<Item> SWISS_CHEESE_BLOCK = block(DiscordModModBlocks.SWISS_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> DERBY_CHEESE_BLOCK = block(DiscordModModBlocks.DERBY_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
-	}
-
-	private static RegistryObject<Item> doubleBlock(RegistryObject<Block> block, CreativeModeTab tab) {
-		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties().tab(tab)));
 	}
 }

@@ -1,0 +1,49 @@
+{
+  "_fv": 33,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:CheddarForest"
+      },
+      {
+        "value": "CUSTOM:SwissWasteLand"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:MozzarellaBlock"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -3123,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:MozzarellaBlock"
+    },
+    "portalParticles": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Cheesy Dimension Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "mozzerellaandsteel",
+    "portalTexture": "shredded_mozzarella_3",
+    "enablePortal": true
+  }
+}

@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "discord_mod:blocks/shredded_mozzarella_3",
-    "particle": "discord_mod:blocks/shredded_mozzarella_3"
+    "all": "discord_mod:blocks/mozzarella",
+    "particle": "discord_mod:blocks/mozzarella"
   }
 }
