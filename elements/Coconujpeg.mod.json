@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "CoconujpegBlockDestroyedByPlayer"
+    },
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -133,9 +136,6 @@
       },
       {
         "value": "Blocks.SAND#0"
-      },
-      {
-        "value": "CUSTOM:Cheeseblockstwo"
       }
     ],
     "generationShape": "UNIFORM",

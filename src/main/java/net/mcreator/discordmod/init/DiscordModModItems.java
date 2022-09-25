@@ -20,7 +20,6 @@ import net.mcreator.discordmod.item.RennetItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GelSwordItem;
 import net.mcreator.discordmod.item.CurdItem;
-import net.mcreator.discordmod.item.CheeseBullShitItem;
 import net.mcreator.discordmod.item.BlueCheeseFoodItem;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -32,12 +31,7 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> GORILLA = REGISTRY.register("gorilla_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.GORILLA, -13426407, -15396848, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> CHEESEBLACKONE = block(DiscordModModBlocks.CHEESEBLACKONE, CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Item> SWISS_CHEESE_BLOCK = block(DiscordModModBlocks.SWISS_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> KRAFT = block(DiscordModModBlocks.KRAFT, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> MONSTER_CHEESE = block(DiscordModModBlocks.MONSTER_CHEESE, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> CHEESEDOOR = doubleBlock(DiscordModModBlocks.CHEESEDOOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> MUENSTERCHEESEDIMENSION = REGISTRY.register("muenstercheesedimension",
-			() -> new MuenstercheesedimensionItem());
 	public static final RegistryObject<Item> AZTEC_BRICK = block(DiscordModModBlocks.AZTEC_BRICK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZTEC_SMOOTH_STONE = block(DiscordModModBlocks.AZTEC_SMOOTH_STONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> RENNET = REGISTRY.register("rennet", () -> new RennetItem());
@@ -75,7 +69,6 @@ public class DiscordModModItems {
 			() -> new SlimeArmorArmorItem.Leggings());
 	public static final RegistryObject<Item> SLIME_ARMOR_ARMOR_BOOTS = REGISTRY.register("slime_armor_armor_boots",
 			() -> new SlimeArmorArmorItem.Boots());
-	public static final RegistryObject<Item> CHEESE_BULL_SHIT = REGISTRY.register("cheese_bull_shit", () -> new CheeseBullShitItem());
 	public static final RegistryObject<Item> BLUE_CHEESE_ZOMBIE = REGISTRY.register("blue_cheese_zombie_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.BLUE_CHEESE_ZOMBIE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> BLUE_CHEESE_FOOD = REGISTRY.register("blue_cheese_food", () -> new BlueCheeseFoodItem());

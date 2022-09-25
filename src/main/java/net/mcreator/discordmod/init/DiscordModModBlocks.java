@@ -26,13 +26,9 @@ import net.mcreator.discordmod.block.MuensterCheeseFenceGateBlock;
 import net.mcreator.discordmod.block.MuensterCheeseFenceBlock;
 import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
-import net.mcreator.discordmod.block.MonsterCheeseBlock;
-import net.mcreator.discordmod.block.KraftBlock;
 import net.mcreator.discordmod.block.CoconujpegBlock;
 import net.mcreator.discordmod.block.CheesedoorBlock;
-import net.mcreator.discordmod.block.CheeseblockstwoBlock;
 import net.mcreator.discordmod.block.CheeseblackoneBlock;
-import net.mcreator.discordmod.block.CheeseBullShitPortalBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
 import net.mcreator.discordmod.block.AztecSmoothStoneBlock;
 import net.mcreator.discordmod.block.AztecBrickBlock;
@@ -42,12 +38,7 @@ public class DiscordModModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, DiscordModMod.MODID);
 	public static final RegistryObject<Block> COCONUJPEG = REGISTRY.register("coconujpeg", () -> new CoconujpegBlock());
 	public static final RegistryObject<Block> CHEESEBLACKONE = REGISTRY.register("cheeseblackone", () -> new CheeseblackoneBlock());
-	public static final RegistryObject<Block> SWISS_CHEESE_BLOCK = REGISTRY.register("swiss_cheese_block", () -> new CheeseblockstwoBlock());
-	public static final RegistryObject<Block> KRAFT = REGISTRY.register("kraft", () -> new KraftBlock());
-	public static final RegistryObject<Block> MONSTER_CHEESE = REGISTRY.register("monster_cheese", () -> new MonsterCheeseBlock());
 	public static final RegistryObject<Block> CHEESEDOOR = REGISTRY.register("cheesedoor", () -> new CheesedoorBlock());
-	public static final RegistryObject<Block> MUENSTERCHEESEDIMENSION_PORTAL = REGISTRY.register("muenstercheesedimension_portal",
-			() -> new MuenstercheesedimensionPortalBlock());
 	public static final RegistryObject<Block> AZTEC_BRICK = REGISTRY.register("aztec_brick", () -> new AztecBrickBlock());
 	public static final RegistryObject<Block> AZTEC_SMOOTH_STONE = REGISTRY.register("aztec_smooth_stone", () -> new AztecSmoothStoneBlock());
 	public static final RegistryObject<Block> SLIME_GRASS = REGISTRY.register("slime_grass", () -> new SlimeGrassBlock());
@@ -70,8 +61,6 @@ public class DiscordModModBlocks {
 			() -> new MuensterCheesePressurePlateBlock());
 	public static final RegistryObject<Block> MUENSTER_CHEESE_BUTTON = REGISTRY.register("muenster_cheese_button",
 			() -> new MuensterCheeseButtonBlock());
-	public static final RegistryObject<Block> CHEESE_BULL_SHIT_PORTAL = REGISTRY.register("cheese_bull_shit_portal",
-			() -> new CheeseBullShitPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

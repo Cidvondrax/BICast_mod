@@ -12,6 +12,8 @@ import net.minecraftforge.common.DungeonHooks;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -32,12 +34,13 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.discordmod.init.DiscordModModItems;
 import net.mcreator.discordmod.init.DiscordModModEntities;
 
 import java.util.Set;
 
 @Mod.EventBusSubscriber
-public class BlueCheeseZombieEntity extends Monster {
+public class BlueCheeseZombieEntity extends Zombie {
 	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("discord_mod:cheddar_forest"),
 			new ResourceLocation("discord_mod:swiss_waste_land"));
 
@@ -83,6 +86,11 @@ public class BlueCheeseZombieEntity extends Monster {
 		return MobType.UNDEAD;
 	}
 
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(DiscordModModItems.BLUE_CHEESE_FOOD.get()));
+	}
+
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
@@ -115,6 +123,7 @@ public class BlueCheeseZombieEntity extends Monster {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
+		builder = builder.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
 		return builder;
 	}
 }

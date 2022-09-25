@@ -84,7 +84,7 @@ public class CoconujpegFeature extends OreFeature {
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.DIAMOND_ORE, Blocks.SAND, DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
+				base_blocks = List.of(Blocks.DIAMOND_ORE, Blocks.SAND);
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}
