@@ -15,7 +15,7 @@
       "value": "CUSTOM:MozzarellaBlock"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "CUSTOM:NachoCheese"
     },
     "airColor": {
       "value": -3123,

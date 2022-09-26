@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.discordmod.item.SlimeArmorArmorItem;
 import net.mcreator.discordmod.item.RennetItem;
+import net.mcreator.discordmod.item.NachoCheeseItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GelSwordItem;
 import net.mcreator.discordmod.item.CurdItem;
@@ -75,8 +76,9 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> SWISS_CHEESE_BLOCK = block(DiscordModModBlocks.SWISS_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> DERBY_CHEESE_BLOCK = block(DiscordModModBlocks.DERBY_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> RUBBLE_BLOCK = block(DiscordModModBlocks.RUBBLE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> F = REGISTRY.register("f_spawn_egg",
-			() -> new ForgeSpawnEggItem(DiscordModModEntities.F, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CHEESE_COW = REGISTRY.register("cheese_cow_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.CHEESE_COW, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NACHO_CHEESE_BUCKET = REGISTRY.register("nacho_cheese_bucket", () -> new NachoCheeseItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

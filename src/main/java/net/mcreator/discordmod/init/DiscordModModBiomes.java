@@ -21,7 +21,6 @@ import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.Biome;
@@ -86,7 +85,8 @@ public class DiscordModModBiomes {
 							surfaceRules.add(2,
 									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, CHEDDAR_FOREST.getId()),
 											DiscordModModBlocks.DERBY_CHEESE_BLOCK.get().defaultBlockState(),
-											DiscordModModBlocks.CHEESEBLACKONE.get().defaultBlockState(), Blocks.WATER.defaultBlockState()));
+											DiscordModModBlocks.CHEESEBLACKONE.get().defaultBlockState(),
+											DiscordModModBlocks.NACHO_CHEESE.get().defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),

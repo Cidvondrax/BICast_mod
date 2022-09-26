@@ -18,9 +18,9 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.discordmod.entity.GorillaEntityProjectile;
 import net.mcreator.discordmod.entity.GorillaEntity;
-import net.mcreator.discordmod.entity.FEntity;
 import net.mcreator.discordmod.entity.CrabEntityProjectile;
 import net.mcreator.discordmod.entity.CrabEntity;
+import net.mcreator.discordmod.entity.CheeseCowEntity;
 import net.mcreator.discordmod.entity.BlueCheeseZombieEntity;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -46,9 +46,9 @@ public class DiscordModModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlueCheeseZombieEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<FEntity>> F = register("f",
-			EntityType.Builder.<FEntity>of(FEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(FEntity::new)
+	public static final RegistryObject<EntityType<CheeseCowEntity>> CHEESE_COW = register("cheese_cow",
+			EntityType.Builder.<CheeseCowEntity>of(CheeseCowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CheeseCowEntity::new)
 
 					.sized(0.9f, 1.4f));
 
@@ -62,7 +62,7 @@ public class DiscordModModEntities {
 			CrabEntity.init();
 			GorillaEntity.init();
 			BlueCheeseZombieEntity.init();
-			FEntity.init();
+			CheeseCowEntity.init();
 		});
 	}
 
@@ -71,6 +71,6 @@ public class DiscordModModEntities {
 		event.put(CRAB.get(), CrabEntity.createAttributes().build());
 		event.put(GORILLA.get(), GorillaEntity.createAttributes().build());
 		event.put(BLUE_CHEESE_ZOMBIE.get(), BlueCheeseZombieEntity.createAttributes().build());
-		event.put(F.get(), FEntity.createAttributes().build());
+		event.put(CHEESE_COW.get(), CheeseCowEntity.createAttributes().build());
 	}
 }

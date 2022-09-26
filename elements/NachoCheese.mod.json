@@ -1,0 +1,47 @@
+{
+  "_fv": 33,
+  "_type": "fluid",
+  "definition": {
+    "name": "Nacho Cheese",
+    "bucketName": "Nacho Cheese Bucket",
+    "textureStill": "nacho_cheese",
+    "textureFlowing": "nacho_cheese",
+    "tintType": "Water fog",
+    "canMultiply": true,
+    "flowRate": 2,
+    "levelDecrease": 3,
+    "slopeFindDistance": 3,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "DRIP_LAVA"
+    },
+    "flowStrength": 1.0,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": false,
+    "temperature": 300,
+    "type": "LAVA",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": true,
+    "tickRate": 10,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": []
+  }
+}

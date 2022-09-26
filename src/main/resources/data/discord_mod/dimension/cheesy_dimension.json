@@ -76,7 +76,7 @@
         "Name": "discord_mod:mozzarella_block"
       },
       "default_fluid": {
-        "Name": "minecraft:water",
+        "Name": "discord_mod:nacho_cheese",
         "Properties": {
           "level": "0"
         }
@@ -3034,7 +3034,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:water",
+                            "Name": "discord_mod:nacho_cheese",
                             "Properties": {
                               "level": "0"
                             }
@@ -3112,7 +3112,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:water",
+                            "Name": "discord_mod:nacho_cheese",
                             "Properties": {
                               "level": "0"
                             }
