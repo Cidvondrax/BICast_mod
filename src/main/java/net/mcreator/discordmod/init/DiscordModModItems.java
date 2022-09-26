@@ -80,6 +80,8 @@ public class DiscordModModItems {
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.CHEESE_COW, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> NACHO_CHEESE_BUCKET = REGISTRY.register("nacho_cheese_bucket", () -> new NachoCheeseItem());
 	public static final RegistryObject<Item> PINK_DERBY_BLOCK = block(DiscordModModBlocks.PINK_DERBY_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> IRONGOLEMTEST = REGISTRY.register("irongolemtest_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.IRONGOLEMTEST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

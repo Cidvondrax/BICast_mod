@@ -29,6 +29,8 @@ public class CheesyDimensionDimension {
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(DiscordModModBlocks.MOZZARELLA_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.DERBY_CHEESE_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.PINK_DERBY_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			event.enqueueWork(() -> {

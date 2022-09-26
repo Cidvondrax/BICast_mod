@@ -7,13 +7,10 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -34,13 +31,12 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.discordmod.init.DiscordModModItems;
 import net.mcreator.discordmod.init.DiscordModModEntities;
 
 import java.util.Set;
 
 @Mod.EventBusSubscriber
-public class BlueCheeseZombieEntity extends Zombie {
+public class IrongolemtestEntity extends Monster {
 	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("discord_mod:derby_biome"),
 			new ResourceLocation("discord_mod:swiss_waste_land"));
 
@@ -48,14 +44,14 @@ public class BlueCheeseZombieEntity extends Zombie {
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
 			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), 20, 4, 8));
+					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.IRONGOLEMTEST.get(), 20, 4, 4));
 	}
 
-	public BlueCheeseZombieEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), world);
+	public IrongolemtestEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(DiscordModModEntities.IRONGOLEMTEST.get(), world);
 	}
 
-	public BlueCheeseZombieEntity(EntityType<BlueCheeseZombieEntity> type, Level world) {
+	public IrongolemtestEntity(EntityType<IrongolemtestEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
@@ -83,12 +79,7 @@ public class BlueCheeseZombieEntity extends Zombie {
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEAD;
-	}
-
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(DiscordModModItems.BLUE_CHEESE_FOOD.get()));
+		return MobType.UNDEFINED;
 	}
 
 	@Override
@@ -101,18 +92,10 @@ public class BlueCheeseZombieEntity extends Zombie {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 	}
 
-	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.DROWN)
-			return false;
-		return super.hurt(source, amount);
-	}
-
 	public static void init() {
-		SpawnPlacements.register(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), SpawnPlacements.Type.ON_GROUND,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
+		SpawnPlacements.register(DiscordModModEntities.IRONGOLEMTEST.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-		DungeonHooks.addDungeonMob(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -122,8 +105,6 @@ public class BlueCheeseZombieEntity extends Zombie {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
-		builder = builder.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
 		return builder;
 	}
 }

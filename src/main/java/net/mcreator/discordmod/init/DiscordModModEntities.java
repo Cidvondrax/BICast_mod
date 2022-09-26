@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.discordmod.entity.IrongolemtestEntity;
 import net.mcreator.discordmod.entity.GorillaEntityProjectile;
 import net.mcreator.discordmod.entity.GorillaEntity;
 import net.mcreator.discordmod.entity.CrabEntityProjectile;
@@ -51,6 +52,11 @@ public class DiscordModModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CheeseCowEntity::new)
 
 					.sized(0.9f, 1.4f));
+	public static final RegistryObject<EntityType<IrongolemtestEntity>> IRONGOLEMTEST = register("irongolemtest",
+			EntityType.Builder.<IrongolemtestEntity>of(IrongolemtestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IrongolemtestEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -63,6 +69,7 @@ public class DiscordModModEntities {
 			GorillaEntity.init();
 			BlueCheeseZombieEntity.init();
 			CheeseCowEntity.init();
+			IrongolemtestEntity.init();
 		});
 	}
 
@@ -72,5 +79,6 @@ public class DiscordModModEntities {
 		event.put(GORILLA.get(), GorillaEntity.createAttributes().build());
 		event.put(BLUE_CHEESE_ZOMBIE.get(), BlueCheeseZombieEntity.createAttributes().build());
 		event.put(CHEESE_COW.get(), CheeseCowEntity.createAttributes().build());
+		event.put(IRONGOLEMTEST.get(), IrongolemtestEntity.createAttributes().build());
 	}
 }

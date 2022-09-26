@@ -4,10 +4,10 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:CheddarForest"
+        "value": "CUSTOM:SwissWasteLand"
       },
       {
-        "value": "CUSTOM:SwissWasteLand"
+        "value": "CUSTOM:DerbyBiome"
       }
     ],
     "worldGenType": "Normal world gen",

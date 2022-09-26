@@ -118,10 +118,10 @@
     "maxNumberOfMobsPerGroup": 8,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:CheddarForest"
+        "value": "CUSTOM:SwissWasteLand"
       },
       {
-        "value": "CUSTOM:SwissWasteLand"
+        "value": "CUSTOM:DerbyBiome"
       }
     ],
     "spawnInDungeons": true
