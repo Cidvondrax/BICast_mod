@@ -17,6 +17,7 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
+import net.mcreator.discordmod.world.features.ores.SwissCheeseBlockFeature;
 import net.mcreator.discordmod.world.features.ores.CoconujpegFeature;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -31,6 +32,9 @@ public class DiscordModModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> COCONUJPEG = register("coconujpeg", CoconujpegFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CoconujpegFeature.GENERATE_BIOMES, CoconujpegFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SWISS_CHEESE_BLOCK = register("swiss_cheese_block", SwissCheeseBlockFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, SwissCheeseBlockFeature.GENERATE_BIOMES,
+					SwissCheeseBlockFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

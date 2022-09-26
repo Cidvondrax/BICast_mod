@@ -16,18 +16,18 @@ import java.util.function.BiConsumer;
 import java.util.Random;
 import java.util.List;
 
-public class CheddarForestFruitDecorator extends CocoaDecorator {
-	public static final CheddarForestFruitDecorator INSTANCE = new CheddarForestFruitDecorator();
-	public static com.mojang.serialization.Codec<CheddarForestFruitDecorator> codec;
+public class DerbyBiomeFruitDecorator extends CocoaDecorator {
+	public static final DerbyBiomeFruitDecorator INSTANCE = new DerbyBiomeFruitDecorator();
+	public static com.mojang.serialization.Codec<DerbyBiomeFruitDecorator> codec;
 	public static TreeDecoratorType<?> tdt;
 	static {
 		codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		tdt = new TreeDecoratorType<>(codec);
-		tdt.setRegistryName("cheddar_forest_tree_fruit_decorator");
+		tdt.setRegistryName("derby_biome_tree_fruit_decorator");
 		ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 	}
 
-	public CheddarForestFruitDecorator() {
+	public DerbyBiomeFruitDecorator() {
 		super(0.2f);
 	}
 
@@ -49,7 +49,7 @@ public class CheddarForestFruitDecorator extends CocoaDecorator {
 						Direction direction1 = direction.getOpposite();
 						BlockPos blockpos = p_161728_.offset(direction1.getStepX(), 0, direction1.getStepZ());
 						if (Feature.isAir(level, blockpos)) {
-							biConsumer.accept(blockpos, DiscordModModBlocks.MUENSTER_CHEESE_WOOD.get().defaultBlockState());
+							biConsumer.accept(blockpos, DiscordModModBlocks.CHEESEBLACKONE.get().defaultBlockState());
 						}
 					}
 				}

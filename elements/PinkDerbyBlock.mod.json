@@ -2,12 +2,12 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "2222_-_copy",
-    "textureTop": "2222_-_copy",
-    "textureLeft": "2222_-_copy",
-    "textureFront": "2222_-_copy",
-    "textureRight": "2222_-_copy",
-    "textureBack": "2222_-_copy",
+    "texture": "dddsds",
+    "textureTop": "dddsds",
+    "textureLeft": "dddsds",
+    "textureFront": "dddsds",
+    "textureRight": "dddsds",
+    "textureBack": "dddsds",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,9 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Swiss Cheese Block",
+    "name": "Derby Cheese Block",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 2.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -50,7 +50,7 @@
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": true,
+    "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
@@ -123,24 +123,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:CheesyDimension"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:DerbyBiome"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:DerbyCheeseBlock"
-      },
-      {
-        "value": "CUSTOM:PinkDerbyBlock"
+        "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 20,
+    "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64

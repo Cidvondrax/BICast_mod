@@ -403,14 +403,6 @@
       }
     },
     {
-      "name": "CheddarForest",
-      "type": "biome",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cheddar_forest"
-    },
-    {
       "name": "SwissWasteLand",
       "type": "biome",
       "sortid": 57,
@@ -535,6 +527,22 @@
       "metadata": {
         "gb": true
       }
+    },
+    {
+      "name": "PinkDerbyBlock",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_derby_block"
+    },
+    {
+      "name": "DerbyBiome",
+      "type": "biome",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "derby_biome"
     }
   ],
   "variable_elements": [],
@@ -576,6 +584,7 @@
       "entity.discord_mod.gorilla": "Gorilla",
       "block.discord_mod.rubble_block": "Rubble Block",
       "block.discord_mod.muenster_cheese_wood": "MuensterCheese Wood",
+      "biome.discord_mod.derby_biome": "Derby Biome",
       "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
       "entity.discord_mod.cheese_cow": "Cheese Cow",
       "entity.discord_mod.blue_cheese_zombie": "Blue Cheese Zombie",
@@ -596,10 +605,10 @@
       "block.discord_mod.muenster_cheese_slab": "MuensterCheese Slab",
       "item.discord_mod.slime_armor_armor_helmet": "SlimeArmor Helmet",
       "item.discord_mod.crab_spawn_egg": "Crab Spawn Egg",
-      "biome.discord_mod.cheddar_forest": "Cheddar Forest",
       "entity.discord_mod.crab": "Crab",
       "biome.discord_mod.swiss_waste_land": "Swiss Waste Land",
       "block.discord_mod.muenster_cheese_planks": "MuensterCheese Planks",
+      "block.discord_mod.pink_derby_block": "Derby Cheese Block",
       "block.discord_mod.coconujpeg": "Cicinut",
       "block.discord_mod.muenster_cheese_button": "MuensterCheese Button",
       "item.discord_mod.blue_cheese_food": "Blue Cheese"

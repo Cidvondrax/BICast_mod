@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.discordmod.block.SwissCheeseBlockBlock;
 import net.mcreator.discordmod.block.SlimeGrassBlock;
 import net.mcreator.discordmod.block.RubbleBlockBlock;
+import net.mcreator.discordmod.block.PinkDerbyBlockBlock;
 import net.mcreator.discordmod.block.NachoCheeseBlock;
 import net.mcreator.discordmod.block.MuensterCheeseWoodBlock;
 import net.mcreator.discordmod.block.MuensterCheeseStairsBlock;
@@ -66,4 +67,5 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> DERBY_CHEESE_BLOCK = REGISTRY.register("derby_cheese_block", () -> new DerbyCheeseBlockBlock());
 	public static final RegistryObject<Block> RUBBLE_BLOCK = REGISTRY.register("rubble_block", () -> new RubbleBlockBlock());
 	public static final RegistryObject<Block> NACHO_CHEESE = REGISTRY.register("nacho_cheese", () -> new NachoCheeseBlock());
+	public static final RegistryObject<Block> PINK_DERBY_BLOCK = REGISTRY.register("pink_derby_block", () -> new PinkDerbyBlockBlock());
 }
