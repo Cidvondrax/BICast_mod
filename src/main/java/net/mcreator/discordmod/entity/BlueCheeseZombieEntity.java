@@ -41,8 +41,7 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class BlueCheeseZombieEntity extends Zombie {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("discord_mod:cheddar_forest"),
-			new ResourceLocation("discord_mod:swiss_waste_land"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("discord_mod:swiss_waste_land"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {

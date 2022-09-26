@@ -43,18 +43,13 @@ import net.mcreator.discordmod.procedures.FRightClickedOnEntityProcedure;
 import net.mcreator.discordmod.init.DiscordModModItems;
 import net.mcreator.discordmod.init.DiscordModModEntities;
 
-import java.util.Set;
 import java.util.List;
 
 @Mod.EventBusSubscriber
 public class CheeseCowEntity extends Animal {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("discord_mod:cheddar_forest"));
-
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.CREATURE)
-					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.CHEESE_COW.get(), 20, 1, 2));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.CHEESE_COW.get(), 20, 1, 2));
 	}
 
 	public CheeseCowEntity(PlayMessages.SpawnEntity packet, Level world) {

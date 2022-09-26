@@ -209,14 +209,6 @@
       "registry_name": "muenster_cheese_button"
     },
     {
-      "name": "MuensterCheeseItemsTag",
-      "type": "tag",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "muenster_cheese_items_tag"
-    },
-    {
       "name": "MuensterCheeseWoodRecipe",
       "type": "recipe",
       "sortid": 39,
