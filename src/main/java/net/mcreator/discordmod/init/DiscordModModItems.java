@@ -75,6 +75,8 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> SWISS_CHEESE_BLOCK = block(DiscordModModBlocks.SWISS_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> DERBY_CHEESE_BLOCK = block(DiscordModModBlocks.DERBY_CHEESE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> RUBBLE_BLOCK = block(DiscordModModBlocks.RUBBLE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> F = REGISTRY.register("f_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.F, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

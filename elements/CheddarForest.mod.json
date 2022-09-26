@@ -4,7 +4,7 @@
   "definition": {
     "name": "Cheddar Forest",
     "groundBlock": {
-      "value": "CUSTOM:Cheeseblackone"
+      "value": "CUSTOM:DerbyCheeseBlock"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Cheeseblackone"
@@ -33,10 +33,10 @@
     "biomeCategory": "NONE",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "baseHeight": 1.0,
+    "heightVariation": 0.5,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
+    "spawnBiomeNether": true,
     "spawnInCaves": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],

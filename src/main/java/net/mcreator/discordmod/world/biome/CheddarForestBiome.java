@@ -16,6 +16,7 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
@@ -35,6 +36,11 @@ import java.util.List;
 import com.google.common.collect.ImmutableList;
 
 public class CheddarForestBiome {
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.142857142857f, 0.142857142857f),
+			Climate.Parameter.span(-0.142857142857f, 0.142857142857f), Climate.Parameter.span(0.457142857143f, 0.742857142857f),
+			Climate.Parameter.span(0.357142857143f, 0.642857142857f), Climate.Parameter.point(0),
+			Climate.Parameter.span(0.046773418898f, 0.332487704612f), 0);
+
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
 				.foliageColorOverride(10387789).grassColorOverride(9470285).build();

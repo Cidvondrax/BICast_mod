@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.discordmod.client.renderer.GorillaRenderer;
+import net.mcreator.discordmod.client.renderer.FRenderer;
 import net.mcreator.discordmod.client.renderer.CrabRenderer;
 import net.mcreator.discordmod.client.renderer.BlueCheeseZombieRenderer;
 
@@ -24,5 +25,6 @@ public class DiscordModModEntityRenderers {
 		event.registerEntityRenderer(DiscordModModEntities.GORILLA.get(), GorillaRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.GORILLA_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), BlueCheeseZombieRenderer::new);
+		event.registerEntityRenderer(DiscordModModEntities.F.get(), FRenderer::new);
 	}
 }

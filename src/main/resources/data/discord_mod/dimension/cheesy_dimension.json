@@ -18,16 +18,16 @@
               0.142857142857
             ],
             "continentalness": [
-              0.367142857143,
-              0.652857142857
+              0.457142857143,
+              0.742857142857
             ],
             "weirdness": [
               -0.649749434544,
               -0.36403514883
             ],
             "erosion": [
-              0.657142857143,
-              0.942857142857
+              0.357142857143,
+              0.642857142857
             ],
             "depth": 0,
             "offset": 0
@@ -3027,7 +3027,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "discord_mod:cheeseblackone"
+                              "Name": "discord_mod:derby_cheese_block"
                             }
                           }
                         },
@@ -3055,7 +3055,10 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "discord_mod:cheeseblackone"
+                        "Name": "discord_mod:cheeseblackone",
+                        "Properties": {
+                          "facing": "north"
+                        }
                       }
                     }
                   }
