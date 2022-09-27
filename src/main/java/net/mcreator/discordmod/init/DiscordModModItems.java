@@ -82,6 +82,9 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> PINK_DERBY_BLOCK = block(DiscordModModBlocks.PINK_DERBY_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> IRONGOLEMTEST = REGISTRY.register("irongolemtest_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.IRONGOLEMTEST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> COBBLED_PINK_DERBY_BLOCK = block(DiscordModModBlocks.COBBLED_PINK_DERBY_BLOCK,
+			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> RUST_BLOCK = block(DiscordModModBlocks.RUST_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

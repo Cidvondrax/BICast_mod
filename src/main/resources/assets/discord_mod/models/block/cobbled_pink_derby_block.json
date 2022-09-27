@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "discord_mod:blocks/dddsds",
+    "up": "discord_mod:blocks/cobbledderby",
+    "north": "discord_mod:blocks/cobbledderby",
+    "east": "discord_mod:blocks/cobbledderby",
+    "south": "discord_mod:blocks/dddsds",
+    "west": "discord_mod:blocks/cobbledderby",
+    "particle": "discord_mod:blocks/dddsds"
+  }
+}

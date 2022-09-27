@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.discordmod.block.SwissCheeseBlockBlock;
 import net.mcreator.discordmod.block.SlimeGrassBlock;
+import net.mcreator.discordmod.block.RustBlockBlock;
 import net.mcreator.discordmod.block.RubbleBlockBlock;
 import net.mcreator.discordmod.block.PinkDerbyBlockBlock;
 import net.mcreator.discordmod.block.NachoCheeseBlock;
@@ -28,6 +29,7 @@ import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
 import net.mcreator.discordmod.block.DerbyCheeseBlockBlock;
 import net.mcreator.discordmod.block.CoconujpegBlock;
+import net.mcreator.discordmod.block.CobbledPinkDerbyBlockBlock;
 import net.mcreator.discordmod.block.CheesyDimensionPortalBlock;
 import net.mcreator.discordmod.block.CheeseblackoneBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
@@ -68,4 +70,7 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> RUBBLE_BLOCK = REGISTRY.register("rubble_block", () -> new RubbleBlockBlock());
 	public static final RegistryObject<Block> NACHO_CHEESE = REGISTRY.register("nacho_cheese", () -> new NachoCheeseBlock());
 	public static final RegistryObject<Block> PINK_DERBY_BLOCK = REGISTRY.register("pink_derby_block", () -> new PinkDerbyBlockBlock());
+	public static final RegistryObject<Block> COBBLED_PINK_DERBY_BLOCK = REGISTRY.register("cobbled_pink_derby_block",
+			() -> new CobbledPinkDerbyBlockBlock());
+	public static final RegistryObject<Block> RUST_BLOCK = REGISTRY.register("rust_block", () -> new RustBlockBlock());
 }

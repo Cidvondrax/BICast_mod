@@ -2,12 +2,12 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "pinkedderby",
-    "textureTop": "pinkedderby",
-    "textureLeft": "pinkedderby",
-    "textureFront": "pinkedderby",
-    "textureRight": "pinkedderby",
-    "textureBack": "pinkedderby",
+    "texture": "rustblock",
+    "textureTop": "rustblock",
+    "textureLeft": "rustblock",
+    "textureFront": "rustblock",
+    "textureRight": "rustblock",
+    "textureBack": "rustblock",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,11 +33,11 @@
         "subtract": false
       }
     ],
-    "name": "Derby Cheese Block",
+    "name": "Rust Block",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 10.0,
-    "hasGravity": false,
+    "hardness": 3.0,
+    "resistance": 15.0,
+    "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "GRASS"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -63,7 +63,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "TNT",
     "creativePickItem": {
       "value": ""
     },
@@ -72,8 +72,8 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
-    "speedFactor": 1.0,
+    "slipperiness": 1.0,
+    "speedFactor": 0.6,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
