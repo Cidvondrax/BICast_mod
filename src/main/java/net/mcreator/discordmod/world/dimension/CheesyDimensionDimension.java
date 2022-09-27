@@ -28,11 +28,13 @@ public class CheesyDimensionDimension {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(DiscordModModBlocks.MOZZARELLA_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.CHHURPISTONE.get());
 			replaceableBlocks.add(DiscordModModBlocks.DERBY_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.PINK_DERBY_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.DERBY_CHEESE_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.PINK_DERBY_BLOCK.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();

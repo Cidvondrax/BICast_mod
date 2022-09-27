@@ -28,6 +28,7 @@ import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
 import net.mcreator.discordmod.block.DerbyCheeseBlockBlock;
 import net.mcreator.discordmod.block.CoconujpegBlock;
+import net.mcreator.discordmod.block.ChhurpistoneBlock;
 import net.mcreator.discordmod.block.CheesyDimensionPortalBlock;
 import net.mcreator.discordmod.block.CheeseblackoneBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
@@ -68,4 +69,5 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> RUBBLE_BLOCK = REGISTRY.register("rubble_block", () -> new RubbleBlockBlock());
 	public static final RegistryObject<Block> NACHO_CHEESE = REGISTRY.register("nacho_cheese", () -> new NachoCheeseBlock());
 	public static final RegistryObject<Block> PINK_DERBY_BLOCK = REGISTRY.register("pink_derby_block", () -> new PinkDerbyBlockBlock());
+	public static final RegistryObject<Block> CHHURPISTONE = REGISTRY.register("chhurpistone", () -> new ChhurpistoneBlock());
 }

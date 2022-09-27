@@ -40,9 +40,9 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:CheeseDimension"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },
@@ -125,11 +125,7 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

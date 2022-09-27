@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:CheeseDimension"
     },
     "destroyTool": "Not specified",
     "customDrop": {

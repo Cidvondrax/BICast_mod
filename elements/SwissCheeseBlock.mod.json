@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:CheeseDimension"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -123,24 +123,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:CheesyDimension"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:DerbyBiome"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:DerbyCheeseBlock"
-      },
-      {
-        "value": "CUSTOM:PinkDerbyBlock"
+        "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 20,
+    "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64

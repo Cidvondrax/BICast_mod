@@ -2,7 +2,7 @@
   "_fv": 33,
   "_type": "biome",
   "definition": {
-    "name": "Derby Biome",
+    "name": "Pink Derby Cave",
     "groundBlock": {
       "value": "CUSTOM:DerbyCheeseBlock"
     },
@@ -11,26 +11,6 @@
     },
     "underwaterBlock": {
       "value": "CUSTOM:PinkDerbyBlock"
-    },
-    "airColor": {
-      "value": -467788,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -467788,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -467788,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -467788,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -467788,
-      "falpha": 0.0
     },
     "ambientSound": {
       "value": ""
@@ -50,46 +30,46 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "PLAINS",
+    "biomeCategory": "UNDERGROUND",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.5,
+    "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "spawnBiome": false,
+    "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 20,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 20,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
-    "mushroomsPerChunk": 0,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 5,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 10,
-    "vanillaTreeType": "Big trees",
-    "treeType": 1,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
     "minHeight": 7,
     "treeStem": {
-      "value": "CUSTOM:MuensterCheeseLog"
+      "value": ""
     },
     "treeBranch": {
-      "value": "CUSTOM:MuensterCheeseLeaves"
+      "value": ""
     },
     "treeVines": {
       "value": ""
     },
     "treeFruits": {
-      "value": "CUSTOM:Cheeseblackone"
+      "value": ""
     },
     "spawnStronghold": false,
-    "spawnMineshaft": true,
-    "spawnMineshaftMesa": true,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
-    "villageType": "plains",
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
@@ -108,8 +88,7 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer",
-      "DesertFeatures"
+      "FrozenTopLayer"
     ],
     "spawnEntries": []
   }
