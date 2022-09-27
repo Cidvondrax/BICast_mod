@@ -30,6 +30,7 @@ import net.mcreator.discordmod.block.MozzarellaBlockBlock;
 import net.mcreator.discordmod.block.DerbyCheeseBlockBlock;
 import net.mcreator.discordmod.block.CoconujpegBlock;
 import net.mcreator.discordmod.block.CobbledPinkDerbyBlockBlock;
+import net.mcreator.discordmod.block.ChhurpistoneBlock;
 import net.mcreator.discordmod.block.CheesyDimensionPortalBlock;
 import net.mcreator.discordmod.block.CheeseblackoneBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
@@ -72,5 +73,6 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> PINK_DERBY_BLOCK = REGISTRY.register("pink_derby_block", () -> new PinkDerbyBlockBlock());
 	public static final RegistryObject<Block> COBBLED_PINK_DERBY_BLOCK = REGISTRY.register("cobbled_pink_derby_block",
 			() -> new CobbledPinkDerbyBlockBlock());
+	public static final RegistryObject<Block> CHHURPISTONE = REGISTRY.register("chhurpistone", () -> new ChhurpistoneBlock());
 	public static final RegistryObject<Block> RUST_BLOCK = REGISTRY.register("rust_block", () -> new RustBlockBlock());
 }

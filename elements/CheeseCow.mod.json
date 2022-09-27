@@ -123,7 +123,11 @@
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DerbyBiome"
+      }
+    ],
     "spawnInDungeons": true
   }
 }

@@ -5,17 +5,23 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.material.Material;
 
-public class RustBlockBlock extends FallingBlock {
+public class ChhurpistoneBlock extends Block {
 
-	public RustBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.FIRE).sound(SoundType.GRAVEL).strength(3f, 15f).friction(1f)
-				.speedFactor(0.6f));
+	public ChhurpistoneBlock() {
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(5f, 10f).requiresCorrectToolForDrops());
 
 	}
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+			return tieredItem.getTier().getLevel() >= 1;
+		return false;
 	}
 
 	@Override

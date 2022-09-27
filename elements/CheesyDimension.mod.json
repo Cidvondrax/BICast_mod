@@ -8,11 +8,14 @@
       },
       {
         "value": "CUSTOM:DerbyBiome"
+      },
+      {
+        "value": "CUSTOM:PinkDerbyCave"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:MozzarellaBlock"
+      "value": "CUSTOM:Chhurpistone"
     },
     "fluidBlock": {
       "value": "CUSTOM:NachoCheese"
@@ -21,7 +24,7 @@
       "value": -3123,
       "falpha": 0.0
     },
-    "canRespawnHere": false,
+    "canRespawnHere": true,
     "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,

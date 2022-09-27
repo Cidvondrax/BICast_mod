@@ -53,7 +53,7 @@
     "biomeCategory": "NONE",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
+    "baseHeight": 0.5,
     "heightVariation": 0.2,
     "spawnBiome": false,
     "spawnBiomeNether": false,

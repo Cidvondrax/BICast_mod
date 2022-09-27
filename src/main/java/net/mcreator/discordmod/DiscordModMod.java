@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.discordmod.init.DiscordModModTabs;
 import net.mcreator.discordmod.init.DiscordModModItems;
 import net.mcreator.discordmod.init.DiscordModModFluids;
 import net.mcreator.discordmod.init.DiscordModModFeatures;
@@ -47,7 +48,7 @@ public class DiscordModMod {
 	private static int messageID = 0;
 
 	public DiscordModMod() {
-
+		DiscordModModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		DiscordModModBlocks.REGISTRY.register(bus);
 		DiscordModModItems.REGISTRY.register(bus);
