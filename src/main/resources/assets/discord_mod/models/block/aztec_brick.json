@@ -3,10 +3,10 @@
   "textures": {
     "down": "discord_mod:blocks/aas",
     "up": "discord_mod:blocks/aas",
-    "north": "discord_mod:blocks/g",
-    "east": "discord_mod:blocks/g",
-    "south": "discord_mod:blocks/g",
-    "west": "discord_mod:blocks/g",
+    "north": "discord_mod:blocks/aztecbrick",
+    "east": "discord_mod:blocks/aztecbrick",
+    "south": "discord_mod:blocks/aztecbrick",
+    "west": "discord_mod:blocks/aztecbrick",
     "particle": "discord_mod:blocks/aas"
   }
 }

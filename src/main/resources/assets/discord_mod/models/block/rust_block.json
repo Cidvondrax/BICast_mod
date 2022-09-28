@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "discord_mod:blocks/rustblock",
+    "up": "discord_mod:blocks/rustblock",
+    "north": "discord_mod:blocks/rustblock",
+    "east": "discord_mod:blocks/rustblock",
+    "south": "discord_mod:blocks/rustblock",
+    "west": "discord_mod:blocks/rustblock",
+    "particle": "discord_mod:blocks/rustblock"
+  }
+}

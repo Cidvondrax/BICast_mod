@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.discordmod.init.DiscordModModTabs;
+import net.mcreator.discordmod.init.DiscordModModParticleTypes;
 import net.mcreator.discordmod.init.DiscordModModItems;
 import net.mcreator.discordmod.init.DiscordModModFluids;
 import net.mcreator.discordmod.init.DiscordModModFeatures;
@@ -58,7 +59,7 @@ public class DiscordModMod {
 		DiscordModModFluids.REGISTRY.register(bus);
 
 		DiscordModModBiomes.REGISTRY.register(bus);
-
+		DiscordModModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

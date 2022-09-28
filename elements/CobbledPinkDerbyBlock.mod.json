@@ -2,12 +2,12 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "aas",
-    "textureTop": "aas",
-    "textureLeft": "aztecbrick",
-    "textureFront": "aztecbrick",
-    "textureRight": "aztecbrick",
-    "textureBack": "aztecbrick",
+    "texture": "dddsds",
+    "textureTop": "cobbledderby",
+    "textureLeft": "cobbledderby",
+    "textureFront": "cobbledderby",
+    "textureRight": "cobbledderby",
+    "textureBack": "dddsds",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Aztec Brick",
+    "name": "Derby Cheese Block",
     "specialInfo": [],
-    "hardness": 0.8999999999999999,
-    "resistance": 7.5,
+    "hardness": 2.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "GRASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -72,9 +72,9 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.5,
-    "speedFactor": 1.1,
-    "jumpFactor": 0.9,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,

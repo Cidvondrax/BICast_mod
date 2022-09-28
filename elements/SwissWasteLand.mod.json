@@ -50,7 +50,7 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "SAVANNA",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.5,
@@ -58,7 +58,7 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 20,
+    "biomeWeight": 25,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 10,
     "seagrassPerChunk": 0,

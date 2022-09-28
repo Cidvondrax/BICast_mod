@@ -20,13 +20,14 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.discordmod.world.teleporter.CheesyDimensionTeleporter;
 import net.mcreator.discordmod.world.teleporter.CheesyDimensionPortalShape;
+import net.mcreator.discordmod.init.DiscordModModParticleTypes;
 
 import java.util.Random;
 import java.util.Optional;
@@ -77,7 +78,7 @@ public class CheesyDimensionPortalBlock extends NetherPortalBlock {
 				pz = pos.getZ() + 0.5 + 0.25 * j;
 				vz = random.nextFloat() * 2 * j;
 			}
-			world.addParticle(ParticleTypes.EXPLOSION, px, py, pz, vx, vy, vz);
+			world.addParticle((SimpleParticleType) (DiscordModModParticleTypes.CHEESE_PARTICLE.get()), px, py, pz, vx, vy, vz);
 		}
 		if (random.nextInt(110) == 0)
 			world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,

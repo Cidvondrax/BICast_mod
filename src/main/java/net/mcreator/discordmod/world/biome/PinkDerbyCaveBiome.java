@@ -7,7 +7,6 @@ import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.biome.MobSpawnSettings;
-import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
@@ -18,11 +17,6 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import java.util.List;
 
 public class PinkDerbyCaveBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.142857142857f, 0.142857142857f),
-			Climate.Parameter.span(-0.142857142857f, 0.142857142857f), Climate.Parameter.span(0.367142857143f, 0.652857142857f),
-			Climate.Parameter.span(0.657142857143f, 0.942857142857f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.769485020861f, -0.483770735147f), 0);
-
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
 				.foliageColorOverride(10387789).grassColorOverride(9470285).build();
