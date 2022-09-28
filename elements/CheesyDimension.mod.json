@@ -35,7 +35,7 @@
       "value": "CUSTOM:MozzarellaBlock"
     },
     "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:CheeseParticle"
     },
     "portalLuminance": 0,
     "portalSound": {

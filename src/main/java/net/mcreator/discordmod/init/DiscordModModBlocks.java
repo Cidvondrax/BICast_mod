@@ -28,6 +28,8 @@ import net.mcreator.discordmod.block.MuensterCheeseFenceBlock;
 import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
 import net.mcreator.discordmod.block.DerbyCheeseBlockBlock;
+import net.mcreator.discordmod.block.CrackedAztecBrivkBlock;
+import net.mcreator.discordmod.block.CoverdAztecBrickBlock;
 import net.mcreator.discordmod.block.CoconujpegBlock;
 import net.mcreator.discordmod.block.CobbledPinkDerbyBlockBlock;
 import net.mcreator.discordmod.block.ChhurpistoneBlock;
@@ -75,4 +77,6 @@ public class DiscordModModBlocks {
 			() -> new CobbledPinkDerbyBlockBlock());
 	public static final RegistryObject<Block> CHHURPISTONE = REGISTRY.register("chhurpistone", () -> new ChhurpistoneBlock());
 	public static final RegistryObject<Block> RUST_BLOCK = REGISTRY.register("rust_block", () -> new RustBlockBlock());
+	public static final RegistryObject<Block> COVERD_AZTEC_BRICK = REGISTRY.register("coverd_aztec_brick", () -> new CoverdAztecBrickBlock());
+	public static final RegistryObject<Block> CRACKED_AZTEC_BRIVK = REGISTRY.register("cracked_aztec_brivk", () -> new CrackedAztecBrivkBlock());
 }

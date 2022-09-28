@@ -4,10 +4,10 @@
   "definition": {
     "texture": "aas",
     "textureTop": "aas",
-    "textureLeft": "aztecbrick",
-    "textureFront": "aztecbrick",
-    "textureRight": "aztecbrick",
-    "textureBack": "aztecbrick",
+    "textureLeft": "g",
+    "textureFront": "g",
+    "textureRight": "g",
+    "textureBack": "g",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Aztec Brick",
+    "name": "Coverd Aztec Brick",
     "specialInfo": [],
-    "hardness": 0.8999999999999999,
-    "resistance": 7.5,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:CheeseDimension"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -72,9 +72,9 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.5,
-    "speedFactor": 1.1,
-    "jumpFactor": 0.9,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,

@@ -2,12 +2,11 @@
 package net.mcreator.discordmod.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
@@ -15,10 +14,9 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class RustBlockBlock extends FallingBlock {
-	public RustBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.FIRE).sound(SoundType.GRAVEL).strength(3f, 15f).friction(1f)
-				.speedFactor(0.6f));
+public class CoverdAztecBrickBlock extends Block {
+	public CoverdAztecBrickBlock() {
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
 	}
 
 	@Override

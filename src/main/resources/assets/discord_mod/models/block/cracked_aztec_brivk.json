@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "discord_mod:blocks/aas",
+    "up": "discord_mod:blocks/aas",
+    "north": "discord_mod:blocks/cracked_aztec_bricks",
+    "east": "discord_mod:blocks/cracked_aztec_bricks",
+    "south": "discord_mod:blocks/cracked_aztec_bricks",
+    "west": "discord_mod:blocks/cracked_aztec_bricks",
+    "particle": "discord_mod:blocks/aas"
+  }
+}
