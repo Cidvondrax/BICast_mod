@@ -21,6 +21,7 @@ import net.mcreator.discordmod.entity.GorillaEntityProjectile;
 import net.mcreator.discordmod.entity.GorillaEntity;
 import net.mcreator.discordmod.entity.CrabEntityProjectile;
 import net.mcreator.discordmod.entity.CrabEntity;
+import net.mcreator.discordmod.entity.CheeseTraderEntity;
 import net.mcreator.discordmod.entity.CheeseCowEntity;
 import net.mcreator.discordmod.entity.BlueCheeseZombieEntity;
 import net.mcreator.discordmod.DiscordModMod;
@@ -57,6 +58,11 @@ public class DiscordModModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IrongolemtestEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CheeseTraderEntity>> CHEESE_TRADER = register("cheese_trader",
+			EntityType.Builder.<CheeseTraderEntity>of(CheeseTraderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CheeseTraderEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -70,6 +76,7 @@ public class DiscordModModEntities {
 			BlueCheeseZombieEntity.init();
 			CheeseCowEntity.init();
 			IrongolemtestEntity.init();
+			CheeseTraderEntity.init();
 		});
 	}
 
@@ -80,5 +87,6 @@ public class DiscordModModEntities {
 		event.put(BLUE_CHEESE_ZOMBIE.get(), BlueCheeseZombieEntity.createAttributes().build());
 		event.put(CHEESE_COW.get(), CheeseCowEntity.createAttributes().build());
 		event.put(IRONGOLEMTEST.get(), IrongolemtestEntity.createAttributes().build());
+		event.put(CHEESE_TRADER.get(), CheeseTraderEntity.createAttributes().build());
 	}
 }

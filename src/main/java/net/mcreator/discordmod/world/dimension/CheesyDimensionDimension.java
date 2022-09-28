@@ -31,6 +31,8 @@ public class CheesyDimensionDimension {
 			replaceableBlocks.add(DiscordModModBlocks.CHHURPISTONE.get());
 			replaceableBlocks.add(DiscordModModBlocks.DERBY_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.PINK_DERBY_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.PINK_DERBY_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.PINK_DERBY_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.DERBY_CHEESE_BLOCK.get());

@@ -2,35 +2,15 @@
   "_fv": 33,
   "_type": "biome",
   "definition": {
-    "name": "Swiss Waste Land",
+    "name": "Pink Derby Surface",
     "groundBlock": {
-      "value": "CUSTOM:SwissCheeseBlock"
+      "value": "CUSTOM:PinkDerbyBlock"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:SwissCheeseBlock"
+      "value": "CUSTOM:PinkDerbyBlock"
     },
     "underwaterBlock": {
-      "value": "CUSTOM:NachoCheese"
-    },
-    "airColor": {
-      "value": -1300,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -2041668,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -2041668,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -2865,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -2865,
-      "falpha": 0.0
+      "value": "CUSTOM:PinkDerbyBlock"
     },
     "ambientSound": {
       "value": ""
@@ -47,20 +27,20 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:CheeseParticle"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "SAVANNA",
+    "biomeCategory": "MOUNTAIN",
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 1.0,
+    "temperature": 0.0,
+    "baseHeight": 2.0,
     "heightVariation": 0.2,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 25,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 10,
+    "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
@@ -86,40 +66,30 @@
       "value": ""
     },
     "spawnStronghold": false,
-    "spawnMineshaft": true,
-    "spawnMineshaftMesa": true,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
-    "spawnDesertPyramid": true,
+    "spawnDesertPyramid": false,
     "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
-    "spawnShipwreck": true,
-    "spawnShipwreckBeached": true,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
-    "oceanRuinType": "WARM",
+    "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
-    "spawnNetherFossil": false,
+    "spawnNetherFossil": true,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
-    "spawnRuinedPortal": "DESERT",
+    "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:BlueCheeseZombie"
-        },
-        "minGroup": 4,
-        "maxGroup": 8,
-        "weight": 30,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }
