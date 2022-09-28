@@ -21,6 +21,7 @@ import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GelSwordItem;
 import net.mcreator.discordmod.item.DerbyWheelItem;
 import net.mcreator.discordmod.item.CurdItem;
+import net.mcreator.discordmod.item.ChhurpiDogTreatItem;
 import net.mcreator.discordmod.item.CheesyDimensionItem;
 import net.mcreator.discordmod.item.BlueCheeseFoodItem;
 import net.mcreator.discordmod.DiscordModMod;
@@ -94,6 +95,9 @@ public class DiscordModModItems {
 			DiscordModModTabs.TAB_CHEESE_DIMENSION);
 	public static final RegistryObject<Item> CRACKED_AZTEC_BRIVK = block(DiscordModModBlocks.CRACKED_AZTEC_BRIVK,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> CHEESE_TRADER = REGISTRY.register("cheese_trader_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.CHEESE_TRADER, -24832, -13404892, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

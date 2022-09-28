@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:chhurpi_dog_treat"
+    },
+    "1": {
+      "item": "discord_mod:chhurpi_dog_treat"
+    },
+    "2": {
+      "item": "discord_mod:chhurpi_dog_treat"
+    },
+    "3": {
+      "item": "discord_mod:chhurpi_dog_treat"
+    }
+  },
+  "result": {
+    "item": "discord_mod:chhurpistone",
+    "count": 1
+  }
+}

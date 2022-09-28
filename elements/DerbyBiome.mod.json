@@ -53,7 +53,7 @@
     "biomeCategory": "PLAINS",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.5,
+    "baseHeight": 1.0,
     "heightVariation": 0.2,
     "spawnBiome": false,
     "spawnBiomeNether": false,

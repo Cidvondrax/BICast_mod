@@ -615,6 +615,62 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cobbled_pink_derby_block"
+    },
+    {
+      "name": "TradeMozzarellaforCheddar",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_mozzarellafor_cheddar",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheeseTrader",
+      "type": "livingentity",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese_trader"
+    },
+    {
+      "name": "ChhurpiDogTreat",
+      "type": "item",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chhurpi_dog_treat"
+    },
+    {
+      "name": "ChhurpiStone4ChhurpiDogTreat",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chhurpi_stone_4_chhurpi_dog_treat"
+    },
+    {
+      "name": "ChhurpiDogTreatx4ChhurpiStone",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chhurpi_dog_treatx_4_chhurpi_stone"
+    },
+    {
+      "name": "PinkDerbySurface",
+      "type": "biome",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_derby_surface"
     }
   ],
   "variable_elements": [],
@@ -645,18 +701,21 @@
       "item.discord_mod.gel_sword": "Gel Sword",
       "block.discord_mod.muenster_cheese_leaves": "MuensterCheese Leaves",
       "block.discord_mod.muenster_cheese_pressure_plate": "MuensterCheese Pressure Plate",
-      "item.discord_mod.rennet": "Rennet",
-      "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
       "item.discord_mod.slime_armor_armor_boots": "SlimeArmor Boots",
+      "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
+      "item.discord_mod.rennet": "Rennet",
+      "item.discord_mod.derby_wheel": "Derby Wheel",
       "item.discord_mod.nacho_cheese_bucket": "Nacho Cheese Bucket",
+      "block.discord_mod.cobbled_pink_derby_block": "Derby Cheese Block",
       "block.discord_mod.rubble_block": "Rubble Block",
       "block.discord_mod.muenster_cheese_wood": "MuensterCheese Wood",
       "biome.discord_mod.derby_biome": "Derby Biome",
       "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
       "item.discord_mod.irongolemtest_spawn_egg": "Irongolemtest Spawn Egg",
-      "block.discord_mod.muenster_cheese_fence": "MuensterCheese Fence",
-      "subtitles.monekeeee": "",
       "entity.discord_mod.irongolemtest": "Irongolemtest",
+      "subtitles.monekeeee": "",
+      "block.discord_mod.muenster_cheese_fence": "MuensterCheese Fence",
+      "block.discord_mod.rust_block": "Rust Block",
       "block.discord_mod.mozzarella_block": "Mozzarella Block",
       "itemGroup.tabcheese_dimension": "Cheese Dimension",
       "block.discord_mod.muenster_cheese_slab": "MuensterCheese Slab",
@@ -664,9 +723,13 @@
       "item.discord_mod.crab_spawn_egg": "Crab Spawn Egg",
       "entity.discord_mod.crab": "Crab",
       "biome.discord_mod.swiss_waste_land": "Swiss Waste Land",
+      "entity.discord_mod.cheese_trader": "Cheese Trader",
+      "block.discord_mod.cracked_aztec_brivk": "Aztec Brick",
+      "biome.discord_mod.pink_derby_surface": "Pink Derby Surface",
       "item.discord_mod.slime_armor_armor_chestplate": "SlimeArmor Chestplate",
       "block.discord_mod.cheeseblackone": "Cheddar Cheese Block",
       "block.discord_mod.nacho_cheese": "Nacho Cheese",
+      "block.discord_mod.coverd_aztec_brick": "Coverd Aztec Brick",
       "block.discord_mod.swiss_cheese_block": "Swiss Cheese Block",
       "block.discord_mod.muenster_cheese_log": "MuensterCheese Log",
       "entity.discord_mod.gorilla": "Gorilla",
@@ -676,6 +739,7 @@
       "fluid.discord_mod.nacho_cheese": "Nacho Cheese",
       "block.discord_mod.muenster_cheese_stairs": "MuensterCheese Stairs",
       "block.discord_mod.aztec_smooth_stone": "Aztec Brick",
+      "item.discord_mod.cheese_trader_spawn_egg": "Cheese Trader Spawn Egg",
       "item.discord_mod.slime_armor_armor_leggings": "SlimeArmor Leggings",
       "block.discord_mod.derby_cheese_block": "Derby Cheese Block",
       "item.discord_mod.cheese_cow_spawn_egg": "Cheese Cow Spawn Egg",
@@ -683,6 +747,7 @@
       "block.discord_mod.slime_grass": "Slime Grass",
       "block.discord_mod.bluecheeseblock": "BLUECHEESEBLOCK",
       "item.discord_mod.blue_cheese_zombie_spawn_egg": "Blue Cheese Zombie Spawn Egg",
+      "item.discord_mod.chhurpi_dog_treat": "Chhurpi Dog Treat",
       "block.discord_mod.muenster_cheese_planks": "MuensterCheese Planks",
       "block.discord_mod.pink_derby_block": "Derby Cheese Block",
       "biome.discord_mod.pink_derby_cave": "Pink Derby Cave",

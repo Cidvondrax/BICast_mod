@@ -11,6 +11,9 @@
       },
       {
         "value": "CUSTOM:PinkDerbyCave"
+      },
+      {
+        "value": "CUSTOM:PinkDerbySurface"
       }
     ],
     "worldGenType": "Normal world gen",
