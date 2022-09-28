@@ -18,6 +18,7 @@ import net.mcreator.discordmod.item.SlimeArmorArmorItem;
 import net.mcreator.discordmod.item.RennetItem;
 import net.mcreator.discordmod.item.NachoCheeseItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
+import net.mcreator.discordmod.item.GlassShardItem;
 import net.mcreator.discordmod.item.GelSwordItem;
 import net.mcreator.discordmod.item.DerbyWheelItem;
 import net.mcreator.discordmod.item.CurdItem;
@@ -94,6 +95,9 @@ public class DiscordModModItems {
 			DiscordModModTabs.TAB_CHEESE_DIMENSION);
 	public static final RegistryObject<Item> CRACKED_AZTEC_BRIVK = block(DiscordModModBlocks.CRACKED_AZTEC_BRIVK,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AZTECSLAB = block(DiscordModModBlocks.AZTECSLAB, DiscordModModTabs.TAB_CHEESE_DIMENSION);
+	public static final RegistryObject<Item> GLASS_SHARD = REGISTRY.register("glass_shard", () -> new GlassShardItem());
+	public static final RegistryObject<Item> CRACKEDGLASS = block(DiscordModModBlocks.CRACKEDGLASS, CreativeModeTab.TAB_DECORATIONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

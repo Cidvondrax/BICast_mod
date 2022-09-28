@@ -7,6 +7,10 @@ package net.mcreator.discordmod.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -28,6 +32,7 @@ import net.mcreator.discordmod.block.MuensterCheeseFenceBlock;
 import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
 import net.mcreator.discordmod.block.DerbyCheeseBlockBlock;
+import net.mcreator.discordmod.block.CrackedglassBlock;
 import net.mcreator.discordmod.block.CrackedAztecBrivkBlock;
 import net.mcreator.discordmod.block.CoverdAztecBrickBlock;
 import net.mcreator.discordmod.block.CoconujpegBlock;
@@ -36,6 +41,7 @@ import net.mcreator.discordmod.block.ChhurpistoneBlock;
 import net.mcreator.discordmod.block.CheesyDimensionPortalBlock;
 import net.mcreator.discordmod.block.CheeseblackoneBlock;
 import net.mcreator.discordmod.block.BLUECHEESEBLOCKBlock;
+import net.mcreator.discordmod.block.AztecslabBlock;
 import net.mcreator.discordmod.block.AztecSmoothStoneBlock;
 import net.mcreator.discordmod.block.AztecBrickBlock;
 import net.mcreator.discordmod.DiscordModMod;
@@ -79,4 +85,14 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> RUST_BLOCK = REGISTRY.register("rust_block", () -> new RustBlockBlock());
 	public static final RegistryObject<Block> COVERD_AZTEC_BRICK = REGISTRY.register("coverd_aztec_brick", () -> new CoverdAztecBrickBlock());
 	public static final RegistryObject<Block> CRACKED_AZTEC_BRIVK = REGISTRY.register("cracked_aztec_brivk", () -> new CrackedAztecBrivkBlock());
+	public static final RegistryObject<Block> AZTECSLAB = REGISTRY.register("aztecslab", () -> new AztecslabBlock());
+	public static final RegistryObject<Block> CRACKEDGLASS = REGISTRY.register("crackedglass", () -> new CrackedglassBlock());
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void clientSetup(FMLClientSetupEvent event) {
+			CrackedglassBlock.registerRenderLayer();
+		}
+	}
 }

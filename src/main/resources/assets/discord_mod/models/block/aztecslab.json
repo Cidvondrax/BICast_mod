@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "discord_mod:blocks/aztecbrick",
+    "top": "discord_mod:blocks/aztecbrick",
+    "side": "discord_mod:blocks/aztecbrick"
+  }
+}

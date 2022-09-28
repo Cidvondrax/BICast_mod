@@ -109,7 +109,7 @@
     "tameable": false,
     "breedTriggerItems": [
       {
-        "value": "CUSTOM:DerbyWheel"
+        "value": "CUSTOM:BlueCheeseFood"
       }
     ],
     "ranged": false,
