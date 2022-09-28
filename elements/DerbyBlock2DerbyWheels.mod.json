@@ -5,12 +5,12 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 2,
     "group": "",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:DerbyCheeseBlock"
       },
       {
         "value": ""
@@ -22,10 +22,10 @@
         "value": ""
       },
       {
-        "value": "Items.FLINT_AND_STEEL"
+        "value": ""
       },
       {
-        "value": "Items.GOLD_INGOT"
+        "value": ""
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:CheeseFuckery"
+      "value": "CUSTOM:DerbyWheel"
     },
-    "name": "chhc",
+    "name": "derby_block_2_derby_wheels",
     "namespace": "mod"
   }
 }

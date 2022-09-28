@@ -19,6 +19,7 @@ import net.mcreator.discordmod.item.RennetItem;
 import net.mcreator.discordmod.item.NachoCheeseItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GelSwordItem;
+import net.mcreator.discordmod.item.DerbyWheelItem;
 import net.mcreator.discordmod.item.CurdItem;
 import net.mcreator.discordmod.item.CheesyDimensionItem;
 import net.mcreator.discordmod.item.BlueCheeseFoodItem;
@@ -85,6 +86,7 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> IRONGOLEMTEST = REGISTRY.register("irongolemtest_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.IRONGOLEMTEST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> CHHURPISTONE = block(DiscordModModBlocks.CHHURPISTONE, DiscordModModTabs.TAB_CHEESE_DIMENSION);
+	public static final RegistryObject<Item> DERBY_WHEEL = REGISTRY.register("derby_wheel", () -> new DerbyWheelItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
