@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "discord_mod:block/destroyed_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "discord_mod:block/destroyed_dimension_portal_ns"
+    }
+  }
+}

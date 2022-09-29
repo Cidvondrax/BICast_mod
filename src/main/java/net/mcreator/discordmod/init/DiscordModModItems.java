@@ -20,6 +20,7 @@ import net.mcreator.discordmod.item.NachoCheeseItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GlassShardItem;
 import net.mcreator.discordmod.item.GelSwordItem;
+import net.mcreator.discordmod.item.DestroyedDimensionItem;
 import net.mcreator.discordmod.item.DerbyWheelItem;
 import net.mcreator.discordmod.item.CurdItem;
 import net.mcreator.discordmod.item.ChhurpiDogTreatItem;
@@ -102,6 +103,7 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> CRACKEDGLASS = block(DiscordModModBlocks.CRACKEDGLASS, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> GLASS_SHARD = REGISTRY.register("glass_shard", () -> new GlassShardItem());
 	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
+	public static final RegistryObject<Item> DESTROYED_DIMENSION = REGISTRY.register("destroyed_dimension", () -> new DestroyedDimensionItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

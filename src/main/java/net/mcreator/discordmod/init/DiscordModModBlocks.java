@@ -31,6 +31,7 @@ import net.mcreator.discordmod.block.MuensterCheeseFenceGateBlock;
 import net.mcreator.discordmod.block.MuensterCheeseFenceBlock;
 import net.mcreator.discordmod.block.MuensterCheeseButtonBlock;
 import net.mcreator.discordmod.block.MozzarellaBlockBlock;
+import net.mcreator.discordmod.block.DestroyedDimensionPortalBlock;
 import net.mcreator.discordmod.block.DerbyCheeseBlockBlock;
 import net.mcreator.discordmod.block.CrackedglassBlock;
 import net.mcreator.discordmod.block.CrackedAztecBrivkBlock;
@@ -87,6 +88,8 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> CRACKED_AZTEC_BRIVK = REGISTRY.register("cracked_aztec_brivk", () -> new CrackedAztecBrivkBlock());
 	public static final RegistryObject<Block> AZTECSLAB = REGISTRY.register("aztecslab", () -> new AztecslabBlock());
 	public static final RegistryObject<Block> CRACKEDGLASS = REGISTRY.register("crackedglass", () -> new CrackedglassBlock());
+	public static final RegistryObject<Block> DESTROYED_DIMENSION_PORTAL = REGISTRY.register("destroyed_dimension_portal",
+			() -> new DestroyedDimensionPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

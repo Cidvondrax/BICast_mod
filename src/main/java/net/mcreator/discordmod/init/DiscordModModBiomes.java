@@ -21,6 +21,7 @@ import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.Biome;
@@ -32,6 +33,7 @@ import net.minecraft.core.Holder;
 import net.mcreator.discordmod.world.biome.SwissWasteLandBiome;
 import net.mcreator.discordmod.world.biome.PinkDerbySurfaceBiome;
 import net.mcreator.discordmod.world.biome.PinkDerbyCaveBiome;
+import net.mcreator.discordmod.world.biome.DestroyedBiomeBiome;
 import net.mcreator.discordmod.world.biome.DerbyBiomeBiome;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -48,6 +50,7 @@ public class DiscordModModBiomes {
 	public static final RegistryObject<Biome> DERBY_BIOME = REGISTRY.register("derby_biome", () -> DerbyBiomeBiome.createBiome());
 	public static final RegistryObject<Biome> PINK_DERBY_CAVE = REGISTRY.register("pink_derby_cave", () -> PinkDerbyCaveBiome.createBiome());
 	public static final RegistryObject<Biome> PINK_DERBY_SURFACE = REGISTRY.register("pink_derby_surface", () -> PinkDerbySurfaceBiome.createBiome());
+	public static final RegistryObject<Biome> DESTROYED_BIOME = REGISTRY.register("destroyed_biome", () -> DestroyedBiomeBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -56,6 +59,7 @@ public class DiscordModModBiomes {
 			DerbyBiomeBiome.init();
 			PinkDerbyCaveBiome.init();
 			PinkDerbySurfaceBiome.init();
+			DestroyedBiomeBiome.init();
 		});
 	}
 
@@ -74,8 +78,8 @@ public class DiscordModModBiomes {
 					// Inject biomes to biome source
 					if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
-						parameters.add(new Pair<>(PinkDerbyCaveBiome.PARAMETER_POINT_UNDERGROUND,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, PINK_DERBY_CAVE.getId()))));
+						parameters.add(new Pair<>(DestroyedBiomeBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, DESTROYED_BIOME.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -88,11 +92,8 @@ public class DiscordModModBiomes {
 						SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-							surfaceRules.add(1,
-									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, PINK_DERBY_CAVE.getId()),
-											DiscordModModBlocks.DERBY_CHEESE_BLOCK.get().defaultBlockState(),
-											DiscordModModBlocks.PINK_DERBY_BLOCK.get().defaultBlockState(),
-											DiscordModModBlocks.PINK_DERBY_BLOCK.get().defaultBlockState()));
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DESTROYED_BIOME.getId()),
+									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.WATER.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
@@ -108,14 +109,18 @@ public class DiscordModModBiomes {
 			}
 		}
 
-		private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock,
-				BlockState underwaterBlock) {
-			return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
-					SurfaceRules.sequence(
-							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
-									SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)),
-											SurfaceRules.state(underwaterBlock))),
-							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock))));
+		private static SurfaceRules.RuleSource preliminarySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock,
+				BlockState undergroundBlock, BlockState underwaterBlock) {
+			return SurfaceRules
+					.ifTrue(SurfaceRules.isBiome(biomeKey),
+							SurfaceRules
+									.ifTrue(SurfaceRules.abovePreliminarySurface(),
+											SurfaceRules.sequence(
+													SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
+															SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0),
+																	SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
+													SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR),
+															SurfaceRules.state(undergroundBlock)))));
 		}
 	}
 }

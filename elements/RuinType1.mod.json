@@ -19,6 +19,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:DerbyBiome"
+      },
+      {
+        "value": "CUSTOM:DestroyedBiome"
       }
     ],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
