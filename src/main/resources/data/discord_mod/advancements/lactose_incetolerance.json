@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "discord_mod:cheeseblackone"
+    },
+    "title": {
+      "translate": "advancements.lactose_incetolerance.title"
+    },
+    "description": {
+      "translate": "advancements.lactose_incetolerance.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lactose_incetolerance": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "discord_mod:cheesy_dimension"
+      }
+    }
+  },
+  "parent": "discord_mod:what_are_you_doing_in_my_swamp"
+}

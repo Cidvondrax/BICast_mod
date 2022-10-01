@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:vine"
+    },
+    "title": {
+      "translate": "advancements.what_are_you_doing_in_my_swamp.title"
+    },
+    "description": {
+      "translate": "advancements.what_are_you_doing_in_my_swamp.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "what_are_you_doing_in_my_swamp": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "swamp"
+      }
+    }
+  }
+}
