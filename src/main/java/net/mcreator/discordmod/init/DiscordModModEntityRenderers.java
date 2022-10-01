@@ -17,6 +17,7 @@ import net.mcreator.discordmod.client.renderer.GorillaRenderer;
 import net.mcreator.discordmod.client.renderer.CrabRenderer;
 import net.mcreator.discordmod.client.renderer.CheeseTraderRenderer;
 import net.mcreator.discordmod.client.renderer.CheeseCowRenderer;
+import net.mcreator.discordmod.client.renderer.CasuMarzuZombieRenderer;
 import net.mcreator.discordmod.client.renderer.BlueCheeseZombieRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -31,6 +32,7 @@ public class DiscordModModEntityRenderers {
 		event.registerEntityRenderer(DiscordModModEntities.CHEESE_COW.get(), CheeseCowRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.IRONGOLEMTEST.get(), IrongolemtestRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.CHEESE_TRADER.get(), CheeseTraderRenderer::new);
+		event.registerEntityRenderer(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), CasuMarzuZombieRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.TURRET.get(), TurretRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.TURRET_PROJECTILE.get(), ThrownItemRenderer::new);
 	}

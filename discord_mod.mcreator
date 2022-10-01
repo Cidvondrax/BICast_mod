@@ -724,12 +724,18 @@
       }
     },
     {
-      "name": "PinkSlimeBlock",
-      "type": "block",
-      "sortid": 87,
+      "name": "PinkSlimeArmourArmor",
+      "type": "armor",
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_slime_block"
+      "registry_name": "pink_slime_armour_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     },
     {
       "name": "SlimeDirt",
@@ -748,18 +754,12 @@
       "registry_name": "slime_biome"
     },
     {
-      "name": "PinkSlimeArmourArmor",
-      "type": "armor",
-      "sortid": 89,
+      "name": "PinkSlimeArmourArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_slime_armour_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
+      "registry_name": "pink_slime_armour_armor_boots_recipe"
     },
     {
       "name": "PinkSlimeArmourArmorHelmetRecipe",
@@ -778,22 +778,6 @@
       "registry_name": "pink_slime_armour_armor_body_recipe"
     },
     {
-      "name": "PinkSlimeArmourArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 92,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_slime_armour_armor_leggings_recipe"
-    },
-    {
-      "name": "PinkSlimeArmourArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_slime_armour_armor_boots_recipe"
-    },
-    {
       "name": "PinkSlimeArmourArmorBodyTickEvent",
       "type": "procedure",
       "sortid": 94,
@@ -808,6 +792,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "PinkSlimeBlock",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_slime_block"
+    },
+    {
+      "name": "PinkSlimeArmourArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_slime_armour_armor_leggings_recipe"
     },
     {
       "name": "SlimeDimension",
@@ -827,6 +827,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "turret"
+    },
+    {
+      "name": "CasuMarzuWheelPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "casu_marzu_wheel_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CasuMarzuZombie",
+      "type": "livingentity",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "casu_marzu_zombie"
+    },
+    {
+      "name": "CasuMarzuWheel",
+      "type": "item",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "casu_marzu_wheel"
     }
   ],
   "variable_elements": [],
@@ -853,15 +885,13 @@
       "block.discord_mod.chhurpistone": "Chhurpi stone",
       "item.discord_mod.curd": "Curd",
       "item.discord_mod.gorilla_spawn_egg": "Gorilla Spawn Egg",
-      "block.discord_mod.pink_slime_block": "Pink Slime Block",
       "subtitles.crebravae": "",
       "item.discord_mod.gel_sword": "Gel Sword",
-      "biome.discord_mod.slime_biome": "Slime Biome",
       "block.discord_mod.muenster_cheese_leaves": "MuensterCheese Leaves",
       "block.discord_mod.muenster_cheese_pressure_plate": "MuensterCheese Pressure Plate",
-      "item.discord_mod.slime_armor_armor_boots": "SlimeArmor Boots",
-      "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
       "item.discord_mod.rennet": "Rennet",
+      "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
+      "item.discord_mod.slime_armor_armor_boots": "SlimeArmor Boots",
       "item.discord_mod.derby_wheel": "Derby Wheel",
       "item.discord_mod.nacho_cheese_bucket": "Nacho Cheese Bucket",
       "block.discord_mod.cobbled_pink_derby_block": "Derby Cheese Block",
@@ -870,17 +900,14 @@
       "biome.discord_mod.derby_biome": "Derby Biome",
       "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
       "item.discord_mod.irongolemtest_spawn_egg": "Irongolemtest Spawn Egg",
-      "entity.discord_mod.turret": "Turret",
-      "block.discord_mod.muenster_cheese_fence": "MuensterCheese Fence",
-      "subtitles.monekeeee": "",
       "entity.discord_mod.irongolemtest": "Irongolemtest",
+      "subtitles.monekeeee": "",
+      "block.discord_mod.muenster_cheese_fence": "MuensterCheese Fence",
       "block.discord_mod.rust_block": "Rust Block",
       "block.discord_mod.mozzarella_block": "Mozzarella Block",
       "itemGroup.tabcheese_dimension": "Cheese Dimension",
       "block.discord_mod.muenster_cheese_slab": "MuensterCheese Slab",
       "item.discord_mod.slime_armor_armor_helmet": "SlimeArmor Helmet",
-      "item.discord_mod.pink_slime_armour_armor_boots": "PinkSlimeArmour Boots",
-      "block.discord_mod.slime_dirt": "Slime Grass",
       "item.discord_mod.crab_spawn_egg": "Crab Spawn Egg",
       "entity.discord_mod.crab": "Crab",
       "biome.discord_mod.swiss_waste_land": "Swiss Waste Land",
@@ -890,23 +917,18 @@
       "block.discord_mod.cracked_aztec_brivk": "Aztec Brick",
       "biome.discord_mod.pink_derby_surface": "Pink Derby Surface",
       "item.discord_mod.slime_armor_armor_chestplate": "SlimeArmor Chestplate",
-      "item.discord_mod.pink_slime_armour_armor_leggings": "PinkSlimeArmour Leggings",
       "block.discord_mod.cheeseblackone": "Cheddar Cheese Block",
       "block.discord_mod.nacho_cheese": "Nacho Cheese",
       "block.discord_mod.coverd_aztec_brick": "Coverd Aztec Brick",
       "block.discord_mod.swiss_cheese_block": "Swiss Cheese Block",
       "block.discord_mod.muenster_cheese_log": "MuensterCheese Log",
       "item.discord_mod.destroyed_dimension": "Destroyed Dimension Portal Igniter",
-      "item.discord_mod.slime_dimension": "Slime Dimension Portal Igniter",
       "entity.discord_mod.gorilla": "Gorilla",
-      "item.discord_mod.pink_slime_armour_armor_chestplate": "PinkSlimeArmour Chestplate",
       "entity.discord_mod.cheese_cow": "Cheese Cow",
-      "item.discord_mod.turret_spawn_egg": "Turret Spawn Egg",
       "entity.discord_mod.blue_cheese_zombie": "Blue Cheese Zombie",
       "item.discord_mod.cheesy_dimension": "Cheesy Dimension Portal Igniter",
       "fluid.discord_mod.nacho_cheese": "Nacho Cheese",
       "block.discord_mod.crackedglass": "Cracked Glass",
-      "item.discord_mod.pink_slime_armour_armor_helmet": "PinkSlimeArmour Helmet",
       "block.discord_mod.muenster_cheese_stairs": "MuensterCheese Stairs",
       "block.discord_mod.aztec_smooth_stone": "Aztec Brick",
       "biome.discord_mod.destroyed_biome": "Destroyed Biome",

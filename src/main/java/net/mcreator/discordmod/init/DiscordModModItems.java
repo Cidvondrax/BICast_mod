@@ -27,6 +27,7 @@ import net.mcreator.discordmod.item.DerbyWheelItem;
 import net.mcreator.discordmod.item.CurdItem;
 import net.mcreator.discordmod.item.ChhurpiDogTreatItem;
 import net.mcreator.discordmod.item.CheesyDimensionItem;
+import net.mcreator.discordmod.item.CasuMarzuWheelItem;
 import net.mcreator.discordmod.item.BlueCheeseFoodItem;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -107,7 +108,10 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
 	public static final RegistryObject<Item> DESTROYED_DIMENSION = REGISTRY.register("destroyed_dimension", () -> new DestroyedDimensionItem());
 	public static final RegistryObject<Item> PINK_SLIME_BLOCK = block(DiscordModModBlocks.PINK_SLIME_BLOCK, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> CASU_MARZU_WHEEL = REGISTRY.register("casu_marzu_wheel", () -> new CasuMarzuWheelItem());
 	public static final RegistryObject<Item> SLIME_DIRT = block(DiscordModModBlocks.SLIME_DIRT, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> CASU_MARZU_ZOMBIE = REGISTRY.register("casu_marzu_zombie_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.CASU_MARZU_ZOMBIE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> PINK_SLIME_ARMOUR_ARMOR_HELMET = REGISTRY.register("pink_slime_armour_armor_helmet",
 			() -> new PinkSlimeArmourArmorItem.Helmet());
 	public static final RegistryObject<Item> PINK_SLIME_ARMOUR_ARMOR_CHESTPLATE = REGISTRY.register("pink_slime_armour_armor_chestplate",
