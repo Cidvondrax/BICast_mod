@@ -1,26 +1,15 @@
 
 package net.mcreator.discordmod.block;
 
-import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.discordmod.init.DiscordModModItems;
-
-import java.util.List;
-import java.util.Collections;
 
 public class SlimeOreBlock extends Block {
+
 	public SlimeOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 5f).requiresCorrectToolForDrops());
+
 	}
 
 	@Override
@@ -37,9 +26,11 @@ public class SlimeOreBlock extends Block {
 
 	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(DiscordModModItems.SLIME.get()));
+		return Collections.singletonList(new ItemStack(DiscordModModItems.DELETED_MOD_ELEMENT.get()));
 	}
+
 }

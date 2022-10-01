@@ -45,7 +45,6 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> GORILLA = REGISTRY.register("gorilla_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.GORILLA, -13426407, -15396848, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> BLUE_SLIME_BLOCK = block(DiscordModModBlocks.BLUE_SLIME_BLOCK, CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Item> PINK_SLIME_BLOCK = block(DiscordModModBlocks.PINK_SLIME_BLOCK, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> CHEESEBLACKONE = block(DiscordModModBlocks.CHEESEBLACKONE, DiscordModModTabs.TAB_CHEESE_DIMENSION);
 	public static final RegistryObject<Item> AZTEC_BRICK = block(DiscordModModBlocks.AZTEC_BRICK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZTEC_SMOOTH_STONE = block(DiscordModModBlocks.AZTEC_SMOOTH_STONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -123,6 +122,7 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> GLASS_SHARD = REGISTRY.register("glass_shard", () -> new GlassShardItem());
 	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
 	public static final RegistryObject<Item> DESTROYED_DIMENSION = REGISTRY.register("destroyed_dimension", () -> new DestroyedDimensionItem());
+	public static final RegistryObject<Item> PINK_SLIME_BLOCK = block(DiscordModModBlocks.PINK_SLIME_BLOCK, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> CASU_MARZU_WHEEL = REGISTRY.register("casu_marzu_wheel", () -> new CasuMarzuWheelItem());
 	public static final RegistryObject<Item> SLIME_DIRT = block(DiscordModModBlocks.SLIME_DIRT, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> CASU_MARZU_ZOMBIE = REGISTRY.register("casu_marzu_zombie_spawn_egg",

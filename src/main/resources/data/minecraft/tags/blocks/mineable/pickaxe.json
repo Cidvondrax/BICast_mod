@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "discord_mod:chhurpistone",
     "discord_mod:slime_ore",
-    "discord_mod:slime_block"
+    "discord_mod:slime_block",
+    "discord_mod:chhurpistone"
   ]
 }

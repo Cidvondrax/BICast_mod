@@ -7,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "discord_mod:slime"
+      "item": "discord_mod:deleted_mod_element"
     },
     "1": {
-      "item": "discord_mod:slime"
+      "item": "discord_mod:deleted_mod_element"
     },
     "2": {
-      "item": "discord_mod:slime"
+      "item": "discord_mod:deleted_mod_element"
     },
     "3": {
       "item": "minecraft:stick"
@@ -23,7 +23,7 @@
     }
   },
   "result": {
-    "item": "discord_mod:slime_axe",
+    "item": "discord_mod:deleted_mod_element",
     "count": 1
   }
 }

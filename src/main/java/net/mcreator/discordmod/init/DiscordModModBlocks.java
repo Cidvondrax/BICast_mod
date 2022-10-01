@@ -57,7 +57,6 @@ public class DiscordModModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, DiscordModMod.MODID);
 	public static final RegistryObject<Block> COCONUJPEG = REGISTRY.register("coconujpeg", () -> new CoconujpegBlock());
 	public static final RegistryObject<Block> BLUE_SLIME_BLOCK = REGISTRY.register("blue_slime_block", () -> new BlueSlimeBlockBlock());
-	public static final RegistryObject<Block> PINK_SLIME_BLOCK = REGISTRY.register("pink_slime_block", () -> new PinkSlimeBlockBlock());
 	public static final RegistryObject<Block> CHEESEBLACKONE = REGISTRY.register("cheeseblackone", () -> new CheeseblackoneBlock());
 	public static final RegistryObject<Block> AZTEC_BRICK = REGISTRY.register("aztec_brick", () -> new AztecBrickBlock());
 	public static final RegistryObject<Block> AZTEC_SMOOTH_STONE = REGISTRY.register("aztec_smooth_stone", () -> new AztecSmoothStoneBlock());
@@ -100,6 +99,7 @@ public class DiscordModModBlocks {
 	public static final RegistryObject<Block> CRACKEDGLASS = REGISTRY.register("crackedglass", () -> new CrackedglassBlock());
 	public static final RegistryObject<Block> DESTROYED_DIMENSION_PORTAL = REGISTRY.register("destroyed_dimension_portal",
 			() -> new DestroyedDimensionPortalBlock());
+	public static final RegistryObject<Block> PINK_SLIME_BLOCK = REGISTRY.register("pink_slime_block", () -> new PinkSlimeBlockBlock());
 	public static final RegistryObject<Block> SLIME_DIRT = REGISTRY.register("slime_dirt", () -> new SlimeDirtBlock());
 	public static final RegistryObject<Block> SLIME_DIMENSION_PORTAL = REGISTRY.register("slime_dimension_portal",
 			() -> new SlimeDimensionPortalBlock());
