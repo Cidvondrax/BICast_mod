@@ -6,7 +6,8 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coconujpeg"
+      "registry_name": "coconujpeg",
+      "path": "~/Misc"
     },
     {
       "name": "Crab",
@@ -14,7 +15,8 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crab"
+      "registry_name": "crab",
+      "path": "~/Misc"
     },
     {
       "name": "Gorilla",
@@ -22,7 +24,8 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gorilla"
+      "registry_name": "gorilla",
+      "path": "~/Misc"
     },
     {
       "name": "Cheeseblackone",
@@ -30,7 +33,8 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cheeseblackone"
+      "registry_name": "cheeseblackone",
+      "path": "~/Cheese"
     },
     {
       "name": "AztecBrick",
@@ -38,7 +42,8 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aztec_brick"
+      "registry_name": "aztec_brick",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "AztecSmoothStone",
@@ -46,7 +51,8 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aztec_smooth_stone"
+      "registry_name": "aztec_smooth_stone",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "Rennet",
@@ -54,7 +60,8 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rennet"
+      "registry_name": "rennet",
+      "path": "~/Slime"
     },
     {
       "name": "Rennetdrop",
@@ -62,7 +69,8 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rennetdrop"
+      "registry_name": "rennetdrop",
+      "path": "~/Slime"
     },
     {
       "name": "SlimeGrass",
@@ -70,7 +78,8 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "slime_grass"
+      "registry_name": "slime_grass",
+      "path": "~/Slime"
     },
     {
       "name": "Curd",
@@ -78,7 +87,8 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "curd"
+      "registry_name": "curd",
+      "path": "~/Cheese"
     },
     {
       "name": "MilkRennetCurd",
@@ -86,7 +96,8 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "milk_rennet_curd"
+      "registry_name": "milk_rennet_curd",
+      "path": "~/Cheese"
     },
     {
       "name": "MozzarellaBall",
@@ -94,7 +105,8 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mozzarella_ball"
+      "registry_name": "mozzarella_ball",
+      "path": "~/Cheese"
     },
     {
       "name": "Mozzarellaballrecipe",
@@ -102,7 +114,8 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mozzarellaballrecipe"
+      "registry_name": "mozzarellaballrecipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MozzarellaBlock",
@@ -110,7 +123,8 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mozzarella_block"
+      "registry_name": "mozzarella_block",
+      "path": "~/Cheese"
     },
     {
       "name": "BLUECHEESEBLOCK",
@@ -118,7 +132,8 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bluecheeseblock"
+      "registry_name": "bluecheeseblock",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseWood",
@@ -126,7 +141,8 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_wood"
+      "registry_name": "muenster_cheese_wood",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseLog",
@@ -134,7 +150,8 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_log"
+      "registry_name": "muenster_cheese_log",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheesePlanks",
@@ -142,7 +159,8 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_planks"
+      "registry_name": "muenster_cheese_planks",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseLeaves",
@@ -150,7 +168,8 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_leaves"
+      "registry_name": "muenster_cheese_leaves",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseStairs",
@@ -158,7 +177,8 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_stairs"
+      "registry_name": "muenster_cheese_stairs",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseSlab",
@@ -166,7 +186,8 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_slab"
+      "registry_name": "muenster_cheese_slab",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseFence",
@@ -174,7 +195,8 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_fence"
+      "registry_name": "muenster_cheese_fence",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseFenceGate",
@@ -182,7 +204,8 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_fence_gate"
+      "registry_name": "muenster_cheese_fence_gate",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheesePressurePlate",
@@ -190,7 +213,8 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_pressure_plate"
+      "registry_name": "muenster_cheese_pressure_plate",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseButton",
@@ -198,7 +222,8 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_button"
+      "registry_name": "muenster_cheese_button",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseWoodRecipe",
@@ -206,7 +231,8 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_wood_recipe"
+      "registry_name": "muenster_cheese_wood_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheesePlanksRecipe",
@@ -214,7 +240,8 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_planks_recipe"
+      "registry_name": "muenster_cheese_planks_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseStairsRecipe",
@@ -222,7 +249,8 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_stairs_recipe"
+      "registry_name": "muenster_cheese_stairs_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseSlabRecipe",
@@ -230,7 +258,8 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_slab_recipe"
+      "registry_name": "muenster_cheese_slab_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseFenceRecipe",
@@ -238,7 +267,8 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_fence_recipe"
+      "registry_name": "muenster_cheese_fence_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseFenceGateRecipe",
@@ -246,7 +276,8 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_fence_gate_recipe"
+      "registry_name": "muenster_cheese_fence_gate_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheesePressurePlateRecipe",
@@ -254,7 +285,8 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_pressure_plate_recipe"
+      "registry_name": "muenster_cheese_pressure_plate_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseButtonRecipe",
@@ -262,7 +294,8 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_button_recipe"
+      "registry_name": "muenster_cheese_button_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "MuensterCheeseStickRecipe",
@@ -270,7 +303,8 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "muenster_cheese_stick_recipe"
+      "registry_name": "muenster_cheese_stick_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "GelSwordLivingEntityIsHitWithTool",
@@ -286,7 +320,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Slime"
     },
     {
       "name": "GelSword",
@@ -294,7 +329,8 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gel_sword"
+      "registry_name": "gel_sword",
+      "path": "~/Cheese"
     },
     {
       "name": "CoconujpegBlockDestroyedByPlayer",
@@ -322,7 +358,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Misc"
     },
     {
       "name": "SlimeArmorArmor",
@@ -336,7 +373,8 @@
         "el": true,
         "eb": true,
         "ec": true
-      }
+      },
+      "path": "~/Slime"
     },
     {
       "name": "SlimeArmorArmorHelmetRecipe",
@@ -344,7 +382,8 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "slime_armor_armor_helmet_recipe"
+      "registry_name": "slime_armor_armor_helmet_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "SlimeArmorArmorBodyRecipe",
@@ -352,7 +391,8 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "slime_armor_armor_body_recipe"
+      "registry_name": "slime_armor_armor_body_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "SlimeArmorArmorLeggingsRecipe",
@@ -360,7 +400,8 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "slime_armor_armor_leggings_recipe"
+      "registry_name": "slime_armor_armor_leggings_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "SlimeArmorArmorBootsRecipe",
@@ -368,7 +409,8 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "slime_armor_armor_boots_recipe"
+      "registry_name": "slime_armor_armor_boots_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "SlimeArmorArmorBodyTickEvent",
@@ -384,7 +426,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Slime"
     },
     {
       "name": "SwissWasteLand",
@@ -392,7 +435,8 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swiss_waste_land"
+      "registry_name": "swiss_waste_land",
+      "path": "~/Cheese"
     },
     {
       "name": "BlueCheeseZombie",
@@ -400,7 +444,8 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blue_cheese_zombie"
+      "registry_name": "blue_cheese_zombie",
+      "path": "~/Cheese"
     },
     {
       "name": "MozzarellaBallsx4MozzarellaBlock",
@@ -408,7 +453,8 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mozzarella_ballsx_4_mozzarella_block"
+      "registry_name": "mozzarella_ballsx_4_mozzarella_block",
+      "path": "~/Cheese"
     },
     {
       "name": "BlueCheeseFood",
@@ -416,7 +462,8 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blue_cheese_food"
+      "registry_name": "blue_cheese_food",
+      "path": "~/Cheese"
     },
     {
       "name": "BlueCheeseItemx2BlueCheeseBlock",
@@ -424,7 +471,8 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blue_cheese_itemx_2_blue_cheese_block"
+      "registry_name": "blue_cheese_itemx_2_blue_cheese_block",
+      "path": "~/Cheese"
     },
     {
       "name": "BlueCheeseZombieloottable",
@@ -432,7 +480,8 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blue_cheese_zombieloottable"
+      "registry_name": "blue_cheese_zombieloottable",
+      "path": "~/Cheese"
     },
     {
       "name": "CheesyDimension",
@@ -443,7 +492,8 @@
       "registry_name": "cheesy_dimension",
       "metadata": {
         "ep": true
-      }
+      },
+      "path": "~/Cheese"
     },
     {
       "name": "SwissCheeseBlock",
@@ -451,7 +501,8 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swiss_cheese_block"
+      "registry_name": "swiss_cheese_block",
+      "path": "~/Cheese"
     },
     {
       "name": "DerbyCheeseBlock",
@@ -459,7 +510,8 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "derby_cheese_block"
+      "registry_name": "derby_cheese_block",
+      "path": "~/Cheese"
     },
     {
       "name": "Mozzerrellab",
@@ -467,7 +519,8 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mozzerrellab"
+      "registry_name": "mozzerrellab",
+      "path": "~/Cheese"
     },
     {
       "name": "RubbleBlock",
@@ -475,7 +528,8 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rubble_block"
+      "registry_name": "rubble_block",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "FRightClickedOnEntity",
@@ -491,7 +545,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Cheese"
     },
     {
       "name": "CheeseCow",
@@ -499,7 +554,8 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cheese_cow"
+      "registry_name": "cheese_cow",
+      "path": "~/Cheese"
     },
     {
       "name": "NachoCheese",
@@ -510,7 +566,8 @@
       "registry_name": "nacho_cheese",
       "metadata": {
         "gb": true
-      }
+      },
+      "path": "~/Cheese"
     },
     {
       "name": "PinkDerbyBlock",
@@ -518,7 +575,8 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_derby_block"
+      "registry_name": "pink_derby_block",
+      "path": "~/Cheese"
     },
     {
       "name": "DerbyBiome",
@@ -526,7 +584,8 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "derby_biome"
+      "registry_name": "derby_biome",
+      "path": "~/Cheese"
     },
     {
       "name": "Irongolemtest",
@@ -534,7 +593,8 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "irongolemtest"
+      "registry_name": "irongolemtest",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "CheeseDimension",
@@ -542,7 +602,8 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cheese_dimension"
+      "registry_name": "cheese_dimension",
+      "path": "~/Cheese"
     },
     {
       "name": "Chhurpistone",
@@ -550,7 +611,8 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chhurpistone"
+      "registry_name": "chhurpistone",
+      "path": "~/Cheese"
     },
     {
       "name": "PinkDerbyCave",
@@ -558,7 +620,8 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_derby_cave"
+      "registry_name": "pink_derby_cave",
+      "path": "~/Cheese"
     },
     {
       "name": "DerbyBlock2DerbyWheels",
@@ -566,7 +629,8 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "derby_block_2_derby_wheels"
+      "registry_name": "derby_block_2_derby_wheels",
+      "path": "~/Cheese"
     },
     {
       "name": "DerbyWheel",
@@ -574,7 +638,8 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "derby_wheel"
+      "registry_name": "derby_wheel",
+      "path": "~/Cheese"
     },
     {
       "name": "CoverdAztecBrick",
@@ -582,7 +647,8 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coverd_aztec_brick"
+      "registry_name": "coverd_aztec_brick",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "RustBlock",
@@ -590,7 +656,8 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rust_block"
+      "registry_name": "rust_block",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "CheeseParticle",
@@ -598,7 +665,8 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cheese_particle"
+      "registry_name": "cheese_particle",
+      "path": "~/Cheese"
     },
     {
       "name": "CrackedAztecBrivk",
@@ -606,7 +674,8 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cracked_aztec_brivk"
+      "registry_name": "cracked_aztec_brivk",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "CobbledPinkDerbyBlock",
@@ -614,7 +683,8 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cobbled_pink_derby_block"
+      "registry_name": "cobbled_pink_derby_block",
+      "path": "~/Cheese"
     },
     {
       "name": "Crackedglass",
@@ -622,7 +692,8 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crackedglass"
+      "registry_name": "crackedglass",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "Aztecslab",
@@ -630,7 +701,8 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aztecslab"
+      "registry_name": "aztecslab",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "GlassShard",
@@ -638,7 +710,8 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glass_shard"
+      "registry_name": "glass_shard",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "RuinType1",
@@ -646,7 +719,8 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ruin_type_1"
+      "registry_name": "ruin_type_1",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "TradeMozzarellaforCheddar",
@@ -662,7 +736,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Cheese"
     },
     {
       "name": "ChhurpiStone4ChhurpiDogTreat",
@@ -670,7 +745,8 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chhurpi_stone_4_chhurpi_dog_treat"
+      "registry_name": "chhurpi_stone_4_chhurpi_dog_treat",
+      "path": "~/Cheese"
     },
     {
       "name": "ChhurpiDogTreatx4ChhurpiStone",
@@ -678,7 +754,8 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chhurpi_dog_treatx_4_chhurpi_stone"
+      "registry_name": "chhurpi_dog_treatx_4_chhurpi_stone",
+      "path": "~/Cheese"
     },
     {
       "name": "CheeseTrader",
@@ -686,7 +763,8 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cheese_trader"
+      "registry_name": "cheese_trader",
+      "path": "~/Cheese"
     },
     {
       "name": "PinkDerbySurface",
@@ -694,7 +772,8 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_derby_surface"
+      "registry_name": "pink_derby_surface",
+      "path": "~/Cheese"
     },
     {
       "name": "ChhurpiDogTreat",
@@ -702,7 +781,8 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chhurpi_dog_treat"
+      "registry_name": "chhurpi_dog_treat",
+      "path": "~/Cheese"
     },
     {
       "name": "DestroyedBiome",
@@ -710,7 +790,8 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "destroyed_biome"
+      "registry_name": "destroyed_biome",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "DestroyedDimension",
@@ -721,7 +802,8 @@
       "registry_name": "destroyed_dimension",
       "metadata": {
         "ep": true
-      }
+      },
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "PinkSlimeArmourArmor",
@@ -735,7 +817,8 @@
         "el": true,
         "eb": true,
         "ec": true
-      }
+      },
+      "path": "~/Slime"
     },
     {
       "name": "SlimeDirt",
@@ -743,7 +826,8 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "slime_dirt"
+      "registry_name": "slime_dirt",
+      "path": "~/Slime"
     },
     {
       "name": "SlimeBiome",
@@ -751,7 +835,8 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "slime_biome"
+      "registry_name": "slime_biome",
+      "path": "~/Slime"
     },
     {
       "name": "PinkSlimeArmourArmorBootsRecipe",
@@ -759,7 +844,8 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_slime_armour_armor_boots_recipe"
+      "registry_name": "pink_slime_armour_armor_boots_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "PinkSlimeArmourArmorHelmetRecipe",
@@ -767,7 +853,8 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_slime_armour_armor_helmet_recipe"
+      "registry_name": "pink_slime_armour_armor_helmet_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "PinkSlimeArmourArmorBodyRecipe",
@@ -775,7 +862,8 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_slime_armour_armor_body_recipe"
+      "registry_name": "pink_slime_armour_armor_body_recipe",
+      "path": "~/Cheese"
     },
     {
       "name": "PinkSlimeArmourArmorBodyTickEvent",
@@ -791,7 +879,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Slime"
     },
     {
       "name": "PinkSlimeBlock",
@@ -799,7 +888,8 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_slime_block"
+      "registry_name": "pink_slime_block",
+      "path": "~/Slime"
     },
     {
       "name": "PinkSlimeArmourArmorLeggingsRecipe",
@@ -807,7 +897,8 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pink_slime_armour_armor_leggings_recipe"
+      "registry_name": "pink_slime_armour_armor_leggings_recipe",
+      "path": "~/Slime"
     },
     {
       "name": "SlimeDimension",
@@ -818,7 +909,8 @@
       "registry_name": "slime_dimension",
       "metadata": {
         "ep": true
-      }
+      },
+      "path": "~/Cheese"
     },
     {
       "name": "Turret",
@@ -826,7 +918,8 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "turret"
+      "registry_name": "turret",
+      "path": "~/DestroyedDimension"
     },
     {
       "name": "CasuMarzuWheelPlayerFinishesUsingItem",
@@ -842,7 +935,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Cheese"
     },
     {
       "name": "CasuMarzuZombie",
@@ -850,7 +944,8 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "casu_marzu_zombie"
+      "registry_name": "casu_marzu_zombie",
+      "path": "~/Cheese"
     },
     {
       "name": "CasuMarzuWheel",
@@ -858,7 +953,8 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "casu_marzu_wheel"
+      "registry_name": "casu_marzu_wheel",
+      "path": "~/Cheese"
     },
     {
       "name": "BlueSlimeBlock",
@@ -1028,7 +1124,8 @@
       "sortid": 97,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "what_are_you_doing_in_my_swamp"
+      "registry_name": "what_are_you_doing_in_my_swamp",
+      "path": "~/Misc"
     },
     {
       "name": "LactoseIncetolerance",
@@ -1036,7 +1133,8 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lactose_incetolerance"
+      "registry_name": "lactose_incetolerance",
+      "path": "~/Cheese"
     }
   ],
   "variable_elements": [],
@@ -1060,6 +1158,7 @@
   ],
   "language_map": {
     "en_us": {
+      "item.discord_mod.slime_axe": "Slime Axe",
       "block.discord_mod.chhurpistone": "Chhurpi stone",
       "item.discord_mod.curd": "Curd",
       "item.discord_mod.gorilla_spawn_egg": "Gorilla Spawn Egg",
@@ -1070,9 +1169,9 @@
       "block.discord_mod.muenster_cheese_leaves": "MuensterCheese Leaves",
       "item.discord_mod.casu_marzu_wheel": "Casu Marzu Wheel",
       "block.discord_mod.muenster_cheese_pressure_plate": "MuensterCheese Pressure Plate",
-      "item.discord_mod.rennet": "Rennet",
-      "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
       "item.discord_mod.slime_armor_armor_boots": "SlimeArmor Boots",
+      "block.discord_mod.muenster_cheese_fence_gate": "MuensterCheese Fence Gate",
+      "item.discord_mod.rennet": "Rennet",
       "item.discord_mod.derby_wheel": "Derby Wheel",
       "item.discord_mod.nacho_cheese_bucket": "Nacho Cheese Bucket",
       "block.discord_mod.cobbled_pink_derby_block": "Derby Cheese Block",
@@ -1088,6 +1187,8 @@
       "block.discord_mod.rust_block": "Rust Block",
       "block.discord_mod.mozzarella_block": "Mozzarella Block",
       "itemGroup.tabcheese_dimension": "Cheese Dimension",
+      "block.discord_mod.blue_slime_block": "Pink Slime Block",
+      "advancements.lactose_incetolerance.title": "Lactose Incetolerance",
       "block.discord_mod.muenster_cheese_slab": "MuensterCheese Slab",
       "item.discord_mod.slime_armor_armor_helmet": "SlimeArmor Helmet",
       "item.discord_mod.pink_slime_armour_armor_boots": "PinkSlimeArmour Boots",
@@ -1100,19 +1201,25 @@
       "item.discord_mod.glass_shard": "Glass Shard",
       "block.discord_mod.cracked_aztec_brivk": "Aztec Brick",
       "biome.discord_mod.pink_derby_surface": "Pink Derby Surface",
+      "item.discord_mod.slime_pickaxe": "Slime Pickaxe",
       "item.discord_mod.slime_armor_armor_chestplate": "SlimeArmor Chestplate",
       "item.discord_mod.pink_slime_armour_armor_leggings": "PinkSlimeArmour Leggings",
+      "item.discord_mod.slime_shovel": "Slime Shovel",
       "block.discord_mod.cheeseblackone": "Cheddar Cheese Block",
       "block.discord_mod.nacho_cheese": "Nacho Cheese",
       "block.discord_mod.coverd_aztec_brick": "Coverd Aztec Brick",
+      "advancements.what_are_you_doing_in_my_swamp.title": "What Are You Doing In My Swamp",
       "block.discord_mod.swiss_cheese_block": "Swiss Cheese Block",
       "block.discord_mod.muenster_cheese_log": "MuensterCheese Log",
+      "item.discord_mod.slime_hoe": "Slime Hoe",
       "item.discord_mod.destroyed_dimension": "Destroyed Dimension Portal Igniter",
       "item.discord_mod.slime_dimension": "Slime Dimension Portal Igniter",
       "entity.discord_mod.casu_marzu_zombie": "Casu Marzu Zombie",
+      "item.discord_mod.slime_sword": "Slime Sword",
       "entity.discord_mod.gorilla": "Gorilla",
       "item.discord_mod.pink_slime_armour_armor_chestplate": "PinkSlimeArmour Chestplate",
       "item.discord_mod.casu_marzu_zombie_spawn_egg": "Casu Marzu Zombie Spawn Egg",
+      "block.discord_mod.slime_block": "Block of Slime",
       "entity.discord_mod.cheese_cow": "Cheese Cow",
       "item.discord_mod.turret_spawn_egg": "Turret Spawn Egg",
       "entity.discord_mod.blue_cheese_zombie": "Blue Cheese Zombie",
@@ -1124,7 +1231,10 @@
       "block.discord_mod.aztec_smooth_stone": "Aztec Brick",
       "biome.discord_mod.destroyed_biome": "Destroyed Biome",
       "item.discord_mod.cheese_trader_spawn_egg": "Cheese Trader Spawn Egg",
+      "advancements.lactose_incetolerance.descr": "Enter Cheese Dimension",
       "item.discord_mod.slime_armor_armor_leggings": "SlimeArmor Leggings",
+      "item.discord_mod.slime": "Slime Gem",
+      "advancements.what_are_you_doing_in_my_swamp.descr": "Enter Swamp",
       "block.discord_mod.derby_cheese_block": "Derby Cheese Block",
       "item.discord_mod.cheese_cow_spawn_egg": "Cheese Cow Spawn Egg",
       "block.discord_mod.aztec_brick": "Aztec Brick",
@@ -1132,6 +1242,7 @@
       "block.discord_mod.bluecheeseblock": "BLUECHEESEBLOCK",
       "item.discord_mod.blue_cheese_zombie_spawn_egg": "Blue Cheese Zombie Spawn Egg",
       "item.discord_mod.chhurpi_dog_treat": "Chhurpi Dog Treat",
+      "block.discord_mod.slime_ore": "Slime Ore",
       "block.discord_mod.muenster_cheese_planks": "MuensterCheese Planks",
       "block.discord_mod.pink_derby_block": "Derby Cheese Block",
       "biome.discord_mod.pink_derby_cave": "Pink Derby Cave",
@@ -1145,6 +1256,14 @@
     "children": [
       {
         "name": "Slime",
+        "children": []
+      },
+      {
+        "name": "DestroyedDimension",
+        "children": []
+      },
+      {
+        "name": "Misc",
         "children": []
       },
       {
