@@ -14,10 +14,10 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class PinkSlimeBlockBlock extends Block {
-	public PinkSlimeBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.SPONGE).sound(SoundType.SLIME_BLOCK).strength(0.8f, 10f).friction(0.8f).speedFactor(0.8f)
-				.jumpFactor(2f));
+public class BlueSlimeBlockBlock extends Block {
+	public BlueSlimeBlockBlock() {
+		super(BlockBehaviour.Properties.of(Material.SPONGE).sound(SoundType.SLIME_BLOCK).strength(0.8f, 10f).friction(1.5f).speedFactor(0.8f)
+				.jumpFactor(1.5f));
 	}
 
 	@Override

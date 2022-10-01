@@ -2,14 +2,14 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "slime",
-    "textureTop": "slime",
-    "textureLeft": "slime",
-    "textureFront": "slime",
-    "textureRight": "slime",
-    "textureBack": "slime",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "slime_ore_block",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -33,28 +33,28 @@
         "subtract": false
       }
     ],
-    "name": "Pink Slime Block",
+    "name": "Block of Slime",
     "specialInfo": [],
-    "hardness": 0.8,
+    "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:CheeseDimension"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "SPONGE"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -72,14 +72,14 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.8,
-    "speedFactor": 0.8,
-    "jumpFactor": 2.0,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "SLIME"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "CUSTOM:CheeseParticle"
@@ -123,20 +123,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:SlimeDimension"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:SlimeBiome"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:SlimeGrass"
-      },
-      {
-        "value": "CUSTOM:SlimeDirt"
+        "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",

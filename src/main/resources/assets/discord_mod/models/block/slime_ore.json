@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "discord_mod:blocks/slime_ore",
+    "particle": "discord_mod:blocks/slime_ore"
+  }
+}

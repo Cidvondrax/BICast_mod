@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:slime"
+    },
+    "1": {
+      "item": "discord_mod:slime"
+    },
+    "2": {
+      "item": "discord_mod:slime"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "discord_mod:slime_axe",
+    "count": 1
+  }
+}

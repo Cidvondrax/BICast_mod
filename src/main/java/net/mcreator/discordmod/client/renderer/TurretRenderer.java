@@ -10,7 +10,7 @@ import net.mcreator.discordmod.client.model.Modelturret;
 
 public class TurretRenderer extends MobRenderer<TurretEntity, Modelturret<TurretEntity>> {
 	public TurretRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelturret(context.bakeLayer(Modelturret.LAYER_LOCATION)), 1f);
+		super(context, new Modelturret(context.bakeLayer(Modelturret.LAYER_LOCATION)), 1.5f);
 	}
 
 	@Override

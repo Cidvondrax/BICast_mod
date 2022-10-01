@@ -7,9 +7,9 @@
     "mobModelName": "Modelturret",
     "mobModelTexture": "22134.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 1.0,
+    "modelWidth": 1.5,
     "modelHeight": 2.0,
-    "modelShadowSize": 1.0,
+    "modelShadowSize": 1.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {

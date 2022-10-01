@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:blue_slime_block"
+    },
+    "1": {
+      "item": "discord_mod:blue_slime_block"
+    },
+    "2": {
+      "item": "discord_mod:slime_sword"
+    }
+  },
+  "result": {
+    "item": "discord_mod:gel_sword",
+    "count": 1
+  }
+}

@@ -17,8 +17,10 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
+import net.mcreator.discordmod.world.features.ores.SlimeOreFeature;
 import net.mcreator.discordmod.world.features.ores.PinkSlimeBlockFeature;
 import net.mcreator.discordmod.world.features.ores.CoconujpegFeature;
+import net.mcreator.discordmod.world.features.ores.BlueSlimeBlockFeature;
 import net.mcreator.discordmod.world.features.RuinType1Feature;
 import net.mcreator.discordmod.DiscordModMod;
 
@@ -33,11 +35,16 @@ public class DiscordModModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> COCONUJPEG = register("coconujpeg", CoconujpegFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, CoconujpegFeature.GENERATE_BIOMES, CoconujpegFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> RUIN_TYPE_1 = register("ruin_type_1", RuinType1Feature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, RuinType1Feature.GENERATE_BIOMES, RuinType1Feature::placedFeature));
+	public static final RegistryObject<Feature<?>> BLUE_SLIME_BLOCK = register("blue_slime_block", BlueSlimeBlockFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, BlueSlimeBlockFeature.GENERATE_BIOMES,
+					BlueSlimeBlockFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> PINK_SLIME_BLOCK = register("pink_slime_block", PinkSlimeBlockFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, PinkSlimeBlockFeature.GENERATE_BIOMES,
 					PinkSlimeBlockFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SLIME_ORE = register("slime_ore", SlimeOreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, SlimeOreFeature.GENERATE_BIOMES, SlimeOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> RUIN_TYPE_1 = register("ruin_type_1", RuinType1Feature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, RuinType1Feature.GENERATE_BIOMES, RuinType1Feature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

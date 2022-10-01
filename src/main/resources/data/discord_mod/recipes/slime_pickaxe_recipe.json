@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:slime"
+    },
+    "1": {
+      "item": "discord_mod:slime"
+    },
+    "2": {
+      "item": "discord_mod:slime"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "discord_mod:slime_pickaxe",
+    "count": 1
+  }
+}

@@ -75,7 +75,7 @@ public class DiscordModModEntities {
 			EntityType.Builder.<TurretEntity>of(TurretEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(TurretEntity::new)
 
-					.sized(1f, 2f));
+					.sized(1.5f, 2f));
 	public static final RegistryObject<EntityType<TurretEntityProjectile>> TURRET_PROJECTILE = register("projectile_turret",
 			EntityType.Builder.<TurretEntityProjectile>of(TurretEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(TurretEntityProjectile::new).sized(0.5f, 0.5f));
