@@ -121,7 +121,7 @@ public class CheeseCowEntity extends Animal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of(DiscordModModItems.BLUE_CHEESE_FOOD.get()).contains(stack.getItem());
+		return List.of(DiscordModModItems.DERBY_WHEEL.get()).contains(stack.getItem());
 	}
 
 	public static void init() {
