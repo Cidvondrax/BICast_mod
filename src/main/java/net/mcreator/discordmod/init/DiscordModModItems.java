@@ -106,6 +106,8 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
 	public static final RegistryObject<Item> DESTROYED_DIMENSION = REGISTRY.register("destroyed_dimension", () -> new DestroyedDimensionItem());
 	public static final RegistryObject<Item> CASU_MARZU_WHEEL = REGISTRY.register("casu_marzu_wheel", () -> new CasuMarzuWheelItem());
+	public static final RegistryObject<Item> CASU_MARZU_ZOMBIE = REGISTRY.register("casu_marzu_zombie_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.CASU_MARZU_ZOMBIE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
