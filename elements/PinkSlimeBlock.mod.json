@@ -2,26 +2,25 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "ddssa",
-    "textureTop": "ddssa",
-    "textureLeft": "ddssa",
-    "textureFront": "ddssa",
-    "textureRight": "ddssa",
-    "textureBack": "ddssa",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "slime",
+    "textureTop": "slime",
+    "textureLeft": "slime",
+    "textureFront": "slime",
+    "textureRight": "slime",
+    "textureBack": "slime",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Pane",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Cracked Glass",
+    "name": "Pink Slime Block",
     "specialInfo": [],
-    "hardness": 0.5,
-    "resistance": 2.5,
+    "hardness": 0.8,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -45,17 +44,17 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:GlassShard"
+      "value": ""
     },
-    "dropAmount": 2,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
-      "value": "GLASS"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -73,14 +72,14 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
-    "speedFactor": 1.0,
-    "jumpFactor": 1.0,
+    "slipperiness": 2.0,
+    "speedFactor": 0.8,
+    "jumpFactor": 2.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "SLIME"
     },
     "breakSound": {
       "value": ""
@@ -124,11 +123,20 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:SlimeDimension"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SlimeBiome"
+      }
+    ],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:SlimeGrass"
+      },
+      {
+        "value": "CUSTOM:SlimeDirt"
       }
     ],
     "generationShape": "UNIFORM",

@@ -24,7 +24,7 @@ import java.util.Collections;
 
 public class CrackedglassBlock extends IronBarsBlock {
 	public CrackedglassBlock() {
-		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GRAVEL).strength(0.5f, 2.5f));
+		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(0.5f, 2.5f));
 	}
 
 	@Override

@@ -7,7 +7,7 @@
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 5000,
     "minCountPerChunk": 1,
-    "maxCountPerChunk": 1,
+    "maxCountPerChunk": 3,
     "spawnLocation": "Ground",
     "spawnHeightOffset": -1,
     "spawnXOffset": 0,
@@ -18,10 +18,13 @@
     "restrictionBlocks": [],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:DerbyBiome"
+        "value": "CUSTOM:DestroyedBiome"
       },
       {
-        "value": "CUSTOM:DestroyedBiome"
+        "value": "CUSTOM:SlimeBiome"
+      },
+      {
+        "value": "CUSTOM:SwissWasteLand"
       }
     ],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"

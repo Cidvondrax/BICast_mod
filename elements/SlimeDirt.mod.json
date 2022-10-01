@@ -2,26 +2,25 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "ddssa",
-    "textureTop": "ddssa",
-    "textureLeft": "ddssa",
-    "textureFront": "ddssa",
-    "textureRight": "ddssa",
-    "textureBack": "ddssa",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "xx",
+    "textureTop": "xx",
+    "textureLeft": "xx",
+    "textureFront": "xx",
+    "textureRight": "xx",
+    "textureBack": "xx",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Pane",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,28 +33,28 @@
         "subtract": false
       }
     ],
-    "name": "Cracked Glass",
+    "name": "Slime Grass",
     "specialInfo": [],
-    "hardness": 0.5,
-    "resistance": 2.5,
+    "hardness": 0.7999999999999999,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:GlassShard"
+      "value": ""
     },
-    "dropAmount": 2,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
+    "plantsGrowOn": true,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
-      "value": "GLASS"
+      "value": "GRASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -80,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -102,7 +101,7 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:CheeseParticle"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,

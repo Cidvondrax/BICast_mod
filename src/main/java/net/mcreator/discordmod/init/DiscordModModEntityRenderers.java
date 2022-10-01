@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.discordmod.client.renderer.TurretRenderer;
 import net.mcreator.discordmod.client.renderer.IrongolemtestRenderer;
 import net.mcreator.discordmod.client.renderer.GorillaRenderer;
 import net.mcreator.discordmod.client.renderer.CrabRenderer;
@@ -30,5 +31,7 @@ public class DiscordModModEntityRenderers {
 		event.registerEntityRenderer(DiscordModModEntities.CHEESE_COW.get(), CheeseCowRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.IRONGOLEMTEST.get(), IrongolemtestRenderer::new);
 		event.registerEntityRenderer(DiscordModModEntities.CHEESE_TRADER.get(), CheeseTraderRenderer::new);
+		event.registerEntityRenderer(DiscordModModEntities.TURRET.get(), TurretRenderer::new);
+		event.registerEntityRenderer(DiscordModModEntities.TURRET_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

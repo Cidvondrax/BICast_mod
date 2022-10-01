@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "discord_mod:pink_slime_block"
+    },
+    "2": {
+      "item": "discord_mod:pink_slime_block"
+    },
+    "3": {
+      "item": "discord_mod:pink_slime_block"
+    },
+    "5": {
+      "item": "discord_mod:pink_slime_block"
+    }
+  },
+  "result": {
+    "item": "discord_mod:pink_slime_armour_armor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "discord_mod:blocks/slime",
+    "up": "discord_mod:blocks/slime",
+    "north": "discord_mod:blocks/slime",
+    "east": "discord_mod:blocks/slime",
+    "south": "discord_mod:blocks/slime",
+    "west": "discord_mod:blocks/slime",
+    "particle": "discord_mod:blocks/slime"
+  }
+}

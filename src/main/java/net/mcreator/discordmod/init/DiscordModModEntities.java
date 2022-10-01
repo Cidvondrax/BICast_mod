@@ -16,6 +16,8 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.discordmod.entity.TurretEntityProjectile;
+import net.mcreator.discordmod.entity.TurretEntity;
 import net.mcreator.discordmod.entity.IrongolemtestEntity;
 import net.mcreator.discordmod.entity.GorillaEntityProjectile;
 import net.mcreator.discordmod.entity.GorillaEntity;
@@ -63,6 +65,14 @@ public class DiscordModModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CheeseTraderEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TurretEntity>> TURRET = register("turret",
+			EntityType.Builder.<TurretEntity>of(TurretEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(TurretEntity::new)
+
+					.sized(1f, 2f));
+	public static final RegistryObject<EntityType<TurretEntityProjectile>> TURRET_PROJECTILE = register("projectile_turret",
+			EntityType.Builder.<TurretEntityProjectile>of(TurretEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(TurretEntityProjectile::new).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -77,6 +87,7 @@ public class DiscordModModEntities {
 			CheeseCowEntity.init();
 			IrongolemtestEntity.init();
 			CheeseTraderEntity.init();
+			TurretEntity.init();
 		});
 	}
 
@@ -88,5 +99,6 @@ public class DiscordModModEntities {
 		event.put(CHEESE_COW.get(), CheeseCowEntity.createAttributes().build());
 		event.put(IRONGOLEMTEST.get(), IrongolemtestEntity.createAttributes().build());
 		event.put(CHEESE_TRADER.get(), CheeseTraderEntity.createAttributes().build());
+		event.put(TURRET.get(), TurretEntity.createAttributes().build());
 	}
 }

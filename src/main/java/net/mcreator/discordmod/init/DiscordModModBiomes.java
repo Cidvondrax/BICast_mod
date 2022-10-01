@@ -31,6 +31,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.discordmod.world.biome.SwissWasteLandBiome;
+import net.mcreator.discordmod.world.biome.SlimeBiomeBiome;
 import net.mcreator.discordmod.world.biome.PinkDerbySurfaceBiome;
 import net.mcreator.discordmod.world.biome.PinkDerbyCaveBiome;
 import net.mcreator.discordmod.world.biome.DestroyedBiomeBiome;
@@ -51,6 +52,7 @@ public class DiscordModModBiomes {
 	public static final RegistryObject<Biome> PINK_DERBY_CAVE = REGISTRY.register("pink_derby_cave", () -> PinkDerbyCaveBiome.createBiome());
 	public static final RegistryObject<Biome> PINK_DERBY_SURFACE = REGISTRY.register("pink_derby_surface", () -> PinkDerbySurfaceBiome.createBiome());
 	public static final RegistryObject<Biome> DESTROYED_BIOME = REGISTRY.register("destroyed_biome", () -> DestroyedBiomeBiome.createBiome());
+	public static final RegistryObject<Biome> SLIME_BIOME = REGISTRY.register("slime_biome", () -> SlimeBiomeBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -60,6 +62,7 @@ public class DiscordModModBiomes {
 			PinkDerbyCaveBiome.init();
 			PinkDerbySurfaceBiome.init();
 			DestroyedBiomeBiome.init();
+			SlimeBiomeBiome.init();
 		});
 	}
 
@@ -80,6 +83,8 @@ public class DiscordModModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(DestroyedBiomeBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, DESTROYED_BIOME.getId()))));
+						parameters.add(new Pair<>(SlimeBiomeBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SLIME_BIOME.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -94,6 +99,10 @@ public class DiscordModModBiomes {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DESTROYED_BIOME.getId()),
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.WATER.defaultBlockState()));
+							surfaceRules.add(1,
+									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SLIME_BIOME.getId()),
+											DiscordModModBlocks.SLIME_GRASS.get().defaultBlockState(),
+											DiscordModModBlocks.SLIME_DIRT.get().defaultBlockState(), Blocks.WATER.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
