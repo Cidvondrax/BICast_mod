@@ -7,35 +7,35 @@
   ],
   "key": {
     "0": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "1": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "2": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "3": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "4": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "5": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "6": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "7": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     },
     "8": {
-      "item": "discord_mod:deleted_mod_element"
+      "item": "discord_mod:slime"
     }
   },
   "result": {
-    "item": "discord_mod:deleted_mod_element",
+    "item": "discord_mod:slime_block",
     "count": 1
   }
 }

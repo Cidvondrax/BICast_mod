@@ -1,9 +1,24 @@
 
 package net.mcreator.discordmod.entity;
 
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ItemSupplier;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.network.protocol.Packet;
+
+import net.mcreator.discordmod.init.DiscordModModEntities;
+
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class TurretEntityProjectile extends AbstractArrow implements ItemSupplier {
-
 	public TurretEntityProjectile(PlayMessages.SpawnEntity packet, Level world) {
 		super(DiscordModModEntities.TURRET_PROJECTILE.get(), world);
 	}

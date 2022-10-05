@@ -50,10 +50,10 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "PLAINS",
+    "biomeCategory": "JUNGLE",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 1.0,
+    "baseHeight": 1.25,
     "heightVariation": 0.2,
     "spawnBiome": false,
     "spawnBiomeNether": false,

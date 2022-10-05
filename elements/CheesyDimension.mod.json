@@ -49,7 +49,7 @@
       "value": "TOOLS"
     },
     "texture": "mozzerellaandsteel",
-    "portalTexture": "shredded_mozzarella_3",
+    "portalTexture": "nacho_cheese",
     "enablePortal": true
   }
 }

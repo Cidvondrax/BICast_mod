@@ -139,6 +139,12 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> SLIME_DIMENSION = REGISTRY.register("slime_dimension", () -> new SlimeDimensionItem());
 	public static final RegistryObject<Item> TURRET = REGISTRY.register("turret_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.TURRET, -5794434, -11057609, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CHEDDAR_SWISS_TRADER = REGISTRY.register("cheddar_swiss_trader_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.CHEDDAR_SWISS_TRADER, -200507, -29184,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MUENSTER_MOZZARELLA_TRADER = REGISTRY.register("muenster_mozzarella_trader_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.MUENSTER_MOZZARELLA_TRADER, -200507, -29184,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
