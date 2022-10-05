@@ -99,8 +99,6 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> CRACKED_AZTEC_BRIVK = block(DiscordModModBlocks.CRACKED_AZTEC_BRIVK,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZTECSLAB = block(DiscordModModBlocks.AZTECSLAB, DiscordModModTabs.TAB_CHEESE_DIMENSION);
-	public static final RegistryObject<Item> CHEESE_TRADER = REGISTRY.register("cheese_trader_spawn_egg",
-			() -> new ForgeSpawnEggItem(DiscordModModEntities.CHEESE_TRADER, -24832, -13404892, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> CRACKEDGLASS = block(DiscordModModBlocks.CRACKEDGLASS, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> GLASS_SHARD = REGISTRY.register("glass_shard", () -> new GlassShardItem());
 	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
@@ -108,6 +106,9 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> CASU_MARZU_WHEEL = REGISTRY.register("casu_marzu_wheel", () -> new CasuMarzuWheelItem());
 	public static final RegistryObject<Item> CASU_MARZU_ZOMBIE = REGISTRY.register("casu_marzu_zombie_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.CASU_MARZU_ZOMBIE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MOZZARELLA_CHEDDAR_TRADER = REGISTRY.register("mozzarella_cheddar_trader_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.MOZZARELLA_CHEDDAR_TRADER, -200507, -29184,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

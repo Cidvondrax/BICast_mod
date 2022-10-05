@@ -49,7 +49,7 @@ public class CasuMarzuZombieEntity extends Monster {
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
 			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), 20, 4, 4));
+					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), 10, 1, 4));
 	}
 
 	public CasuMarzuZombieEntity(PlayMessages.SpawnEntity packet, Level world) {
