@@ -14,8 +14,16 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.discordmod.item.SlimeSwordItem;
+import net.mcreator.discordmod.item.SlimeShovelItem;
+import net.mcreator.discordmod.item.SlimePickaxeItem;
+import net.mcreator.discordmod.item.SlimeItem;
+import net.mcreator.discordmod.item.SlimeHoeItem;
+import net.mcreator.discordmod.item.SlimeDimensionItem;
+import net.mcreator.discordmod.item.SlimeAxeItem;
 import net.mcreator.discordmod.item.SlimeArmorArmorItem;
 import net.mcreator.discordmod.item.RennetItem;
+import net.mcreator.discordmod.item.PinkSlimeArmourArmorItem;
 import net.mcreator.discordmod.item.NachoCheeseItem;
 import net.mcreator.discordmod.item.MozzarellaBallItem;
 import net.mcreator.discordmod.item.GlassShardItem;
@@ -36,6 +44,7 @@ public class DiscordModModItems {
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.CRAB, -3407872, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> GORILLA = REGISTRY.register("gorilla_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.GORILLA, -13426407, -15396848, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BLUE_SLIME_BLOCK = block(DiscordModModBlocks.BLUE_SLIME_BLOCK, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> CHEESEBLACKONE = block(DiscordModModBlocks.CHEESEBLACKONE, DiscordModModTabs.TAB_CHEESE_DIMENSION);
 	public static final RegistryObject<Item> AZTEC_BRICK = block(DiscordModModBlocks.AZTEC_BRICK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZTEC_SMOOTH_STONE = block(DiscordModModBlocks.AZTEC_SMOOTH_STONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -65,6 +74,8 @@ public class DiscordModModItems {
 			DiscordModModTabs.TAB_CHEESE_DIMENSION);
 	public static final RegistryObject<Item> MUENSTER_CHEESE_BUTTON = block(DiscordModModBlocks.MUENSTER_CHEESE_BUTTON,
 			DiscordModModTabs.TAB_CHEESE_DIMENSION);
+	public static final RegistryObject<Item> SLIME_ORE = block(DiscordModModBlocks.SLIME_ORE, DiscordModModTabs.TAB_CHEESE_DIMENSION);
+	public static final RegistryObject<Item> SLIME_BLOCK = block(DiscordModModBlocks.SLIME_BLOCK, DiscordModModTabs.TAB_CHEESE_DIMENSION);
 	public static final RegistryObject<Item> GEL_SWORD = REGISTRY.register("gel_sword", () -> new GelSwordItem());
 	public static final RegistryObject<Item> SLIME_ARMOR_ARMOR_HELMET = REGISTRY.register("slime_armor_armor_helmet",
 			() -> new SlimeArmorArmorItem.Helmet());
@@ -74,9 +85,15 @@ public class DiscordModModItems {
 			() -> new SlimeArmorArmorItem.Leggings());
 	public static final RegistryObject<Item> SLIME_ARMOR_ARMOR_BOOTS = REGISTRY.register("slime_armor_armor_boots",
 			() -> new SlimeArmorArmorItem.Boots());
+	public static final RegistryObject<Item> SLIME_SWORD = REGISTRY.register("slime_sword", () -> new SlimeSwordItem());
+	public static final RegistryObject<Item> SLIME_PICKAXE = REGISTRY.register("slime_pickaxe", () -> new SlimePickaxeItem());
 	public static final RegistryObject<Item> BLUE_CHEESE_ZOMBIE = REGISTRY.register("blue_cheese_zombie_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.BLUE_CHEESE_ZOMBIE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SLIME_AXE = REGISTRY.register("slime_axe", () -> new SlimeAxeItem());
+	public static final RegistryObject<Item> SLIME_SHOVEL = REGISTRY.register("slime_shovel", () -> new SlimeShovelItem());
 	public static final RegistryObject<Item> BLUE_CHEESE_FOOD = REGISTRY.register("blue_cheese_food", () -> new BlueCheeseFoodItem());
+	public static final RegistryObject<Item> SLIME_HOE = REGISTRY.register("slime_hoe", () -> new SlimeHoeItem());
+	public static final RegistryObject<Item> SLIME = REGISTRY.register("slime", () -> new SlimeItem());
 	public static final RegistryObject<Item> CHEESY_DIMENSION = REGISTRY.register("cheesy_dimension", () -> new CheesyDimensionItem());
 	public static final RegistryObject<Item> SWISS_CHEESE_BLOCK = block(DiscordModModBlocks.SWISS_CHEESE_BLOCK,
 			DiscordModModTabs.TAB_CHEESE_DIMENSION);
@@ -104,11 +121,24 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
 	public static final RegistryObject<Item> DESTROYED_DIMENSION = REGISTRY.register("destroyed_dimension", () -> new DestroyedDimensionItem());
 	public static final RegistryObject<Item> CASU_MARZU_WHEEL = REGISTRY.register("casu_marzu_wheel", () -> new CasuMarzuWheelItem());
+	public static final RegistryObject<Item> PINK_SLIME_BLOCK = block(DiscordModModBlocks.PINK_SLIME_BLOCK, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> CASU_MARZU_ZOMBIE = REGISTRY.register("casu_marzu_zombie_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.CASU_MARZU_ZOMBIE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SLIME_DIRT = block(DiscordModModBlocks.SLIME_DIRT, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> MOZZARELLA_CHEDDAR_TRADER = REGISTRY.register("mozzarella_cheddar_trader_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.MOZZARELLA_CHEDDAR_TRADER, -200507, -29184,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> PINK_SLIME_ARMOUR_ARMOR_HELMET = REGISTRY.register("pink_slime_armour_armor_helmet",
+			() -> new PinkSlimeArmourArmorItem.Helmet());
+	public static final RegistryObject<Item> PINK_SLIME_ARMOUR_ARMOR_CHESTPLATE = REGISTRY.register("pink_slime_armour_armor_chestplate",
+			() -> new PinkSlimeArmourArmorItem.Chestplate());
+	public static final RegistryObject<Item> PINK_SLIME_ARMOUR_ARMOR_LEGGINGS = REGISTRY.register("pink_slime_armour_armor_leggings",
+			() -> new PinkSlimeArmourArmorItem.Leggings());
+	public static final RegistryObject<Item> PINK_SLIME_ARMOUR_ARMOR_BOOTS = REGISTRY.register("pink_slime_armour_armor_boots",
+			() -> new PinkSlimeArmourArmorItem.Boots());
+	public static final RegistryObject<Item> SLIME_DIMENSION = REGISTRY.register("slime_dimension", () -> new SlimeDimensionItem());
+	public static final RegistryObject<Item> TURRET = REGISTRY.register("turret_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.TURRET, -5794434, -11057609, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

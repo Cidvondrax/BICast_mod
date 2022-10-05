@@ -40,8 +40,8 @@ public class RuinType1Feature extends Feature<NoneFeatureConfiguration> {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("discord_mod:derby_biome"),
-			new ResourceLocation("discord_mod:destroyed_biome"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("discord_mod:slime_biome"),
+			new ResourceLocation("discord_mod:destroyed_biome"), new ResourceLocation("discord_mod:swiss_waste_land"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 
@@ -59,7 +59,7 @@ public class RuinType1Feature extends Feature<NoneFeatureConfiguration> {
 			return false;
 		boolean anyPlaced = false;
 		if ((context.random().nextInt(1000000) + 1) <= 5000) {
-			int count = context.random().nextInt(1) + 1;
+			int count = context.random().nextInt(3) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);

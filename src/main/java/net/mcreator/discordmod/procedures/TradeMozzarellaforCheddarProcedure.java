@@ -1,14 +1,8 @@
 package net.mcreator.discordmod.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.discordmod.init.DiscordModModItems;
-import net.mcreator.discordmod.init.DiscordModModBlocks;
+import javax.annotation.Nullable;
 
 public class TradeMozzarellaforCheddarProcedure {
 	public static void execute(Entity sourceentity) {
