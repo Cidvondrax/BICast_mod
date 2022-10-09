@@ -29,7 +29,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
@@ -48,8 +47,8 @@ public class CasuMarzuZombieEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), 20, 4, 4));
+			event.getSpawns().getSpawner(MobCategory.AMBIENT)
+					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), 15, 1, 4));
 	}
 
 	public CasuMarzuZombieEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -121,9 +120,8 @@ public class CasuMarzuZombieEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), SpawnPlacements.Type.ON_GROUND,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 		DungeonHooks.addDungeonMob(DiscordModModEntities.CASU_MARZU_ZOMBIE.get(), 180);
 	}
 

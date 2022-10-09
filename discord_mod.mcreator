@@ -758,15 +758,6 @@
       "path": "~/Cheese"
     },
     {
-      "name": "CheeseTrader",
-      "type": "livingentity",
-      "sortid": 80,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cheese_trader",
-      "path": "~/Cheese"
-    },
-    {
       "name": "PinkDerbySurface",
       "type": "biome",
       "sortid": 84,
@@ -1135,6 +1126,65 @@
       "locked_code": false,
       "registry_name": "lactose_incetolerance",
       "path": "~/Cheese"
+    },
+    {
+      "name": "TradeMuensteurForMozzarella",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_muensteur_for_mozzarella",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheddarSwissTrader",
+      "type": "livingentity",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheddar_swiss_trader",
+      "path": "~/cheese"
+    },
+    {
+      "name": "TradeCheddarForSwiss",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_cheddar_for_swiss",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MozzarellaCheddarTrader",
+      "type": "livingentity",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mozzarella_cheddar_trader",
+      "path": "~/cheese"
+    },
+    {
+      "name": "MuensterMozzarellaTrader",
+      "type": "livingentity",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muenster_mozzarella_trader",
+      "path": "~/cheese"
     }
   ],
   "variable_elements": [],
@@ -1177,6 +1227,7 @@
       "block.discord_mod.cobbled_pink_derby_block": "Derby Cheese Block",
       "block.discord_mod.rubble_block": "Rubble Block",
       "block.discord_mod.muenster_cheese_wood": "MuensterCheese Wood",
+      "item.discord_mod.cheddar_swiss_trader_spawn_egg": "Cheddar Swiss Trader Spawn Egg",
       "biome.discord_mod.derby_biome": "Derby Biome",
       "item.discord_mod.mozzarella_ball": "Mozzarella Ball",
       "item.discord_mod.irongolemtest_spawn_egg": "Irongolemtest Spawn Egg",
@@ -1185,6 +1236,7 @@
       "subtitles.monekeeee": "",
       "entity.discord_mod.irongolemtest": "Irongolemtest",
       "block.discord_mod.rust_block": "Rust Block",
+      "entity.discord_mod.cheddar_swiss_trader": "Cheddar Swiss Trader",
       "block.discord_mod.mozzarella_block": "Mozzarella Block",
       "itemGroup.tabcheese_dimension": "Cheese Dimension",
       "block.discord_mod.blue_slime_block": "Pink Slime Block",
@@ -1230,8 +1282,8 @@
       "block.discord_mod.muenster_cheese_stairs": "MuensterCheese Stairs",
       "block.discord_mod.aztec_smooth_stone": "Aztec Brick",
       "biome.discord_mod.destroyed_biome": "Destroyed Biome",
-      "item.discord_mod.cheese_trader_spawn_egg": "Cheese Trader Spawn Egg",
       "advancements.lactose_incetolerance.descr": "Enter Cheese Dimension",
+      "item.discord_mod.cheese_trader_spawn_egg": "Cheese Trader Spawn Egg",
       "item.discord_mod.slime_armor_armor_leggings": "SlimeArmor Leggings",
       "item.discord_mod.slime": "Slime Gem",
       "advancements.what_are_you_doing_in_my_swamp.descr": "Enter Swamp",
@@ -1255,19 +1307,23 @@
     "name": "~",
     "children": [
       {
-        "name": "Slime",
-        "children": []
-      },
-      {
         "name": "Misc",
         "children": []
       },
       {
-        "name": "Cheese",
+        "name": "DestroyedDimension",
         "children": []
       },
       {
-        "name": "DestroyedDimension",
+        "name": "cheese",
+        "children": []
+      },
+      {
+        "name": "Slime",
+        "children": []
+      },
+      {
+        "name": "Cheese",
         "children": []
       }
     ]

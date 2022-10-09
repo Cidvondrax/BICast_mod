@@ -18,13 +18,15 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.discordmod.entity.TurretEntityProjectile;
 import net.mcreator.discordmod.entity.TurretEntity;
+import net.mcreator.discordmod.entity.MuensterMozzarellaTraderEntity;
+import net.mcreator.discordmod.entity.MozzarellaCheddarTraderEntity;
 import net.mcreator.discordmod.entity.IrongolemtestEntity;
 import net.mcreator.discordmod.entity.GorillaEntityProjectile;
 import net.mcreator.discordmod.entity.GorillaEntity;
 import net.mcreator.discordmod.entity.CrabEntityProjectile;
 import net.mcreator.discordmod.entity.CrabEntity;
-import net.mcreator.discordmod.entity.CheeseTraderEntity;
 import net.mcreator.discordmod.entity.CheeseCowEntity;
+import net.mcreator.discordmod.entity.CheddarSwissTraderEntity;
 import net.mcreator.discordmod.entity.CasuMarzuZombieEntity;
 import net.mcreator.discordmod.entity.BlueCheeseZombieEntity;
 import net.mcreator.discordmod.DiscordModMod;
@@ -47,7 +49,7 @@ public class DiscordModModEntities {
 			EntityType.Builder.<GorillaEntityProjectile>of(GorillaEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(GorillaEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<BlueCheeseZombieEntity>> BLUE_CHEESE_ZOMBIE = register("blue_cheese_zombie",
-			EntityType.Builder.<BlueCheeseZombieEntity>of(BlueCheeseZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			EntityType.Builder.<BlueCheeseZombieEntity>of(BlueCheeseZombieEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlueCheeseZombieEntity::new)
 
 					.sized(0.6f, 1.8f));
@@ -61,14 +63,15 @@ public class DiscordModModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IrongolemtestEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<CheeseTraderEntity>> CHEESE_TRADER = register("cheese_trader",
-			EntityType.Builder.<CheeseTraderEntity>of(CheeseTraderEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CheeseTraderEntity::new)
+	public static final RegistryObject<EntityType<CasuMarzuZombieEntity>> CASU_MARZU_ZOMBIE = register("casu_marzu_zombie",
+			EntityType.Builder.<CasuMarzuZombieEntity>of(CasuMarzuZombieEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CasuMarzuZombieEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<CasuMarzuZombieEntity>> CASU_MARZU_ZOMBIE = register("casu_marzu_zombie",
-			EntityType.Builder.<CasuMarzuZombieEntity>of(CasuMarzuZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CasuMarzuZombieEntity::new)
+	public static final RegistryObject<EntityType<MozzarellaCheddarTraderEntity>> MOZZARELLA_CHEDDAR_TRADER = register("mozzarella_cheddar_trader",
+			EntityType.Builder.<MozzarellaCheddarTraderEntity>of(MozzarellaCheddarTraderEntity::new, MobCategory.CREATURE)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(MozzarellaCheddarTraderEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TurretEntity>> TURRET = register("turret",
@@ -79,6 +82,17 @@ public class DiscordModModEntities {
 	public static final RegistryObject<EntityType<TurretEntityProjectile>> TURRET_PROJECTILE = register("projectile_turret",
 			EntityType.Builder.<TurretEntityProjectile>of(TurretEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(TurretEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CheddarSwissTraderEntity>> CHEDDAR_SWISS_TRADER = register("cheddar_swiss_trader",
+			EntityType.Builder.<CheddarSwissTraderEntity>of(CheddarSwissTraderEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CheddarSwissTraderEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MuensterMozzarellaTraderEntity>> MUENSTER_MOZZARELLA_TRADER = register("muenster_mozzarella_trader",
+			EntityType.Builder.<MuensterMozzarellaTraderEntity>of(MuensterMozzarellaTraderEntity::new, MobCategory.CREATURE)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(MuensterMozzarellaTraderEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -92,9 +106,11 @@ public class DiscordModModEntities {
 			BlueCheeseZombieEntity.init();
 			CheeseCowEntity.init();
 			IrongolemtestEntity.init();
-			CheeseTraderEntity.init();
 			CasuMarzuZombieEntity.init();
+			MozzarellaCheddarTraderEntity.init();
 			TurretEntity.init();
+			CheddarSwissTraderEntity.init();
+			MuensterMozzarellaTraderEntity.init();
 		});
 	}
 
@@ -105,8 +121,10 @@ public class DiscordModModEntities {
 		event.put(BLUE_CHEESE_ZOMBIE.get(), BlueCheeseZombieEntity.createAttributes().build());
 		event.put(CHEESE_COW.get(), CheeseCowEntity.createAttributes().build());
 		event.put(IRONGOLEMTEST.get(), IrongolemtestEntity.createAttributes().build());
-		event.put(CHEESE_TRADER.get(), CheeseTraderEntity.createAttributes().build());
 		event.put(CASU_MARZU_ZOMBIE.get(), CasuMarzuZombieEntity.createAttributes().build());
+		event.put(MOZZARELLA_CHEDDAR_TRADER.get(), MozzarellaCheddarTraderEntity.createAttributes().build());
 		event.put(TURRET.get(), TurretEntity.createAttributes().build());
+		event.put(CHEDDAR_SWISS_TRADER.get(), CheddarSwissTraderEntity.createAttributes().build());
+		event.put(MUENSTER_MOZZARELLA_TRADER.get(), MuensterMozzarellaTraderEntity.createAttributes().build());
 	}
 }

@@ -116,8 +116,6 @@ public class DiscordModModItems {
 	public static final RegistryObject<Item> CRACKED_AZTEC_BRIVK = block(DiscordModModBlocks.CRACKED_AZTEC_BRIVK,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AZTECSLAB = block(DiscordModModBlocks.AZTECSLAB, DiscordModModTabs.TAB_CHEESE_DIMENSION);
-	public static final RegistryObject<Item> CHEESE_TRADER = REGISTRY.register("cheese_trader_spawn_egg",
-			() -> new ForgeSpawnEggItem(DiscordModModEntities.CHEESE_TRADER, -24832, -13404892, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> CRACKEDGLASS = block(DiscordModModBlocks.CRACKEDGLASS, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> GLASS_SHARD = REGISTRY.register("glass_shard", () -> new GlassShardItem());
 	public static final RegistryObject<Item> CHHURPI_DOG_TREAT = REGISTRY.register("chhurpi_dog_treat", () -> new ChhurpiDogTreatItem());
@@ -135,9 +133,18 @@ public class DiscordModModItems {
 			() -> new PinkSlimeArmourArmorItem.Leggings());
 	public static final RegistryObject<Item> PINK_SLIME_ARMOUR_ARMOR_BOOTS = REGISTRY.register("pink_slime_armour_armor_boots",
 			() -> new PinkSlimeArmourArmorItem.Boots());
+	public static final RegistryObject<Item> MOZZARELLA_CHEDDAR_TRADER = REGISTRY.register("mozzarella_cheddar_trader_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.MOZZARELLA_CHEDDAR_TRADER, -200507, -29184,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> SLIME_DIMENSION = REGISTRY.register("slime_dimension", () -> new SlimeDimensionItem());
 	public static final RegistryObject<Item> TURRET = REGISTRY.register("turret_spawn_egg",
 			() -> new ForgeSpawnEggItem(DiscordModModEntities.TURRET, -5794434, -11057609, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CHEDDAR_SWISS_TRADER = REGISTRY.register("cheddar_swiss_trader_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.CHEDDAR_SWISS_TRADER, -200507, -29184,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MUENSTER_MOZZARELLA_TRADER = REGISTRY.register("muenster_mozzarella_trader_spawn_egg",
+			() -> new ForgeSpawnEggItem(DiscordModModEntities.MUENSTER_MOZZARELLA_TRADER, -200507, -29184,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -2,10 +2,10 @@
   "_fv": 33,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Cheese Trader",
+    "mobName": "Muenster Mozzarella Trader",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "609aa44a1bab81527b50505f9fca6ed837bf1eb1.png",
+    "mobModelTexture": "steve.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -24832,
+      "value": -200507,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -13404892,
+      "value": -29184,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:MozzarellaBlock"
     },
     "equipmentOffHand": {
       "value": ""
@@ -44,7 +44,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -78,7 +78,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:MuensterCheeseLog"
     },
     "livingSound": {
       "value": ""
@@ -100,10 +100,10 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "onRightClickedOn": {
-      "name": "TradeMozzarellaforCheddar"
+      "name": "TradeMuensteurForMozzarella"
     },
     "hasAI": true,
-    "aiBase": "(none)",
+    "aiBase": "Villager",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
@@ -113,13 +113,17 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 1,
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DerbyBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

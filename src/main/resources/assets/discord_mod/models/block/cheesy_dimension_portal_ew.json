@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "discord_mod:blocks/shredded_mozzarella_3",
-    "portal": "discord_mod:blocks/shredded_mozzarella_3"
+    "particle": "discord_mod:blocks/nacho_cheese",
+    "portal": "discord_mod:blocks/nacho_cheese"
   },
   "elements": [
     {

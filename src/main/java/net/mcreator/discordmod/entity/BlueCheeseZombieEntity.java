@@ -14,7 +14,6 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.monster.Zombie;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -29,7 +28,6 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
@@ -47,8 +45,8 @@ public class BlueCheeseZombieEntity extends Zombie {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), 20, 4, 8));
+			event.getSpawns().getSpawner(MobCategory.AMBIENT)
+					.add(new MobSpawnSettings.SpawnerData(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), 25, 2, 8));
 	}
 
 	public BlueCheeseZombieEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -109,9 +107,8 @@ public class BlueCheeseZombieEntity extends Zombie {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), SpawnPlacements.Type.ON_GROUND,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), SpawnPlacements.Type.NO_RESTRICTIONS,
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 		DungeonHooks.addDungeonMob(DiscordModModEntities.BLUE_CHEESE_ZOMBIE.get(), 180);
 	}
 

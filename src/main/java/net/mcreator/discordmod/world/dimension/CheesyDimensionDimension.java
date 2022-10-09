@@ -36,7 +36,7 @@ public class CheesyDimensionDimension {
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.SWISS_CHEESE_BLOCK.get());
 			replaceableBlocks.add(DiscordModModBlocks.DERBY_CHEESE_BLOCK.get());
-			replaceableBlocks.add(DiscordModModBlocks.PINK_DERBY_BLOCK.get());
+			replaceableBlocks.add(DiscordModModBlocks.COBBLED_PINK_DERBY_BLOCK.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();

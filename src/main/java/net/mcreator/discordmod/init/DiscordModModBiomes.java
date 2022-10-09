@@ -102,8 +102,8 @@ public class DiscordModModBiomes {
 							surfaceRules.add(1,
 									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, PINK_DERBY_CAVE.getId()),
 											DiscordModModBlocks.DERBY_CHEESE_BLOCK.get().defaultBlockState(),
-											DiscordModModBlocks.PINK_DERBY_BLOCK.get().defaultBlockState(),
-											DiscordModModBlocks.PINK_DERBY_BLOCK.get().defaultBlockState()));
+											DiscordModModBlocks.COBBLED_PINK_DERBY_BLOCK.get().defaultBlockState(),
+											DiscordModModBlocks.COBBLED_PINK_DERBY_BLOCK.get().defaultBlockState()));
 							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DESTROYED_BIOME.getId()),
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.WATER.defaultBlockState()));
 							surfaceRules.add(1,
