@@ -1259,15 +1259,15 @@
         "children": []
       },
       {
-        "name": "DestroyedDimension",
-        "children": []
-      },
-      {
         "name": "Misc",
         "children": []
       },
       {
         "name": "Cheese",
+        "children": []
+      },
+      {
+        "name": "DestroyedDimension",
         "children": []
       }
     ]
